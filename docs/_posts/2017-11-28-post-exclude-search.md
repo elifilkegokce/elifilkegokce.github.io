@@ -24,6 +24,6 @@ algolia:
     - index.html
     - index.md
     - excluded-file.html
-    - _posts/2017-11-28-post-exclude-search.md
+    - 2019-10-27-hello.md
     - subdirectory/*.html
 ```
