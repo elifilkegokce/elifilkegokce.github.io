@@ -4,7 +4,14 @@ search: false
 ---
 
 Customers connect to contact center of a bank for a variety of reasons. 
-One of the main contact reasons involves fraud. Suppose that you are interested in 
+One of the main contact reasons involves fraud. Suppose that you are trying to
+predict the possibility of a fraud call on a certain day. Since a call can be
+associated with more than one reason or call center agents usually enter very 
+general descriptions as call intentions, we need to listen to call records to
+determine call intentions accurately. However, number of calls coming to 
+a contact center during a day is very high and it is not possible to listen 
+all calls. One way is to listened t
+
 
 ```yaml
 search: false
