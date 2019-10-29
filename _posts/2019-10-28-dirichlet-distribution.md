@@ -3,7 +3,8 @@ title:  "What is Dirichlet Distribution?"
 search: false
 ---
 
-This post should not appear in the search index because it has the following YAML Front Matter:
+Customers connect to contact center of a bank for a variety of reasons. 
+One of the main contact reasons involves fraud. Suppose that you are interested in 
 
 ```yaml
 search: false
