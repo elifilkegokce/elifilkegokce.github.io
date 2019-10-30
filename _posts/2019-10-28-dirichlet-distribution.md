@@ -20,7 +20,9 @@ customer to report a suspicious transaction is 0? Using the prior expectations
 based on the past data, the best way to predict the proportions or
  probabilities is with Beta distribution:
  
- 
+ \begin{equation}
+Z = WX + b
+\end{equation}
 
 ```yaml
 search: false
