@@ -4,14 +4,18 @@ search: false
 ---
 
 Customers connect to contact center of a bank for a variety of reasons. 
-One of the main contact reasons involves fraud. Suppose that you are trying to
-predict the possibility of a fraud call on a certain day. Since a call can be
-associated with more than one reason or call center agents usually enter very 
-general descriptions as call intentions, we need to listen to call records to
-determine call intentions accurately. However, number of calls coming to 
-a contact center during a day is very high and it is not possible to listen 
-all calls. One way is to listened t
-
+One of the main contact reasons involves reporting a suspicious transaction. 
+Suppose that you are trying to predict the possibility of such a call. Since a 
+call can be associated with more than one reason or call center agents 
+usually enter very general descriptions as call intentions, one way to 
+determine call intentions accurately is to listen to a sample of calls. Then, 
+you may use the ratio of calls reporting a suspicious transaction as 
+the possibility of a call to be associated with a suspicious transaction.
+However, this may not be a good predictor. More than 100K calls are handled at 
+a contact center during the day and the available capacity for call listening 
+is very limited to a sample size of about 500 calls. There may not be any 
+suspicious transaction related calls in such a small sample of calls. In that 
+case, does it mean that the possibility of a fraud call is 0? 
 
 ```yaml
 search: false
