@@ -18,11 +18,27 @@ calls. There may not be any suspicious transaction related calls in such a
 small sample of calls. In that case, does it mean that the possibility of a 
 customer to report a suspicious transaction is 0? Using the prior expectations 
 based on the past data, the best way to predict the proportions or
- probabilities is with Beta distribution:
+probabilities is with $Beta$ distribution. The standard $Beta$ distribution gives the probability density of
+a value $x$ on the interval (0,1):
  
- \begin{equation}
-Z = WX + b
+\begin{equation}
+Beta(\alpha,\beta):\,\, prob(x|\alpha,\beta)=\frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)}\label{eq:BetaDensity}
 \end{equation}
+where $B$ is the beta function
+\[
+B(\alpha,\beta)=\int_{0}^{1}t^{\alpha-1}(1-t)^{\beta-1}dt
+\]
+
+
+ There are two parameters which work together to determine
+if the distribution has a mode in the interior of the unit interval
+and whether it is symmetrical.
+
+
+
+
+
+
 
 ```yaml
 search: false
