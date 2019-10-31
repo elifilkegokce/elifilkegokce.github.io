@@ -17,7 +17,7 @@ On the other hand, more calls may be expected during day time - increasing the
 possibility. Using the prior expectations based on the past data, the best way 
 to predict the proportions and probabilities is with Beta distribution. 
 
-<p align="center">
+<p style="text-align: center;">
 `Beta distribution is used to predict proportions and probabilities`
 </p>
  
