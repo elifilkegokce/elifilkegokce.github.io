@@ -19,11 +19,25 @@ to predict the proportions and probabilities is with Beta distribution.
 
 > Beta distribution is used to predict proportions and probabilities!
  
-Beta distribution is defined on the interval $[0, 1]$ and gives the 
-probability density of a random value $p$:
+Beta distribution has two parameters $\bf{\alpha}$ and $\bf{\beta}$ and
+it is defined on the interval $[0, 1].$ Beta distribution provides the 
+probability density of a random value $p$ as follows:
 
 Notation:
-$\bf{\Gamma(n):}$
+
+* $\bf{\Gamma(n):}$ Gamma function for which $\Gamma(1)=1$ and $\Gamma(n)=(n-1)!$
+* $\bf{\alpha}:$ The first parameter of Beta distribution. It is the weight given
+to the event, which is the calls associated with suspicious transactions in our case.
+* $\bf{\beta}:$ The second parameter of Beta distribution. It is the weight given
+to the non-event, which is the calls that don't involve suspicious transaction 
+related topics in our case.
+*$\bf{B(\alpha, \beta)}:$ Beta function. Using the parameters $\alpha$ and $\beta$, 
+and the gamma function $\Gamma(n)$, it is defined by the formula
+
+\[
+B(\alpha,\beta)=\frac{}
+\]
+
 
 
 
