@@ -20,7 +20,7 @@ to predict the proportions and probabilities is with Beta distribution.
 > Beta distribution is used to predict proportions and probabilities!
  
 Beta distribution has two parameters $\bf{\alpha}$ and $\bf{\beta}$ and,
-similar to probabilities, it is defined on the interval $[0, 1].$  
+similar to probabilities, it is defined on the interval $(0, 1).$  
 Beta distribution provides the probability density function (PDF) of 
 a random value $p$ using the notation below.
 
@@ -40,11 +40,15 @@ and $\beta$, and the gamma function $\Gamma(n)$, it is defined by
 B(\alpha,\beta)=\frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}
 \end{equation}
 
-Finally, we define the PDF of Beta distribution by 
+Finally, for $\alpha>0$ and $\beta>0$, we define the PDF of Beta 
+distribution by 
 
 \begin{equation}
-P(p|\alpha,\beta)=\frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)} 
+P(p|\alpha,\beta)=\frac{1}{B(\alpha,\beta)} p^{\alpha-1}(1-p)^{\beta-1}
 \end{equation}
+
+
+
 
 
 
