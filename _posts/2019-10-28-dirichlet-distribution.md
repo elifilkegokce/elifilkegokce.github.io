@@ -19,44 +19,37 @@ to predict the proportions and probabilities is with Beta distribution.
 
 > Beta distribution is used to predict proportions and probabilities!
  
-Beta distribution has two parameters $\bf{\alpha}$ and $\bf{\beta}$ and
-it is defined on the interval $[0, 1].$ Beta distribution provides the 
-probability density of a random value $p$ as follows:
+Beta distribution has two parameters $\bf{\alpha}$ and $\bf{\beta}$ and,
+similar to probabilities, it is defined on the interval $[0, 1].$  
+Beta distribution provides the probability density function (PDF) of 
+a random value $p$ using the notation below.
 
 Notation:
 
 * $\bf{\Gamma(n):}$ Gamma function for which $\Gamma(1)=1$ and $\Gamma(n)=(n-1)!$
-* $\bf{\alpha}:$ The first parameter of Beta distribution. It is the weight given
-to the event, which is the calls associated with suspicious transactions in our case.
-* $\bf{\beta}:$ The second parameter of Beta distribution. It is the weight given
-to the non-event, which is the calls that don't involve suspicious transaction 
-related topics in our case.
-* $\bf{B(\alpha, \beta)}:$ Beta function. Using the parameters $\alpha$ and $\beta$, 
-and the gamma function $\Gamma(n)$, it is defined by the formula
+* $\bf{\alpha}:$ The first parameter of Beta distribution. It is the weight 
+given to the event, which is the calls associated with suspicious transactions 
+in our case.
+* $\bf{\beta}:$ The second parameter of Beta distribution. It is the weight 
+given to the non-event, which is the calls that don't involve suspicious 
+transaction related topics in our case.
+* $\bf{B(\alpha, \beta)}:$ Beta function. Using the parameters $\alpha$ 
+and $\beta$, and the gamma function $\Gamma(n)$, it is defined by
 
 \begin{equation}
 B(\alpha,\beta)=\frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}
 \end{equation}
 
+Finally, we define the PDF of Beta distribution by 
 
-
-
- 
 \begin{equation}
 P(p|\alpha,\beta)=\frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)} 
 \end{equation}
-where $B(\alpha,\beta)$ is the beta function
-\[
-B(\alpha,\beta)=
-\]
 
-a distribution has two shape parameters, denoted by $\alpha$ and $\beta$. 
- Similar to probabilities, it ix
-  
 
- There are two parameters which work together to determine
-if the distribution has a mode in the interior of the unit interval
-and whether it is symmetrical.
+
+
+
 
 
 
