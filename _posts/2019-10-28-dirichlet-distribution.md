@@ -34,9 +34,9 @@ related topics in our case.
 * $\bf{B(\alpha, \beta)}:$ Beta function. Using the parameters $\alpha$ and $\beta$, 
 and the gamma function $\Gamma(n)$, it is defined by the formula
 
-\[
+\begin{equation}
 B(\alpha,\beta)=\frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}
-\]
+\end{equation}
 
 
 
