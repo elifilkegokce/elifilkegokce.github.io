@@ -17,7 +17,7 @@ On the other hand, more calls may be expected during day time - increasing the
 possibility. Using the prior expectations based on the past data, the best way 
 to predict the proportions or probabilities is with Beta distribution. 
 
-
+>Test Noteeeeee
  
  
  The standard $Beta$ distribution gives the probability density of
@@ -60,6 +60,7 @@ algolia:
     - 2019-10-27-hello.md
     - subdirectory/*.html
 ```
-
-**REFERENCES**
+---
+REFERENCES
+---
 http://varianceexplained.org/statistics/beta_distribution_and_baseball/
