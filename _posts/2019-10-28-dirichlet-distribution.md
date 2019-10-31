@@ -17,7 +17,7 @@ On the other hand, more calls may be expected during day time - increasing the
 possibility. Using the prior expectations based on the past data, the best way 
 to predict the proportions or probabilities is with Beta distribution. 
 
-**Test Noteeeeeee***
+`Test Noteeeeeee`
  
  
  The standard $Beta$ distribution gives the probability density of
@@ -48,7 +48,8 @@ search: false
 
 c
 
-To exclude files when using **Algolia** as a search provider add an array to `algolia.files_to_exclude` in your `_config.yml`. For more configuration options be sure to check their [full documentation](https://community.algolia.com/jekyll-algolia/options.html).
+To exclude files when using **Algolia** as a search provider add an array to
+ `algolia.files_to_exclude` in your `_config.yml`. For more configuration options be sure to check their [full documentation](https://community.algolia.com/jekyll-algolia/options.html).
 
 ```yaml
 algolia:
