@@ -27,11 +27,11 @@ a random value $p$ using the notation below.
 Notation:
 
 * $\bf{\Gamma(n):}$ Gamma function for which $\Gamma(1)=1$ and $\Gamma(n)=(n-1)!$
-* $\bf{\alpha}:$ The first parameter of Beta distribution. It is the weight 
+* $\bf{\alpha}:$ The first parameter of Beta distribution. It is like a weight 
 given to the event, which is the calls associated with suspicious transactions 
 in our case.
-* $\bf{\beta}:$ The second parameter of Beta distribution. It is the weight 
-given to the non-event, which is the calls that don't involve suspicious 
+* $\bf{\beta}:$ The second parameter of Beta distribution. It is like a weight 
+given to the no-event, which is the calls that don't involve suspicious 
 transaction related topics in our case.
 * $\bf{B(\alpha, \beta)}:$ Beta function. Using the parameters $\alpha$ 
 and $\beta$, and the gamma function $\Gamma(n)$, it is defined by
@@ -47,7 +47,10 @@ distribution by
 P(p|\alpha,\beta)=\frac{1}{B(\alpha,\beta)} p^{\alpha-1}(1-p)^{\beta-1}
 \end{equation}
 
-
+As you may observe in PDF of Beta, $p^{\alpha-1}(1-p)^{\beta-1}$ weighs 
+the probability of an event $p$ and the probability of no-event $1-p$. 
+In our case, event occurs if a call involves a suspicious transaction. 
+However, the result of the computation may
 
 
 
