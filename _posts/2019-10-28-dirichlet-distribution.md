@@ -22,10 +22,10 @@ to predict the proportions and probabilities is with Beta distribution.
 Beta distribution is defined on the interval $[0, 1]$ and gives the 
 probability density of a random value $p$:
 
-'
 Notation:
+$\bf{\Gamma(n):}$
 
-'
+
 
  
 \begin{equation}
