@@ -31,11 +31,11 @@ to the event, which is the calls associated with suspicious transactions in our 
 * $\bf{\beta}:$ The second parameter of Beta distribution. It is the weight given
 to the non-event, which is the calls that don't involve suspicious transaction 
 related topics in our case.
-*$\bf{B(\alpha, \beta)}:$ Beta function. Using the parameters $\alpha$ and $\beta$, 
+* $\bf{B(\alpha, \beta)}:$ Beta function. Using the parameters $\alpha$ and $\beta$, 
 and the gamma function $\Gamma(n)$, it is defined by the formula
 
 \[
-B(\alpha,\beta)=\frac{}
+B(\alpha,\beta)=\frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}
 \]
 
 
