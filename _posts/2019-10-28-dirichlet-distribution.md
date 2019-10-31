@@ -19,11 +19,16 @@ to predict the proportions and probabilities is with Beta distribution.
 
 > Beta distribution is used to predict proportions and probabilities!
  
-The Beta distribution is defined on the interval $[0, 1].$ and gives the 
+Beta distribution is defined on the interval $[0, 1]$ and gives the 
 probability density of a random value $p$:
+'
+Notation:
+
+'
+
  
 \begin{equation}
-P(p|\alpha,\beta)=\frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)}\label{eq:BetaDensity}
+P(p|\alpha,\beta)=\frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)} 
 \end{equation}
 where $B(\alpha,\beta)$ is the beta function
 \[
