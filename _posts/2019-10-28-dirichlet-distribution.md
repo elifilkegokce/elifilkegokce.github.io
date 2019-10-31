@@ -15,9 +15,9 @@ transaction related calls during midnight. In that case, does it mean that
 the possibility of a customer to report a suspicious transaction is close to 0?
 On the other hand, more calls may be expected during day time - increasing the 
 possibility. Using the prior expectations based on the past data, the best way 
-to predict the proportions or probabilities is with Beta distribution. 
+to predict the proportions and probabilities is with Beta distribution. 
 
-`Test Noteeeeeee`
+`Beta distribution is used to predict proportions and probabilities`
  
  
  The standard $Beta$ distribution gives the probability density of
