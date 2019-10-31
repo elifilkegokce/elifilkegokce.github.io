@@ -27,7 +27,7 @@ P(p|\alpha,\beta)=\frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)}\label{eq:B
 \end{equation}
 where $B(\alpha,\beta)$ is the beta function
 \[
-B(\alpha,\beta)=\int_{0}^{1}t^{\alpha-1}(1-t)^{\beta-1}dt
+B(\alpha,\beta)=
 \]
 
 a distribution has two shape parameters, denoted by $\alpha$ and $\beta$. 
