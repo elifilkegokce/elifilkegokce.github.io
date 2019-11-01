@@ -52,7 +52,7 @@ distribution by
 \f (p|\alpha,\beta)=\frac{1}{B(\alpha,\beta)} p^{\alpha-1}(1-p)^{\beta-1}
 \end{equation}
 
-As you may observe in PDF of Beta, '$p^{\alpha-1}(1-p)^{\beta-1}$' weighs 
+As you may observe in PDF of Beta, $p^{\alpha-1}(1-p)^{\beta-1}$ weighs 
 the probability of an event $p$ and the probability of no-event $1-p$. 
 In our case, event occurs if a call involves a suspicious transaction. 
 However, the function '$p^{\alpha-1}(1-p)^{\beta-1}$', as PDF by itself, does 
