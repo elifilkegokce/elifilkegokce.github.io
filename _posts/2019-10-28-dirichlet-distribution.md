@@ -30,13 +30,20 @@ a random value $p$ using the notation below.
 
 Notation:
 
-* $\bf{\Gamma(n):}$ Gamma function for which $\Gamma(1)=1$ and $\Gamma(n)=(n-1)!$
+* $\bf{\Gamma(n):}$ Gamma function, which is defined by
+ 
+$$
+\begin{equation}
+Gamma(n) = \int_{0}^{\inf} x^{n-1} exp^{-x} dx
+\end{equation}
+$$
+
 * $\bf{\alpha}:$ The first parameter of Beta distribution. Effective number of
 observations of $p$ (i.e., event), which is the calls associated with 
 suspicious transactions in our case.
 * $\bf{\beta}:$ The second parameter of Beta distribution. Effective number
-of observations of $1-p$ (i.e., no-event), which is the calls that don't 
-involve suspicious transaction related topics in our case).
+of observations of $(1-p)$ (i.e., no-event), which is the calls that don't 
+involve suspicious transaction related topics in our case.
 * $\bf{B(\alpha, \beta)}:$ Beta function, which has a constant value for given
 $\alpha$ and $\beta.$ Using the parameters $\alpha$ 
 and $\beta$, and the gamma function $\Gamma(n)$, it is defined by
@@ -114,6 +121,12 @@ $$
 \Gamma(\alpha)\Gamma(\beta) & = 
 \int_{0}^{\inf} \exp^{-u} \bigg(\int_{0}^{1} (uv)^{\alpha-1}
 (u-uv)^{\beta-1} udv \bigg) du \\
+& = 
+\int_{0}^{\inf} \exp^{-u} \bigg((u)^{\alpha+\beta-1} \int_{0}^{1} v^{\alpha-1}
+(1-v)^{\beta-1} dv \bigg) du \\
+& = 
+\int_{0}^{\inf} \exp^{-u} \bigg((u)^{\alpha+\beta-1} \int_{0}^{1} v^{\alpha-1}
+(1-v)^{\beta-1} dv \bigg) du \\
 
 \end{align} 
 $$
