@@ -105,7 +105,7 @@ x^{\alpha-1}y^{\beta-1} dx dy
 $$
 
 First, we set $u=x+y$. This results in $y=u-x$ and $dy=du.$ Since $0 \le y$, 
-$0 \le u-x $ and, from $0 \le x,$ we get $0 \le x \le u.$
+we have $0 \le u-x $ and, from $0 \le x,$ we get $0 \le x \le u.$
 
 $$
 \begin{align}
