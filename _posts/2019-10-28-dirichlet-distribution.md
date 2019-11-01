@@ -78,8 +78,10 @@ we have
 
 We start with calculating $\Gamma(\alpha)\Gamma(\beta)$
 
-\usepackage{amsmath}
 
+\documentclass{artical}
+\usepackage{amsmath}
+\begin{document}
 \begin{equation}
 \begin{split}
 \Gamma(\alpha)\Gamma(\beta) & =  \int_{0}^{\inf} \exp^{-x}x^{\alpha-1}dx \int_{0}^{\inf} \exp^{-y}y^{\beta-1}dy \\
@@ -87,6 +89,7 @@ We start with calculating $\Gamma(\alpha)\Gamma(\beta)$
 & = \int_{0}^{\inf} \int_{0}^{\inf} \exp^{-(x+y)} x^{\alpha-1}y^{\beta-1} dx dy
 \end{split}
 \end{equation}
+\end{document}
 
 Now, we set $u=x+y$, where $u \ge x$
 
