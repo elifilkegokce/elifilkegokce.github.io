@@ -102,7 +102,7 @@ Now, we set $u=x+y$, where $u \ge x$ and $dy=du,$
 $$
 \begin{align}
 \int_{0}^{\inf} \int_{0}^{\inf} \exp^{-(x+y)} x^{\alpha-1}y^{\beta-1} dx dy
-  & =  \int_{0}^{\inf} \exp^{-u} \bigg(\int_{0}^{t} x^{\alpha-1}
+  & =  \int_{0}^{\inf} \exp^{-u} \bigg(\int_{0}^{u} x^{\alpha-1}
 (u-x)^{\beta-1} dx \bigg) du \\
 \end{align} 
 $$
