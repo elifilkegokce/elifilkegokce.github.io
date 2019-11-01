@@ -34,7 +34,7 @@ Notation:
  
 $$
 \begin{equation}
-\kGamma(n) = \int_{0}^{\inf} x^{n-1} exp^{-x} dx
+\Gamma(n) = \int_{0}^{\inf} x^{n-1} exp^{-x} dx
 \end{equation}
 $$
 
