@@ -66,7 +66,7 @@ Since the area under the curve of the PDF should be equal to 1,
 
 \begin{equation}
 \int_{0}^{1} f(p|\alpha,\beta) dp = \int_{0}^{1} \frac{1}{B(\alpha,\beta)} 
-p^{\alpha-1}(1-p)^{\beta-1} dp
+p^{\alpha-1}(1-p)^{\beta-1} dp = 1
 \end{equation}
 
 
