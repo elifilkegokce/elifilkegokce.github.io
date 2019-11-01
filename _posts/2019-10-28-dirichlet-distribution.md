@@ -109,7 +109,9 @@ $0 \le u-x $ and, from $0 \le x$ $0, we get \le x \le u.$
 
 $$
 \begin{align}
-\Gamma(\alpha)\Gamma(\beta) &  =  \int_{0}^{\inf} \exp^{-u} 
+\Gamma(\alpha)\Gamma(\beta)&  =  \int_{0}^{\inf} \int_{0}^{u} \exp^{-u} 
+x^{\alpha-1}(u-x)^{\beta-1} dx du \\
+ &  =  \int_{0}^{\inf} \exp^{-u} 
 \bigg(\int_{0}^{u} x^{\alpha-1}(u-x)^{\beta-1} dx \bigg) du \\
 \end{align} 
 $$
