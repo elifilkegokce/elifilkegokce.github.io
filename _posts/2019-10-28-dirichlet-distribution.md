@@ -104,8 +104,8 @@ x^{\alpha-1}y^{\beta-1} dx dy
 \end{align}
 $$
 
-First, we set $u=x+y$. This results in $y=u-x$ and $dy=du.$ Since $0 x,y 
-\ge 0$, $0 \le u-x$ and $0 \le x \le u.$
+First, we set $u=x+y$. This results in $y=u-x$ and $dy=du.$ Since $0 \le x,y 
+0$, $0 \le u-x$ and $0 \le x \le u.$
 
 $$
 \begin{align}
