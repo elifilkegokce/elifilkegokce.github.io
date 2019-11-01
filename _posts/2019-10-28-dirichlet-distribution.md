@@ -134,6 +134,14 @@ $$
 \end{align} 
 $$
 
+Finally, from the last equation, we have
+
+$$
+\begin{equation}
+ B(\alpha,\beta) = \frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}
+\end{equation} \qed
+$$
+
 
 
 
