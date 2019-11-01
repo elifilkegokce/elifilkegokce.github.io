@@ -80,11 +80,9 @@ We start with calculating $\Gamma(\alpha)\Gamma(\beta)$
 
 \begin{equation}
 \begin{split}
-\Gamma(\alpha)\Gamma(\beta) & =  \int_{0}^{\inf} \exp^{-x}x^{\alpha-1}dx
-\int_{0}^{\inf} \exp^{-y}y^{\beta-1}dy \\
-& = \int_{0}^{\inf} \int_{0}^{\inf} \exp^{-x}x^{\alpha-1}
-\exp^{-y}y^{\beta-1} dx dy \\
-&= \int_{0}^{\inf} \int_{0}^{\inf} \exp^{-(x+y)} x^{\alpha-1}y^{\beta-1} dx dy
+\Gamma(\alpha)\Gamma(\beta) & =  \int_{0}^{\inf} \exp^{-x}x^{\alpha-1}dx \int_{0}^{\inf} \exp^{-y}y^{\beta-1}dy \\
+& = \int_{0}^{\inf} \int_{0}^{\inf} \exp^{-x}x^{\alpha-1} \exp^{-y}y^{\beta-1} dx dy \\
+& = \int_{0}^{\inf} \int_{0}^{\inf} \exp^{-(x+y)} x^{\alpha-1}y^{\beta-1} dx dy
 \end{split}
 \end{equation}
 
@@ -93,10 +91,12 @@ Now, we set $u=x+y$, where $u \ge x$
 \begin{equation}
 \begin{split}
 \int_{0}^{\inf} \int_{0}^{\inf} \exp^{-(x+y)} x^{\alpha-1}y^{\beta-1} dx dy
-\end{split} & =  \int_{0}^{\inf} \exp^{-u} \int_{0}^{t} x^{\alpha-1}
-(u-x)^{\beta-1} dx du
+  & =  \int_{0}^{\inf} \exp^{-u} \int_{0}^{t} x^{\alpha-1}
+(u-x)^{\beta-1} dx du \\
 \end{split} 
 \end{equation}
+
+
 
 
 
