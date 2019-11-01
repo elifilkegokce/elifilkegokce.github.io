@@ -78,6 +78,8 @@ we have
 
 We start with calculating $\Gamma(\alpha)\Gamma(\beta)$
 
+\usepackage{amsmath}
+
 \begin{equation}
 \begin{split}
 \Gamma(\alpha)\Gamma(\beta) & =  \int_{0}^{\inf} \exp^{-x}x^{\alpha-1}dx \int_{0}^{\inf} \exp^{-y}y^{\beta-1}dy \\
