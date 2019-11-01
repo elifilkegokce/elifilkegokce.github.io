@@ -125,8 +125,8 @@ $$
 \int_{0}^{\inf} \exp^{-u} \bigg((u)^{\alpha+\beta-1} \int_{0}^{1} v^{\alpha-1}
 (1-v)^{\beta-1} dv \bigg) du \\
 & = \bigg(
-\int_{0}^{\inf} (u)^{\alpha+\beta-1} \exp^{-u} \bigg) \bigg( \int_{0}^{1} v^{\alpha-1}
-(1-v)^{\beta-1} dv \bigg) du \\
+\int_{0}^{\inf} (u)^{\alpha+\beta-1} \exp^{-u} du \bigg) \bigg( \int_{0}^{1} v^{\alpha-1}
+(1-v)^{\beta-1} dv \bigg) \\
 
 \end{align} 
 $$
