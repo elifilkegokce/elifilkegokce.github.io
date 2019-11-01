@@ -49,7 +49,7 @@ Finally, for $\alpha>0$ and $\beta>0$, we define the PDF of Beta
 distribution by 
 
 \begin{equation}
-\f (p|\alpha,\beta)=\frac{1}{B(\alpha,\beta)} p^{\alpha-1}(1-p)^{\beta-1}
+f(p|\alpha,\beta)=\frac{1}{B(\alpha,\beta)} p^{\alpha-1}(1-p)^{\beta-1}
 \end{equation}
 
 As you may observe in PDF of Beta, $p^{\alpha-1}(1-p)^{\beta-1}$ weighs 
