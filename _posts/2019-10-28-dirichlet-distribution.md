@@ -84,7 +84,7 @@ $$
 \end{equation}
 $$
 
-We start with calculating $\Gamma(\alpha)\Gamma(\beta)$
+We start with calculating $\Gamma(\alpha)\Gamma(\beta),$
 
 $$
 \begin{align}
@@ -97,7 +97,7 @@ x^{\alpha-1}y^{\beta-1} dx dy
 \end{align}
 $$
 
-First, we set $u=x+y$, where $u \ge x$ and $dy=du,$
+First, we set $u=x+y$, where $0 \le x \le u$ and $dy=du,$
 
 $$
 \begin{align}
@@ -106,6 +106,22 @@ $$
 (u-x)^{\beta-1} dx \bigg) du \\
 \end{align} 
 $$
+
+Then, we set $x = uv$, where $dx=udv.$ Since $0 \le x \le u,$
+$0 \le uv \le u$ and $0 \le v \le 1$ for $u > 0$.
+
+$$
+\begin{align}
+\int_{0}^{\inf} \exp^{-u} \bigg(\int_{0}^{u} x^{\alpha-1}
+(u-x)^{\beta-1} dx \bigg) du &= 
+\int_{0}^{\inf} \exp^{-u} \bigg(\int_{0}^{u} (uv)^{\alpha-1}
+(u-uv)^{\beta-1} udv \bigg) du \\
+
+
+\end{align} 
+$$
+
+
 
 
 
