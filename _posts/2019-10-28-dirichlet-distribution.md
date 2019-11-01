@@ -27,12 +27,12 @@ a random value $p$ using the notation below.
 Notation:
 
 * $\bf{\Gamma(n):}$ Gamma function for which $\Gamma(1)=1$ and $\Gamma(n)=(n-1)!$
-* $\bf{\alpha}:$ The first parameter of Beta distribution. It is like a weight 
-given to the event, which is the calls associated with suspicious transactions 
-in our case.
-* $\bf{\beta}:$ The second parameter of Beta distribution. It is like a weight 
-given to the no-event, which is the calls that don't involve suspicious 
-transaction related topics in our case.
+* $\bf{\alpha}:$ The first parameter of Beta distribution. Effective number of
+observations of $p$ (i.e., event), which is the calls associated with 
+suspicious transactions in our case.
+* $\bf{\beta}:$ The second parameter of Beta distribution. Effective number
+of observations of $1-p$ (i.e., no-event), which is the calls that don't 
+involve suspicious transaction related topics in our case).
 * $\bf{B(\alpha, \beta)}:$ Beta function. Using the parameters $\alpha$ 
 and $\beta$, and the gamma function $\Gamma(n)$, it is defined by
 
@@ -44,13 +44,18 @@ Finally, for $\alpha>0$ and $\beta>0$, we define the PDF of Beta
 distribution by 
 
 \begin{equation}
-P(p|\alpha,\beta)=\frac{1}{B(\alpha,\beta)} p^{\alpha-1}(1-p)^{\beta-1}
+\Beta(p|\alpha,\beta)=\frac{1}{B(\alpha,\beta)} p^{\alpha-1}(1-p)^{\beta-1}
 \end{equation}
 
-As you may observe in PDF of Beta, $p^{\alpha-1}(1-p)^{\beta-1}$ weighs 
+As you may observe in PDF of Beta, '$p^{\alpha-1}(1-p)^{\beta-1}$' weighs 
 the probability of an event $p$ and the probability of no-event $1-p$. 
 In our case, event occurs if a call involves a suspicious transaction. 
-However, the result of the computation may 
+However, the function '$p^{\alpha-1}(1-p)^{\beta-1}$', as PDF by itself, does 
+not guarantee that the area under the curve of the PDF to be 1. In order to 
+ensure that the total probability is 1, it is normalized by dividing by the
+constant $B(\alpha,\beta).$
+
+
 
 
 
