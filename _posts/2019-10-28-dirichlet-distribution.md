@@ -1,7 +1,9 @@
 ---
-title:  "What is Dirichlet Distribution?"
+title:  "What is Beta Distribution?"
 search: false
 ---
+
+## 1 Why do we need Beta Distribution?
 
 Customers connect to contact center of a bank for a variety of reasons. 
 One of the main contact reasons involves reporting a suspicious transaction. 
@@ -19,6 +21,8 @@ to predict the proportions and probabilities is with Beta distribution.
 
 > Beta distribution is used to predict proportions and probabilities!
  
+## How is Beta Distribution defined?
+ 
 Beta distribution has two parameters $\bf{\alpha}$ and $\bf{\beta}$ and,
 similar to probabilities, it is defined on the interval $(0, 1).$  
 Beta distribution provides the probability density function (PDF) of 
@@ -33,18 +37,19 @@ suspicious transactions in our case.
 * $\bf{\beta}:$ The second parameter of Beta distribution. Effective number
 of observations of $1-p$ (i.e., no-event), which is the calls that don't 
 involve suspicious transaction related topics in our case).
-* $\bf{B(\alpha, \beta)}:$ Beta function. Using the parameters $\alpha$ 
+* $\bf{B(\alpha, \beta)}:$ Beta function, which has a constant value for given
+$\alpha$ and $\beta.$ Using the parameters $\alpha$ 
 and $\beta$, and the gamma function $\Gamma(n)$, it is defined by
 
 \begin{equation}
-f(\alpha,\beta)=\frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}
+B(\alpha,\beta)=\frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}
 \end{equation}
 
 Finally, for $\alpha>0$ and $\beta>0$, we define the PDF of Beta 
 distribution by 
 
 \begin{equation}
-\B (p|\alpha,\beta)=\frac{1}{B(\alpha,\beta)} p^{\alpha-1}(1-p)^{\beta-1}
+\f(p|\alpha,\beta)=\frac{1}{B(\alpha,\beta)} p^{\alpha-1}(1-p)^{\beta-1}
 \end{equation}
 
 As you may observe in PDF of Beta, '$p^{\alpha-1}(1-p)^{\beta-1}$' weighs 
@@ -54,6 +59,10 @@ However, the function '$p^{\alpha-1}(1-p)^{\beta-1}$', as PDF by itself, does
 not guarantee that the area under the curve of the PDF to be 1. In order to 
 ensure that the total probability is 1, it is normalized by dividing by the
 constant $B(\alpha,\beta).$
+
+## 3 Let's Derive the Beta Function!
+
+
 
 
 
