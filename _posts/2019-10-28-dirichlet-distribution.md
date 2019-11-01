@@ -21,7 +21,7 @@ to predict the proportions and probabilities is with Beta distribution.
 
 > Beta distribution is used to predict proportions and probabilities!
  
-## How is Beta Distribution defined?
+## 2 How is Beta Distribution defined?
  
 Beta distribution has two parameters $\bf{\alpha}$ and $\bf{\beta}$ and,
 similar to probabilities, it is defined on the interval $(0, 1).$  
@@ -49,7 +49,7 @@ Finally, for $\alpha>0$ and $\beta>0$, we define the PDF of Beta
 distribution by 
 
 \begin{equation}
-\f(p|\alpha,\beta)=\frac{1}{B(\alpha,\beta)} p^{\alpha-1}(1-p)^{\beta-1}
+\f (p|\alpha,\beta)=\frac{1}{B(\alpha,\beta)} p^{\alpha-1}(1-p)^{\beta-1}
 \end{equation}
 
 As you may observe in PDF of Beta, '$p^{\alpha-1}(1-p)^{\beta-1}$' weighs 
