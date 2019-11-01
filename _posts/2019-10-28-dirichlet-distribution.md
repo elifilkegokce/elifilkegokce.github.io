@@ -37,7 +37,7 @@ involve suspicious transaction related topics in our case).
 and $\beta$, and the gamma function $\Gamma(n)$, it is defined by
 
 \begin{equation}
-B(\alpha,\beta)=\frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}
+f(\alpha,\beta)=\frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}
 \end{equation}
 
 Finally, for $\alpha>0$ and $\beta>0$, we define the PDF of Beta 
