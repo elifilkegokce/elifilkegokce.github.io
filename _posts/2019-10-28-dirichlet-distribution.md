@@ -76,11 +76,11 @@ we have
  = \frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}
 \end{equation}
 
-We start with calculating $\frac{\Gamma(\alpha)\Gamma(\beta)}$
+We start with calculating $\Gamma(\alpha)\Gamma(\beta)$
 
 \begin{equation}
-\Gamma(\alpha)\Gamma(\beta) = \int_{0}^{\infinity} \exp^{-x}x^{\alpha-1}dx
-\int_{0}^{\infinity} \exp^{-y}y^{\alpha-1}dy
+\Gamma(\alpha)\Gamma(\beta) = \int_{0}^{\inf} \exp^{-x}x^{\alpha-1}dx
+\int_{0}^{\inf} \exp^{-y}y^{\alpha-1}dy
 \end{equation}
 
 
