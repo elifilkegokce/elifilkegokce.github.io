@@ -34,7 +34,7 @@ Notation:
  
 $$
 \begin{equation}
-\Gamma(n) = \int_{0}^{\inf} x^{n-1} exp^{-x} dx
+\kGamma(n) = \int_{0}^{\inf} x^{n-1} exp^{-x} dx
 \end{equation}
 $$
 
@@ -64,7 +64,7 @@ f(p|\alpha,\beta)=\frac{1}{B(\alpha,\beta)} p^{\alpha-1}(1-p)^{\beta-1}
 $$
 
 As you may observe in PDF of Beta, $p^{\alpha-1}(1-p)^{\beta-1}$ weighs 
-the probability of an event $p$ and the probability of no-event $1-p$. 
+the probability of an event $p$ and the probability of no-event $(1-p)$. 
 In our case, event occurs if a call involves a suspicious transaction. 
 However, the function $p^{\alpha-1}(1-p)^{\beta-1}$, as PDF by itself, does 
 not guarantee that the area under the curve of the PDF to be 1. In order to 
@@ -124,8 +124,8 @@ $$
 & = 
 \int_{0}^{\inf} \exp^{-u} \bigg((u)^{\alpha+\beta-1} \int_{0}^{1} v^{\alpha-1}
 (1-v)^{\beta-1} dv \bigg) du \\
-& = 
-\int_{0}^{\inf} \exp^{-u} \bigg((u)^{\alpha+\beta-1} \int_{0}^{1} v^{\alpha-1}
+& = \bigg(
+\int_{0}^{\inf} (u)^{\alpha+\beta-1} \exp^{-u} \bigg) \bigg( \int_{0}^{1} v^{\alpha-1}
 (1-v)^{\beta-1} dv \bigg) du \\
 
 \end{align} 
