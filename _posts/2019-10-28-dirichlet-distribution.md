@@ -62,12 +62,22 @@ constant $B(\alpha,\beta).$
 
 ## 3 Let's Derive the Beta Function!
 
-Since the area under the curve of the PDF should be equal to 1,
+Since the area under the curve of the PDF should be equal to 1, from
 
 \begin{equation}
-\int_{0}^{1} f(p|\alpha,\beta) dp = \int_{0}^{1} \frac{1}{B(\alpha,\beta)} 
-p^{\alpha-1}(1-p)^{\beta-1} dp = 1
+\int_{0}^{1} f(p|\alpha,\beta) dp = \frac{1}{B(\alpha,\beta)} 
+\int_{0}^{1} p^{\alpha-1}(1-p)^{\beta-1} dp = 1,
 \end{equation}
+
+we have
+
+\begin{equation}
+ B(\alpha,\beta) = \int_{0}^{1} p^{\alpha-1}(1-p)^{\beta-1} dp 
+ = \frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}
+\end{equation}
+
+
+
 
 
 
