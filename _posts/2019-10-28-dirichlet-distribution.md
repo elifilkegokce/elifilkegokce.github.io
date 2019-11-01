@@ -41,16 +41,20 @@ involve suspicious transaction related topics in our case).
 $\alpha$ and $\beta.$ Using the parameters $\alpha$ 
 and $\beta$, and the gamma function $\Gamma(n)$, it is defined by
 
+$$
 \begin{equation}
 B(\alpha,\beta)=\frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}
 \end{equation}
+$$
 
 Finally, for $\alpha>0$ and $\beta>0$, we define the PDF of Beta 
 distribution by 
 
+$$
 \begin{equation}
 f(p|\alpha,\beta)=\frac{1}{B(\alpha,\beta)} p^{\alpha-1}(1-p)^{\beta-1}
 \end{equation}
+$$
 
 As you may observe in PDF of Beta, $p^{\alpha-1}(1-p)^{\beta-1}$ weighs 
 the probability of an event $p$ and the probability of no-event $1-p$. 
@@ -64,17 +68,21 @@ constant $B(\alpha,\beta).$
 
 Since the area under the curve of the PDF should be equal to 1, from
 
+$$
 \begin{equation}
 \int_{0}^{1} f(p|\alpha,\beta) dp = \frac{1}{B(\alpha,\beta)} 
 \int_{0}^{1} p^{\alpha-1}(1-p)^{\beta-1} dp = 1,
 \end{equation}
+$$
 
 we have
 
+$$
 \begin{equation}
  B(\alpha,\beta) = \int_{0}^{1} p^{\alpha-1}(1-p)^{\beta-1} dp 
  = \frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}
 \end{equation}
+$$
 
 We start with calculating $\Gamma(\alpha)\Gamma(\beta)$
 
@@ -91,13 +99,13 @@ $$
 
 Now, we set $u=x+y$, where $u \ge x$
 
-\begin{equation}
-\begin{split}
+$$
+\begin{align}
 \int_{0}^{\inf} \int_{0}^{\inf} \exp^{-(x+y)} x^{\alpha-1}y^{\beta-1} dx dy
   & =  \int_{0}^{\inf} \exp^{-u} \int_{0}^{t} x^{\alpha-1}
 (u-x)^{\beta-1} dx du \\
-\end{split} 
-\end{equation}
+\end{align} 
+$$
 
 
 
