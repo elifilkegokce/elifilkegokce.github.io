@@ -107,8 +107,8 @@ $$
 \end{align} 
 $$
 
-Then, we set $x = uv$, where $dx=udv.$ Since $0 \le x \le u,$
-$0 \le uv \le u$ and $0 \le v \le 1$ for $u > 0$.
+Then, we set $x = uv$, where $dx=udv.$ Since $0 \le x \le u,$ $0
+\le uv \le u$ and $0 \le v \le 1$ for $u > 0$.
 
 $$
 \begin{align}
