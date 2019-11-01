@@ -79,17 +79,13 @@ we have
 We start with calculating $\Gamma(\alpha)\Gamma(\beta)$
 
 
-\documentclass{artical}
-\usepackage{amsmath}
-\begin{document}
 \begin{equation}
-\begin{split}
+\begin{aligned}
 \Gamma(\alpha)\Gamma(\beta) & =  \int_{0}^{\inf} \exp^{-x}x^{\alpha-1}dx \int_{0}^{\inf} \exp^{-y}y^{\beta-1}dy \\
 & = \int_{0}^{\inf} \int_{0}^{\inf} \exp^{-x}x^{\alpha-1} \exp^{-y}y^{\beta-1} dx dy \\
-& = \int_{0}^{\inf} \int_{0}^{\inf} \exp^{-(x+y)} x^{\alpha-1}y^{\beta-1} dx dy
-\end{split}
+& = \int_{0}^{\inf} \int_{0}^{\inf} \exp^{-(x+y)} x^{\alpha-1}y^{\beta-1} dx dy \\
+\end{aligned}
 \end{equation}
-\end{document}
 
 Now, we set $u=x+y$, where $u \ge x$
 
