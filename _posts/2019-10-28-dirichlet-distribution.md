@@ -97,7 +97,7 @@ x^{\alpha-1}y^{\beta-1} dx dy
 \end{align}
 $$
 
-Now, we set $u=x+y$, where $u \ge x$ and $dy=du,$
+First, we set $u=x+y$, where $u \ge x$ and $dy=du,$
 
 $$
 \begin{align}
