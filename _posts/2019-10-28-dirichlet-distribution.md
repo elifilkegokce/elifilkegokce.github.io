@@ -148,7 +148,7 @@ Probability density function of the Beta distribution
 
 <style type="text/css">
   p {
-    .width-half {width: 50%}
+    .width-half {width: 100%}
   }
 </style>
 
@@ -170,14 +170,14 @@ Probability density function of the Beta distribution
   }
 </style>
 
-![](/images/beta-distribution/beta_a_1_beta_ge1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_g1_beta_1.png){: .align-right .width-half} 
+![](/images/beta-distribution/beta_a_1_b_ge1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_g1_b_1.png){: .align-right .width-half} 
 
 <style type="text/css">
   p {
     .width-half {width: 30%}
   }
 </style>
-![](/images/beta-distribution/beta_a_g1_beta_less1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_beta_ge1.png){: .align-right .width-half} 
+![](/images/beta-distribution/beta_a_g1_b_less1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_b_ge1.png){: .align-right .width-half} 
 
 
 To exclude files when using **Algolia** as a search provider add an array to
