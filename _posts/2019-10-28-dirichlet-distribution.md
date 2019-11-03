@@ -164,8 +164,9 @@ Probability density function of the Beta distribution
 
 ![](/images/beta-distribution/beta_a_b_less1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_less1_b_ge1.png){: .align-right .width-half} 
 
-![](/images/beta-distribution/beta_a_b_less1.png){: .align-right .width-half} 
-| ![](/images/beta-distribution/beta_a_less1_b_ge1.png){: .align-right .width-half} 
+![](/images/beta-distribution/beta_a_1_beta_ge1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_g1_beta_1.png){: .align-right .width-half} 
+
+![](/images/beta-distribution/beta_a_g1_beta_less1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_beta_g1.png){: .align-right .width-half} 
 
 
 
