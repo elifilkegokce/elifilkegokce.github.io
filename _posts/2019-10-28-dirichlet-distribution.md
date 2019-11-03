@@ -148,11 +148,24 @@ Probability density function of the Beta distribution
 
 <style type="text/css">
   p {
+    .width-half {width: 50%}
+  }
+</style>
+
+![](/images/beta-distribution/beta_a_equal_b.png){: .align-right .width-half} 
+
+
+
+<style type="text/css">
+  p {
     .width-half {width: 30%}
   }
 </style>
 
-![](/images/beta-distribution/beta_a_equal_b.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_b_less1.png){: .align-right .width-half} 
+![](/images/beta-distribution/beta_a_b_less1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_less1_b_ge1.png){: .align-right .width-half} 
+
+![](/images/beta-distribution/beta_a_b_less1.png){: .align-right .width-half} 
+| ![](/images/beta-distribution/beta_a_less1_b_ge1.png){: .align-right .width-half} 
 
 
 
