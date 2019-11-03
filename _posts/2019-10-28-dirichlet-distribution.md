@@ -144,6 +144,7 @@ $$
 
 ## 4 Parameter of Beta Distribution
 
+Probability density function of the Beta distribution
 
 
 
