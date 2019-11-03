@@ -142,6 +142,9 @@ $$
 \end{equation} 
 $$
 
+## 4 Parameter of Beta Distribution
+
+
 
 
 
