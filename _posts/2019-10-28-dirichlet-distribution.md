@@ -177,7 +177,7 @@ Probability density function of the Beta distribution
     .width-half {width: 30%}
   }
 </style>
-![](/images/beta-distribution/beta_a_g1_beta_less1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_beta_g1.png){: .align-right .width-half} 
+![](/images/beta-distribution/beta_a_g1_beta_less1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_beta_ge1.png){: .align-right .width-half} 
 
 
 To exclude files when using **Algolia** as a search provider add an array to
