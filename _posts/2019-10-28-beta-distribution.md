@@ -147,9 +147,6 @@ $$
 Probability density function of the Beta distribution
 
 
-<p align="center">
-  <img src="/images/beta-distribution/beta_a_equal_b.png" width="100%" />
-</p>
 
 <style type="text/css">
   p {
