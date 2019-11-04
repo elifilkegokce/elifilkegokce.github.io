@@ -151,14 +151,16 @@ distribution is distributed more sparsely and most of the values
 concentrated near zero. Graphs below show how PDF of beta changes with
 $\alpha$ and $\beta.$
 
-![](/images/beta-distribution/beta_a_equal_b.png){: .align-center} 
-
-
 <style type="text/css">
   p {
     .width-half {width: 30%}
   }
 </style>
+
+![](/images/beta-distribution/beta_a_equal_b_less1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_equal_b.png){: .align-right .width-half} 
+
+When $\alpha=\beta$, PDF of beta is symmetric around $0.5$ 
+
 
 ![](/images/beta-distribution/beta_a_b_less1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_less1_b_ge1.png){: .align-right .width-half} 
 
