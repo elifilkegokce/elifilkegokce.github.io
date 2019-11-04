@@ -151,8 +151,6 @@ distribution is distributed more sparsely and most of the values
 concentrated near zero. Graphs below show how PDF of beta changes with
 $\alpha$ and $\beta.$
 
-testk
-
 ![](/images/beta-distribution/beta_a_equal_b.png){: .align-center} 
 
 
@@ -188,4 +186,8 @@ algolia:
 REFERENCES
 ---
 
-http://varianceexplained.org/statistics/beta_distribution_and_baseball/
+[Beta Distribution and Baseball](http://varianceexplained.org/statistics/beta_distribution_and_baseball/)
+[On the Dirichlet Distribution](https://mast.queensu.ca/~communications/Papers/msc-jiayu-lin.pdf)
+[Beta Distribution](https://en.wikipedia.org/wiki/Beta_distribution)
+
+
