@@ -144,9 +144,14 @@ $$
 
 ## 4 Parameter of Beta Distribution
 
-Probability density function of the Beta distribution
+PDF of the Beta distribution has two concentration parameters; $\alpha$ 
+and $\beta.$  When these concentration parameters get larger, resulting 
+probability is distributed more evenly. When they get smaller, resulting 
+distribution is distributed more sparsely and most of the values 
+concentrated near zero. Graphs below show how PDF of beta changes with
+$\alpha$ and $\beta.$
 
-test
+testk
 
 ![](/images/beta-distribution/beta_a_equal_b.png){: .align-center} 
 
