@@ -146,14 +146,18 @@ $$
 
 Probability density function of the Beta distribution
 
+
+<p align="center">
+  <img src="/images/beta-distribution/beta_a_equal_b.png" width="100%" />
+</p>
+
 <style type="text/css">
   p {
     .width-half {width: 100%}
   }
 </style>
 
-![](/images/beta-distribution/beta_a_equal_b.png){: .align-right .width-half} 
-
+![](/images/beta-distribution/beta_a_equal_b.png){: .align-center .width-half} 
 
 
 <style type="text/css">
