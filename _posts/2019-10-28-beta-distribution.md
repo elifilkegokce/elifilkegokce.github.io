@@ -227,6 +227,15 @@ b_list = [0.01, 0.75, 0.9]
 a_list = [0.01, 0.75, 0.9]
 plot_beta(a_list, b_list, plot_title, color_list)
 ```
+
+## Example: Bayesian Updating
+
+
+
+
+
+
+
 ---
 REFERENCES
 ---
