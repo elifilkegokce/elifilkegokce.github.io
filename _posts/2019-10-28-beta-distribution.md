@@ -230,6 +230,23 @@ plot_beta(a_list, b_list, plot_title, color_list)
 
 ## Example: Bayesian Updating
 
+Step 1: Suppose that we are interested in predicting the probability 
+of a call within a certain group of incoming calls to be 
+associated with a suspicious transaction and based on historical 
+data, the probability of a call to have a topic of suspicious 
+transaction is about 0.3. This can be represented using a Beta 
+distribution with $\alpha = 75$ and $\beta=175$ 
+
+Step 2: Suppose that 5 such calls are handled and all of them
+is associated with a suspicious transaction. Then, we update our
+probability distribution using parameters $\alpha = 75+5$ and 
+$\beta=175$
+
+Step 3: Suppose that 7 more calls are handled and none of them
+is associated with a suspicious transaction. Then, we update our
+probability distribution using parameters $\alpha = 80$ and 
+$\beta=175+7$
+
 
 
 
