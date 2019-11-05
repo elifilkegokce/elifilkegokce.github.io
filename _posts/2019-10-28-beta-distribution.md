@@ -169,7 +169,11 @@ around 0.5 and variance of probability $p$ converges to 0. When each call
 is equally likely to be about a suspicious call or not, we choose a higher
 value for $\alpha$ and $\beta.$
 
-Now, we consider the cases where $\alpha \ne \beta.$
+As seen in the below graphs, for $\alpha \ne \beta, Beta distribution is 
+skewed to the right or left based on the parameter dominated.$ If $\alpha$
+parameter dominates ($\alpha>\beta$), then Beta distribution is skewed to 
+the left. If $\beta$ dominates, then it is skewed to the right. Interchanging 
+the parameters yields the reverse of the initial Beta PDF.
 
 ![](/images/beta-distribution/beta_a_b_less1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_b_ge1.png){: .align-right .width-half} 
 
