@@ -189,16 +189,18 @@ import numpy as np
 from scipy.stats import beta
 import matplotlib.pyplot as plt
 
-def plot_beta(a_list, b_list, plot_title, color_list, fig_name, legend_loc='best'):
+def plot_beta(a_list, b_list, plot_title, color_list, 
+             fig_name='plot.png', legend_loc='best'):
     '''
-    Plots the probability density functions of the Beta Distributions
-    for the given list of alpha parameters and the corresponding
-    list of beta parameters
+    Plots the probability density functions of the Beta 
+    Distributions for the given list of alpha parameters
+    and the corresponding list of beta parameters.
     plot_title: Title of the plot.
-    color_list: List of colors that is used in the plot. There should 
-    be one color for each probability density function.
-    legend_loc: Location of the legen on the plot.
-    fig_name: Name of the file that the plot is saved. 
+    color_list: List of colors that is used in the plot. 
+    There should be one color for each probability 
+    density function.
+    fig_name: Name of the file that the plot is saved.
+    legend_loc: Location of the legen on the plot. 
     '''
     x = np.linspace(0,1,1000)
 
@@ -223,7 +225,7 @@ color_list = ['red', 'blue', 'green', 'purple', 'orange']
 plot_title = 'PDF of Beta Distribution (alpha=beta<1)'
 b_list = [0.01, 0.75, 0.9]
 a_list = [0.01, 0.75, 0.9]
-plot_beta(a_list, b_list, plot_title, color_list, 'beta_a_equal_b_less1.png')
+plot_beta(a_list, b_list, plot_title, color_list)
 ```
 ---
 REFERENCES
