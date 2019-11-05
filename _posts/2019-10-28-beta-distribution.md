@@ -182,18 +182,48 @@ the parameters yields the reverse of the initial Beta PDF.
 ![](/images/beta-distribution/beta_a_g1_b_less1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_less1_b_ge1.png){: .align-right .width-half} 
 
 
+Python code to generate the graphs above is below.
 
+```
+import numpy as np
+from scipy.stats import beta
+import matplotlib.pyplot as plt
 
+def plot_beta(a_list, b_list, plot_title, color_list, fig_name, legend_loc='best'):
+    '''
+    Plots the probability density functions of the Beta Distributions
+    for the given list of alpha parameters and the corresponding
+    list of beta parameters
+    plot_title: Title of the plot.
+    color_list: List of colors that is used in the plot. There should 
+    be one color for each probability density function.
+    legend_loc: Location of the legen on the plot.
+    fig_name: Name of the file that the plot is saved. 
+    '''
+    x = np.linspace(0,1,1000)
 
-```yaml
-algolia:
-  # Exclude more files from indexing
-  files_to_exclude:
-    - index.html
-    - index.md
-    - excluded-file.html
-    - 2019-10-27-hello.md
-    - subdirectory/*.html
+    for ind, a in enumerate(a_list):
+        b, color_  = b_list[ind], color_list[ind]
+        
+        y = beta.pdf(x, a, b, loc=0, scale=1)
+        
+        label_= 'a='+str(a)+', b='+str(b)
+        plt.plot(x, y, label=label_, color =color_ )
+    
+    plt.title(plot_title)
+    plt.xlabel('p')
+    plt.ylabel('Probability Density')
+    plt.legend(loc=legend_loc, borderaxespad=1, fontsize=10)
+    plt.savefig(fig_name)
+    plt.show()
+    plt.clf()
+
+color_list = ['red', 'blue', 'green', 'purple', 'orange']
+
+plot_title = 'PDF of Beta Distribution (alpha=beta<1)'
+b_list = [0.01, 0.75, 0.9]
+a_list = [0.01, 0.75, 0.9]
+plot_beta(a_list, b_list, plot_title, color_list, 'beta_a_equal_b_less1.png')
 ```
 ---
 REFERENCES
