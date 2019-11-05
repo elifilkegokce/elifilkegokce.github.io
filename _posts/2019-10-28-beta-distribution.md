@@ -168,17 +168,14 @@ $\alpha=\beta>2$. When $\alpha=\beta \rightarrow \inf,$ $p$ concentrates
 around 0.5 and variance converges to 0.
 
 
-![](/images/beta-distribution/beta_a_b_less1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_less1_b_ge1.png){: .align-right .width-half} 
-
+![](/images/beta-distribution/beta_a_b_less1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_b_ge1.png){: .align-right .width-half} 
 
 ![](/images/beta-distribution/beta_a_1_b_ge1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_g1_b_1.png){: .align-right .width-half} 
 
+![](/images/beta-distribution/beta_a_g1_b_less1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_less1_b_ge1.png){: .align-right .width-half} 
 
-![](/images/beta-distribution/beta_a_g1_b_less1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_b_ge1.png){: .align-right .width-half} 
 
 
-To exclude files when using **Algolia** as a search provider add an array to
- `algolia.files_to_exclude` in your `_config.yml`. For more configuration options be sure to check their [full documentation](https://community.algolia.com/jekyll-algolia/options.html).
 
 ```yaml
 algolia:
