@@ -147,9 +147,9 @@ $$
 PDF of the Beta distribution has two concentration parameters; $\alpha$ 
 and $\beta.$  When these concentration parameters get larger, resulting 
 probability is distributed more evenly. When they get smaller, resulting 
-distribution is distributed more sparsely and most of the values 
-concentrated near zero. Graphs below show how PDF of beta changes with
-$\alpha$ and $\beta.$
+distribution is distributed more sparsely. As $\alpha, \beta \rightarrow 0,$ 
+variable $p$ concentrates near 0 or 1 more and more. Graphs below show 
+how PDF of beta changes with $\alpha$ and $\beta.$
 
 <style type="text/css">
   p {
@@ -159,7 +159,13 @@ $\alpha$ and $\beta.$
 
 ![](/images/beta-distribution/beta_a_equal_b_less1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_equal_b.png){: .align-right .width-half} 
 
-When $\alpha=\beta$, PDF of beta is symmetric around $0.5$ 
+When $\alpha=\beta$, PDF of beta is symmetric around $0.5$ Distribution is 
+U-shaped for $\alpha=\beta<1.$ When $\alpha=\beta \rightarrow 0,$ Beta
+distribution becomes Bernoulli distribution with equal probability 0.5 at
+$p=0$ and $p=1$ and zero otherwise. When $\alpha=\beta=1,$ Beta distribution
+is equivalent to Uniform distribution.  Distribution is 
+bell-shaped for $\alpha=\beta>2. When $\alpha=\beta \rightarrow \inf,$
+$p$ concentrates around 0.5 and variance converges to 0.
 
 
 ![](/images/beta-distribution/beta_a_b_less1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_less1_b_ge1.png){: .align-right .width-half} 
