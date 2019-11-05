@@ -170,7 +170,7 @@ is equally likely to be about a suspicious call or not, we choose a higher
 value for $\alpha$ and $\beta.$
 
 As seen in the below graphs, for $\alpha \ne \beta$, Beta distribution is 
-skewed to the right or left based on the parameter dominated.$ If $\alpha$
+skewed to the right or left based on the parameter dominated. If $\alpha$
 parameter dominates ($\alpha>\beta$), then Beta distribution is skewed to 
 the left. If $\beta$ dominates, then it is skewed to the right. Interchanging 
 the parameters yields the reverse of the initial Beta PDF.
