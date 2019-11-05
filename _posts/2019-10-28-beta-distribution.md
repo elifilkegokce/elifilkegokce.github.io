@@ -142,7 +142,7 @@ $$
 \end{equation} 
 $$
 
-## 4 Parameter of Beta Distribution
+## 4 Parameters of Beta Distribution
 
 PDF of the Beta distribution has two concentration parameters; $\alpha$ 
 and $\beta.$  When these concentration parameters get larger, resulting 
@@ -169,7 +169,7 @@ around 0.5 and variance of probability $p$ converges to 0. When each call
 is equally likely to be about a suspicious call or not, we choose a higher
 value for $\alpha$ and $\beta.$
 
-As seen in the below graphs, for $\alpha \ne \beta, Beta distribution is 
+As seen in the below graphs, for $\alpha \ne \beta$, Beta distribution is 
 skewed to the right or left based on the parameter dominated.$ If $\alpha$
 parameter dominates ($\alpha>\beta$), then Beta distribution is skewed to 
 the left. If $\beta$ dominates, then it is skewed to the right. Interchanging 
@@ -180,6 +180,7 @@ the parameters yields the reverse of the initial Beta PDF.
 ![](/images/beta-distribution/beta_a_1_b_ge1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_g1_b_1.png){: .align-right .width-half} 
 
 ![](/images/beta-distribution/beta_a_g1_b_less1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_less1_b_ge1.png){: .align-right .width-half} 
+
 
 
 
