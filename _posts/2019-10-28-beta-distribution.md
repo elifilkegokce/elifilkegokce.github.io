@@ -165,9 +165,9 @@ distribution becomes Bernoulli distribution with equal probability 0.5 at
 $p=0$ and $p=1$ and zero elsewhere. When $\alpha=\beta=1,$ Beta distribution
 is equivalent to Uniform distribution. Beta is bell-shaped for 
 $\alpha=\beta>2$. When $\alpha=\beta \rightarrow \inf,$ $p$ concentrates 
-around 0.5 and variance of probability $p$ converges to 0. When each call
-is equally likely to be about a suspicious call or not, we choose a higher
-value for $\alpha$ and $\beta.$
+around 0.5, variance of probability $p$ converges to 0, and PDF becomes
+sharper. When each call is equally likely to be about a suspicious call 
+or not, we choose a higher value for $\alpha$ and $\beta.$
 
 As seen in the below graphs, for $\alpha \ne \beta$, Beta distribution is 
 skewed to the right or left based on the parameter dominated. If $\alpha$
