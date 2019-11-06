@@ -247,6 +247,17 @@ is associated with a suspicious transaction. Then, we update our
 probability distribution using parameters $\alpha = 80$ and 
 $\beta=175+7$
 
+Step 4: Suppose that 7 more calls are handled and none of them
+is associated with a suspicious transaction. Then, we update our
+probability distribution using parameters $\alpha = 80$ and 
+$\beta=175+7$
+
+![](/images/beta-distribution/Ex1.png){: .align-right .width-half} | ![](/images/beta-distribution/Ex2.png){: .align-right .width-half} 
+
+![](/images/beta-distribution/Ex3.png){: .align-right .width-half} | ![](/images/beta-distribution/Ex4.png){: .align-right .width-half} 
+
+
+
 
 
 
