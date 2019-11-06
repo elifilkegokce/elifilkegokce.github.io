@@ -232,32 +232,32 @@ plot_beta(a_list, b_list, plot_title, color_list)
 
 Step 1: Suppose that we are interested in predicting the probability 
 of a call within a certain group of incoming calls to be 
-associated with a suspicious transaction and based on historical 
-data, the probability of a call to have a topic of suspicious 
-transaction is about 0.3. This can be represented using a Beta 
-distribution with $\alpha = 75$ and $\beta=175$ 
+associated with a suspicious transaction. Based on historical 
+data, average probability of a call to be associated with a 
+suspicious transaction is about 0.3. This can be formulated using 
+Beta distribution with $\alpha = 75$ and $\beta=175.$ As new calls
+are received, we update the parameters $\alpha$ and $\beta.$ 
 
-Step 2: Suppose that 5 such calls are handled and all of them
+Step 2: Suppose that 7 new calls are received and all of them
 is associated with a suspicious transaction. Then, we update our
-probability distribution using parameters $\alpha = 75+5$ and 
+probability distribution using parameters $\alpha = 75+7$ and 
 $\beta=175$
 
-Step 3: Suppose that 7 more calls are handled and none of them
+Step 3: Suppose that 5 more calls are received and none of them
 is associated with a suspicious transaction. Then, we update our
-probability distribution using parameters $\alpha = 80$ and 
-$\beta=175+7$
+probability distribution using parameters $\alpha = 82$ and 
+$\beta=175+5$
 
-Step 4: Suppose that 7 more calls are handled and none of them
-is associated with a suspicious transaction. Then, we update our
-probability distribution using parameters $\alpha = 80$ and 
-$\beta=175+7$
+Step 4: Suppose that 110 more calls are handled and 50 of these
+calls are associated with a suspicious transaction.  Then, we 
+update our probability distribution using parameters $\alpha = 82$ and 
+$\beta=180+60$ and expectation becomes $82/(82+240) \approx 0.25$
 
 ![](/images/beta-distribution/Ex1.png){: .align-right .width-half} | ![](/images/beta-distribution/Ex2.png){: .align-right .width-half} 
 
 ![](/images/beta-distribution/Ex3.png){: .align-right .width-half} | ![](/images/beta-distribution/Ex4.png){: .align-right .width-half} 
 
-
-
+ 
 
 
 
