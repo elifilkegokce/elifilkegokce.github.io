@@ -144,12 +144,14 @@ $$
 
 ## 4 Parameters of Beta Distribution
 
-PDF of the Beta distribution has two concentration parameters; $\alpha$ 
-and $\beta.$  When these concentration parameters get larger, resulting 
-probability is distributed more evenly. When they get smaller, resulting 
-distribution is distributed more sparsely. As $\alpha, \beta \rightarrow 0,$ 
-variable $p$ concentrates more and more near 0 or 1. Graphs below show 
-how PDF of Beta changes with $\alpha$ and $\beta.$
+PDF of the Beta distribution has two shape parameters; $\alpha$ and 
+$\beta.$ When they get smaller, resulting distribution is distributed 
+more sparsely. As $\alpha, \beta \rightarrow 0,$ probability parameter 
+$p$ concentrates more and more near 0 or 1. When they are equal to 1, 
+possibility of $p$ to take on any value between 0 and 1 becomes equally 
+likely. When the parameters get larger, distribution tighten about the 
+expectations. Graphs below show how PDF of Beta changes with $\alpha$ 
+and $\beta.$
 
 <style type="text/css">
   p {
@@ -228,37 +230,39 @@ a_list = [0.01, 0.75, 0.9]
 plot_beta(a_list, b_list, plot_title, color_list)
 ```
 
-## Example: Bayesian Updating
+## 5 Example: Bayesian Updating
 
 Step 1: Suppose that we are interested in predicting the probability 
 of a call within a certain group of incoming calls to be 
 associated with a suspicious transaction. Based on historical 
 data, average probability of a call to be associated with a 
-suspicious transaction is about 0.3. This can be formulated using 
-Beta distribution with $\alpha = 75$ and $\beta=175.$ As new calls
-are received, we update the parameters $\alpha$ and $\beta.$ 
+suspicious transaction is about 0.3, which can range between 0.2 and
+0.4. This can be formulated using Beta distribution with $\alpha = 75$ 
+and $\beta=175.$ As new calls are received, we update the parameters 
+$\alpha$ and $\beta.$ 
 
 Step 2: Suppose that 7 new calls are received and all of them
 is associated with a suspicious transaction. Then, we update our
-probability distribution using parameters $\alpha = 75+7$ and 
+probability distribution using parameters $\alpha = (75+7)$ and 
 $\beta=175$
 
 Step 3: Suppose that 5 more calls are received and none of them
 is associated with a suspicious transaction. Then, we update our
 probability distribution using parameters $\alpha = 82$ and 
-$\beta=175+5$
+$\beta=(175+5)$
 
 Step 4: Suppose that 110 more calls are handled and 50 of these
 calls are associated with a suspicious transaction.  Then, we 
-update our probability distribution using parameters $\alpha = 82$ and 
-$\beta=180+60$ and expectation becomes $82/(82+240) \approx 0.25$
+update our probability distribution using parameters 
+$\alpha = (82+50)$ and $\beta=(180+60)$ and expectation becomes 
+$82/(82+240) \approx 0.35$
 
 ![](/images/beta-distribution/Ex1.png){: .align-right .width-half} | ![](/images/beta-distribution/Ex2.png){: .align-right .width-half} 
 
 ![](/images/beta-distribution/Ex3.png){: .align-right .width-half} | ![](/images/beta-distribution/Ex4.png){: .align-right .width-half} 
 
  
-
+## 6 Last Note!
 
 
 
