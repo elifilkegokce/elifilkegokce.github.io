@@ -244,7 +244,7 @@ $\alpha$ and $\beta.$
 Step 2: Suppose that 7 new calls are received and all of them
 is associated with a suspicious transaction. Then, we update our
 probability distribution using parameters $\alpha = (75+7)$ and 
-$\beta=175$
+$\beta=175$ to include our new information. 
 
 Step 3: Suppose that 5 more calls are received and none of them
 is associated with a suspicious transaction. Then, we update our
@@ -262,11 +262,19 @@ $82/(82+240) \approx 0.35$
 ![](/images/beta-distribution/Ex3.png){: .align-right .width-half} | ![](/images/beta-distribution/Ex4.png){: .align-right .width-half} 
 
  
-## 6 Last Note!
+## 6 One Last Note!
 
-
-
-
+Beta distribution enables us to model the random behaviour of
+proportions and probabilities. There is another interesting 
+property of the Beta distribution. Beta distribution is 
+the [conjugate prior probability 
+distribution](https://en.wikipedia.org/wiki/Conjugate_prior) 
+for the Bernoulli, binomial, and geometric distributions. If Beta
+distribution is used to model the prior distribution of the 
+probability parameters in these distributions, then resulting 
+posterior distribution is Beta distribution. This provides 
+closed from expression for the posterior distribution,
+making the calculations easier.
 
 ---
 REFERENCES
