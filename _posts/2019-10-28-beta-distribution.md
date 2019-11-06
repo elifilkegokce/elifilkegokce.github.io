@@ -236,8 +236,8 @@ Step 1: Suppose that we are interested in predicting the probability
 of a call within a certain group of incoming calls to be 
 associated with a suspicious transaction. Based on historical 
 data, average probability of a call to be associated with a 
-suspicious transaction is about 0.3, which can range between 0.2 and
-0.4. This can be formulated using Beta distribution with $\alpha = 75$ 
+suspicious transaction is about 0.3, which can range between 0.245 and
+0.358. This can be formulated using Beta distribution with $\alpha = 75$ 
 and $\beta=175.$ As new calls are received, we update the parameters 
 $\alpha$ and $\beta.$ 
 
