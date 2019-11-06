@@ -3,8 +3,6 @@ title:  "What is Beta Distribution?"
 search: false
 ---
 
-## 1 Why do we need Beta Distribution?
-
 Customers connect to contact center of a bank for a variety of reasons. 
 One of the main contact reasons involves reporting a suspicious transaction. 
 Suppose that you are trying to predict the probability of a call to be 
@@ -21,7 +19,7 @@ to predict the proportions and probabilities is with Beta distribution.
 
 > Beta distribution is used to predict proportions and probabilities!
  
-## 2 How is Beta Distribution defined?
+## 1 How is Beta Distribution defined?
  
 Beta distribution has two parameters $\bf{\alpha}$ and $\bf{\beta}$ and,
 similar to probabilities, it is defined on the interval $(0, 1).$  
@@ -71,7 +69,7 @@ not guarantee that the area under the curve of the PDF to be 1. In order to
 ensure that the total probability is 1, it is normalized by dividing by the
 constant $B(\alpha,\beta).$
 
-## 3 Let's Derive the Beta Function!
+## 2 Let's Derive the Beta Function!
 
 Since the area under the curve of the PDF should be equal to 1, from
 
@@ -142,7 +140,7 @@ $$
 \end{equation} 
 $$
 
-## 4 Parameters of Beta Distribution
+## 3 Parameters of Beta Distribution
 
 PDF of the Beta distribution has two shape parameters; $\alpha$ and 
 $\beta.$ When they get smaller, resulting distribution is distributed 
@@ -230,7 +228,7 @@ a_list = [0.01, 0.75, 0.9]
 plot_beta(a_list, b_list, plot_title, color_list)
 ```
 
-## 5 Example: Bayesian Updating
+## 4 Example: Bayesian Updating
 
 Step 1: Suppose that we are interested in predicting the probability 
 of a call within a certain group of incoming calls to be 
@@ -262,7 +260,7 @@ $82/(82+240) \approx 0.35$
 ![](/images/beta-distribution/Ex3.png){: .align-right .width-half} | ![](/images/beta-distribution/Ex4.png){: .align-right .width-half} 
 
  
-## 6 One Last Note!
+## 5 One Last Note!
 
 Beta distribution enables us to model the random behaviour of
 proportions and probabilities. There is another interesting 
