@@ -3,19 +3,16 @@ title:  "What is Beta Distribution?"
 search: false
 ---
 
-Customers connect to contact center of a bank for a variety of reasons. 
-One of the main contact reasons involves reporting a suspicious transaction. 
-Suppose that you are trying to predict the probability of a call to be 
-associated with a suspicious transaction. A naive approach may be to use 
-the ratio of calls reporting a suspicious transaction in a certain time 
-period. However, this may not be a good predictor especially when small 
-number of calls are considered. Ratio of suspicious call depends on the 
-time of the day and the day of the week. There may be a few suspicious 
-transaction related calls during midnight. In that case, does it mean that 
-the possibility of a customer to report a suspicious transaction is close to 0?
-On the other hand, more calls may be expected during day time - increasing the 
-possibility. Using the prior expectations based on the past data, the best way 
-to predict the proportions and probabilities is with Beta distribution. 
+Lately, most of the projects I am working on requires me to answer the 
+question: "Why do customers call the contact center?". A customer may
+contact to the customer service of a bank  for various reasons. One of 
+the main reason is to report a suspicious transaction. Suppose that you 
+are trying to predict the probability of a call to be associated with a
+suspicious transaction. A naive approach may be to use the ratio of 
+calls reporting a suspicious transaction. However, this may not be a 
+good predictor since a call may include a mixture of topics. Using the 
+prior expectations based on the past data, the best way to predict 
+the proportions and probabilities is with Beta distribution. 
 
 > Beta distribution is used to predict proportions and probabilities!
  
