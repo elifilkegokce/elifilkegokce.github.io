@@ -15,13 +15,13 @@ model, which considers all possible call reasons.
 > Dirichlet distribution is the multivariate generalization of the 
 >[Beta Distribution](https://elifilkegokce.github.io/beta-distribution/)!
  
-## 1 How is Beta Distribution defined?
+## 1 How is Dirichlet Distribution defined?
  
 
-## 2 Let's Derive the Beta Function!
+## 2 Let's Derive the PDF of Dirichlet Distribution!
 
 
-## 3 Parameters of Beta Distribution
+## 3 Parameters of Dirichlet Distribution
 
 
 ## 4 Example: Bayesian Updating
