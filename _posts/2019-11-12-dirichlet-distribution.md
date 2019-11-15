@@ -4,12 +4,15 @@ search: false
 ---
 
 We have discussed [Beta Distribution](https://elifilkegokce.github.io/beta-distribution/)
-in our previous post. If customers called the contact center for only two
-reasons, then Beta distribution would be enough to formulate the
-probability of a call to be associated with a certain reason. 
-However, a call can be related to multiple reasons. For example, a call may be
+in our previous post. If customers had called the contact center for only two
+reasons, then Beta distribution would have been enough to formulate the
+probability of a call to be associated with a certain reason. However, calls
+are usually related to multiple topics. For example, a call may be
 associated with a check order, account information update, and
-bill payment at the same time. In that case, we need a generalized
+bill payment at the same time. 
+
+
+In that case, we need a generalized
 model, which considers all possible call reasons. 
 
 > Dirichlet distribution is the multivariate generalization of the 
