@@ -16,8 +16,8 @@ of them is associated with account information update and the remaining
 100 is associated with check order. The probability of each topic in the 
 call becomes $(p_1, p_2, p_3) = (0.5, 0.3, 0.2)$
  
-|Call Topic|Call 1|--|
-|--|# of words|$p_t$|
+|Call Topic|Call 1||
+||words|$p_t$|
 |Bill Payment|250|0.5|
 
 In that case, we need a generalized
