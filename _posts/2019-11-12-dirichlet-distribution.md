@@ -13,15 +13,18 @@ Suppose after counting the number of words associated with each topic
 in the call transcript, we find out that there are 500 words in the 
 transcript. Out of these, 250 words are associated with bill payment, 150
 of them is associated with account information update and the remaining 
-100 is associated with check order. The probability of each topic in the 
-call becomes $(p_1, p_2, p_3) = (0.5, 0.3, 0.2)$
+100 is associated with check order. The probability distribution of three 
+topics can be obtained by normalizing the word counts of each topic; 
+i.e., dividing word count of each topic by the number of total words in the
+call transcript. Then, the probability distribution of topics
+become $(250, 150, 100)/100 = (0.5, 0.3, 0.2)$
  
-||Call 1||
-|Topic|words|$p_t$|
-|Bill Payment|250|250/500 = 0.5|
-|Account Update|150|150/500 = 0.3|
-|Check Order|100|100/500 = 0.1|
-||500|500/500 = 1|
+||Call 1||||Call 2||
+|Topic|words|$probability$|||words|probability|
+|Bill Payment|250| 0.50|||264|0.48|
+|Account Update|150|0.30|||187|0.34|
+|Check Order|100|0.10|||99|0.18|
+||500| 1.00|||550|1.00| 
 
 
 In that case, we need a generalized
