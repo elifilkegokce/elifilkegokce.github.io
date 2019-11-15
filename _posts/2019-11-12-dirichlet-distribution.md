@@ -27,6 +27,16 @@ become $(250, 150, 100)/100 = (0.5, 0.3, 0.2)$
 |=====
 ||500| 1.00|||550|1.00| 
 
+| Header1 | Header2 | Header3 |
+|:--------|:-------:|--------:|
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|----
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|=====
+| Foot1   | Foot2   | Foot3
+
 
 In that case, we need a generalized
 model, which considers all possible call reasons. 
