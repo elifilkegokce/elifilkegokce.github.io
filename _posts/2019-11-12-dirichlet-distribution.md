@@ -7,10 +7,18 @@ We have discussed [Beta Distribution](https://elifilkegokce.github.io/beta-distr
 in our previous post. If customers had called the contact center for only two
 reasons, then Beta distribution would have been enough to formulate the
 probability of a call to be associated with a certain reason. However, calls
-are usually related to multiple topics. For example, a call may be
-associated with a check order, account information update, and
-bill payment at the same time. 
-
+are usually related to multiple topics. A call may be associated with
+bill payment, account information update and check order at the same time. 
+Suppose after counting the number of words associated with each topic 
+in the call transcript, we find out that there are 500 words in the 
+transcript. Out of these, 250 words are associated with bill payment, 150
+of them is associated with account information update and the remaining 
+100 is associated with check order. The probability of each topic in the 
+call becomes $(p_1, p_2, p_3) = (250/500, 150/500, 100/500) =
+ (0.5, 0.3, 0.2)$
+ 
+            |Call 1|
+Bill Payment|250|
 
 In that case, we need a generalized
 model, which considers all possible call reasons. 
