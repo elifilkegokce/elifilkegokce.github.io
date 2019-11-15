@@ -21,6 +21,7 @@ become $(250, 150, 100)/100 = (0.5, 0.3, 0.2)$
  
 ||Call 1||||Call 2||
 |Topic|words|probability|||words|probability|
+|:----|:---:|----------:|||words|probability|
 |Bill Payment|250| 0.50|||264|0.48|
 |Account Update|150|0.30|||187|0.34|
 |Check Order|100|0.10|||99|0.18|
