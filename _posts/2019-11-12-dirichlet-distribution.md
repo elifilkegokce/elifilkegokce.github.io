@@ -16,9 +16,13 @@ of them is associated with account information update and the remaining
 100 is associated with check order. The probability of each topic in the 
 call becomes $(p_1, p_2, p_3) = (0.5, 0.3, 0.2)$
  
-|Call Topic|Call 1||
+|Topic|Call 1||
 ||words|$p_t$|
-|Bill Payment|250|0.5|
+|Bill Payment|250|250/500 = 0.5|
+|Account Update|150|150/500 = 0.3|
+|Check Order|100|100/500 = 0.1|
+||500|500/500 = 1|
+
 
 In that case, we need a generalized
 model, which considers all possible call reasons. 
