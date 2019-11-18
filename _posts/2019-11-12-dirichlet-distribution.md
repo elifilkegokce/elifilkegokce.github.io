@@ -23,14 +23,14 @@ related to these three topics, but with different probability distributions
 as in the table below.
 
  
-|                |   Call 1  |         | | | Call 2 |            | | | Call 3 |            |
-| :------------- | :-------: | :-----: | | | :-------: | :-----: | | | :-------: | :-----: |
-| Topic          | words | probability | | | words | probability | | | words | probability |
-| Bill Payment   |  250  |    0.500    | | |  264  |    0.480    | | |  264  | 0.550       |  
-| Account Update |  150  |    0.300    | | |  187  |    0.340    | | |  132  | 0.275       |
-| Check Order    |  100  |    0.200    | | |   99  |    0.180    | | |  84   | 0.175       |
+|                |   Call 1  |             | | |   Call 2  |             | | |   Call 3  |             |
+| :------------- | :-------: |   :-----:   | | | :-------: |   :-----:   | | | :-------: |   :-----:   |
+| **Topic**      |**words**|**probability**| | |**words**|**probability**| | |**words**|**probability**|
+| Bill Payment   |   250   |     0.500     | | |   264   |     0.480     | | |   264   |    0.550      |  
+| Account Update |   150   |     0.300     | | |   187   |     0.340     | | |   132   |    0.275      |
+| Check Order    |   100   |     0.200     | | |    99   |     0.180     | | |    84   |    0.175      |
 | =====
-|                |**500**|   **1.00**  | | |**550**|  **1.00**   | | |**480**|
+|                | **500** |   **1.000**   | | | **550** |   **1.00**    | | | **480** |   **1.00**    |
 
 
 
