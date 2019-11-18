@@ -22,7 +22,6 @@ variability in the call process, it is possible to get calls which is
 related to these three topics, but with different probability distributions
 as in the table below.
 
- 
 |                |   Call 1  |         | | |   Call 2  |         | | |   Call 3  |         |
 | :------------- | :-------: | :-----: | | | :-------: | :-----: | | | :-------: | :-----: |
 | **Topic**      |**words**|  **$P$**  | | |**words**|  **$P$**  | | |**words**|  **$P$**  |
@@ -32,10 +31,8 @@ as in the table below.
 | =====
 |                | **500** | **1.000** | | | **550** | **1.00**  | | | **480** | **1.00**  |
 
-
-
-In that case, we need a generalized
-model, which considers all possible call reasons. 
+In that case, we need a generalized model, which provides the probability 
+of all possible probability values of $P$ for a given set of call topics. 
 
 > Dirichlet distribution is the multivariate generalization of the 
 >[Beta Distribution](https://elifilkegokce.github.io/beta-distribution/)!
@@ -60,10 +57,9 @@ model, which considers all possible call reasons.
 REFERENCES
 ---
 
-[Beta Distribution and Baseball](http://varianceexplained.org/statistics/beta_distribution_and_baseball/)
+[Dirichlet Distribution](https://en.wikipedia.org/wiki/Dirichlet_distribution)
 
 [On the Dirichlet Distribution](https://mast.queensu.ca/~communications/Papers/msc-jiayu-lin.pdf)
 
-[Beta Distribution](https://en.wikipedia.org/wiki/Beta_distribution)
 
 
