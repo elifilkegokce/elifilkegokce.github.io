@@ -17,26 +17,21 @@ of them is associated with account information update and the remaining
 topics can be obtained by normalizing the word counts of each topic; 
 i.e., dividing word count of each topic by the number of total words in the
 call transcript. Then, the probability distribution of topics
-become $(250, 150, 100)/100 = (0.5, 0.3, 0.2)$
- 
-|                |   Call 1  |         | | | Call 2 | |
-| :------------- | :-------: | :-----: | | | :-------: | :-----: |
-| Topic          | words | probability | | | words | probability |
-| Bill Payment   |  250  |     0.50    | | |  264  |     0.48    |
-| Account Update |  150  |     0.30    | | |  187  |     0.34    |
-| Check Order    |  100  |     0.10    | | |   99  |     0.18    |
-| =====
-|                |**500**|   **1.00**  | | |**550**|  **1.00**  | 
+become $(250, 150, 100)/100 = (0.5, 0.3, 0.2)$ Because of the inevitable
+variability in the call process, it is possible to get calls which is 
+related to these three topics, but with different probability distributions
+as in the table below.
 
-| Header1 | Header2 | Header3 |
-|:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|----
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=====
-| Foot1   | Foot2   | Foot3
+ 
+|                |   Call 1  |         | | | Call 2 |            | | | Call 3 |            |
+| :------------- | :-------: | :-----: | | | :-------: | :-----: | | | :-------: | :-----: |
+| Topic          | words | probability | | | words | probability | | | words | probability |
+| Bill Payment   |  250  |    0.500    | | |  264  |    0.480    | | |  264  | 0.550       |  
+| Account Update |  150  |    0.300    | | |  187  |    0.340    | | |  132  | 0.275       |
+| Check Order    |  100  |    0.200    | | |   99  |    0.180    | | |  84   | 0.175       |
+| =====
+|                |**500**|   **1.00**  | | |**550**|  **1.00**   | | |**480**|
+
 
 
 In that case, we need a generalized
