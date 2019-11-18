@@ -31,13 +31,35 @@ as in the table below.
 | =====
 |                | **500** | **1.000** | | | **550** | **1.00**  | | | **480** | **1.00**  |
 
-In that case, we need a generalized model, which provides the probability 
-of all possible probability values of $P$ for a given set of call topics. 
+In that case, we need a generalized model, which describe the uncertainty in 
+the probabilities $p.$ Dirichlet distribution, which is the generalization of
+the Beta distribution into multiple dimensions, and provides the probability 
+density of all possible probability values of $P={p_1, p_2,...,p_k}$ for 
+a given set of $k$ elements (i.e., call topics). 
 
 > Dirichlet distribution is the multivariate generalization of the 
 >[Beta Distribution](https://elifilkegokce.github.io/beta-distribution/)!
+
+>Dirichlet distribution provides a distribution on a $k$
  
 ## 1 How is Dirichlet Distribution defined?
+
+Dirichlet distribution is parameterized by the vector $\bf{\alpha} = 
+(\alpha_1, \alpha_2,...,\alpha_k) $, which has the same number of elements 
+($k$) as $P,$ and it is defined on the interval $(0, 1).$ Dirichlet
+distribution provides the probability density function (PDF) of a random 
+values $P$ using the notation below.
+
+Notation:
+
+* $\bf{\Gamma(n):}$ Gamma function, which is defined by
+ 
+$$
+\begin{equation}
+\Gamma(n) = \int_{0}^{\inf} x^{n-1} exp^{-x} dx
+\end{equation}
+$$
+
  
 
 ## 2 Let's Derive the PDF of Dirichlet Distribution!
@@ -50,6 +72,9 @@ of all possible probability values of $P$ for a given set of call topics.
 
 
 ## 5 One Last Note!
+
+Dirichlet distribution is the conjugate prior for categorical distribution 
+and multinomial distribution. This means that 
 
 
 
