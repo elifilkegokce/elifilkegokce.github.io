@@ -70,7 +70,7 @@ $\Gamma(n)$, it is defined by
 
 $$
 \begin{equation}
-\bf{B(\bf{\alpha})}=\frac{\product_{i=1}^{k} \Gamma(\alpha_i)}{\Gamma(\sum_{i=1}^{k} \alpha_i)}
+\bf{B(\bf{\alpha})}=\frac{\prod_{i=1}^{k} \Gamma(\alpha_i)}{\Gamma(\sum_{i=1}^{k} \alpha_i)}
 \end{equation}
 $$
 
