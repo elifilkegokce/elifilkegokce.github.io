@@ -100,16 +100,16 @@ consists of all possible probability values for 3 events.
 
 Beta distribution is a special case of Dirichlet distribution for$k=2$ 
 events. By replacing $\alpha_1 \rightarrow \alpha$, $\alpha_2 \rightarrow \beta$, 
-$p_1 \rightarrow p,$ and $p_2 \rightarrow (1-p),$ we get Beta distribution, 
+$p_1 \rightarrow p,$ and $p_2 \rightarrow (1-p),$ we get [Beta Distribution](https://elifilkegokce.github.io/beta-distribution/), 
 $B(\alpha,\beta)$. 
 
 As you may observe in the PDF of Dirichlet distribution, 
 $\prod_{i=1}^kp_i^{\alpha_i-1}$ weighs the probability of each event $p_i.$ 
-In our case, each event is a call topic.
-However, the function $\prod_{i=1}^kp_i^{\alpha_i-1}$ , as PDF by itself, 
-does not guarantee that the area under the curve of the PDF to be 1. In order
-to ensure that the total probability is 1, it is normalized by dividing by 
-the constant $\bf{B(\bf{\alpha})}.$ 
+In our case, each event is a call topic. However, the function 
+$\prod_{i=1}^kp_i^{\alpha_i-1}$ , as PDF by itself, does not guarantee 
+that the area under the curve of the PDF to be 1. In order to ensure 
+that the total probability is 1, it is normalized by dividing by the 
+constant $\bf{B(\bf{\alpha})}.$ 
 
 ## 2 Let's Derive the PDF of Dirichlet Distribution!
 
