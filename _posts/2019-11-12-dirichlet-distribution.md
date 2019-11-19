@@ -168,11 +168,13 @@ Since $0 \le x_i \le u_k,$ $0\le u_kv_i \le u_k$ and $0 \le v_i \le 1$ for $u_k 
 $$
 \begin{align}
 \prod_{i=1}^{k} \Gamma(\alpha_i) & = \int_{u_k=0}^{\inf} \int_{x_{k-1}=0}^{1}
-... \int_{x_1=0}^{1} \exp^{-u_k} \prod_{i=1}^{k-1} (u_kv_i)^{\alpha_i-1} 
+... \\\\
+&\int_{x_1=0}^{1} \exp^{-u_k} \prod_{i=1}^{k-1} (u_kv_i)^{\alpha_i-1} 
 (u_k - \sum_{i=1}^{k-1}(u_kv_i))^{\alpha_k-1} u_k^{k-1} dv_1 dv_2...dv_{k-1}du_k \\\\
 & = \int_{u_k=0}^{\inf} \exp^{-u_k} u_k^{\sum_{i=1}^k-k}\int_{x_{k-1}=0}^{1}
-... \int_{x_1=0}^{1}  \prod_{i=1}^{k-1} (v_i)^{\alpha_i-1} 
-(1- \sum_{i=1}^{k-1}(v_i))^{\alpha_k-1} u_k^{k-1} dv_1 dv_2...dv_{k-1}du_k \\\\
+... \\\\
+& \int_{x_1=0}^{1}  \prod_{i=1}^{k-1} v_i^{\alpha_i-1} 
+(1- \sum_{i=1}^{k-1}v_i)^{\alpha_k-1} u_k^{k-1} dv_1 dv_2...dv_{k-1}du_k \\\\
 
 \end{align}
 $$
