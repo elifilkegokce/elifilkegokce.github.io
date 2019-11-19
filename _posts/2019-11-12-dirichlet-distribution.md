@@ -35,7 +35,7 @@ In that case, we need a generalized model, which describe the uncertainty in
 the probabilities $\bf{P}.$ Dirichlet distribution, which is the generalization of
 the Beta distribution into multiple dimensions, and provides the probability 
 density of all possible probability values of $\bf{P}=(p_1, p_2,...,p_k)$ for 
-a given set of $k$ elements (i.e., call topics). 
+a given set of $k$ events (i.e., call topics). 
 
 > Dirichlet distribution is the multivariate generalization of the 
 >[Beta Distribution](https://elifilkegokce.github.io/beta-distribution/)!
@@ -45,7 +45,7 @@ a given set of $k$ elements (i.e., call topics).
 
 Dirichlet distribution is parameterized by the vector $\bf{\alpha} = 
 (\alpha_1, \alpha_2,...,\alpha_k) $ with $\alpha_i >0$ for $i=1,2, ..k$, 
-which has the same number of elements $, k,$ as $P.$ Dirichlet
+which has the same number of events $, k,$ as $P.$ Dirichlet
 distribution provides the probability density function (PDF) of a random 
 values $P$ using the notation below.
 
@@ -88,16 +88,13 @@ where $\sum_{i=1}^kp_i =1$ and $p_i \ge 0$ for $i=1,2,...,k.$
 Since the sum of the probabilities must be equal to one, 
 $\sum_{i=1}^kp_i =1,$ and none of the probability, $p_i,$ can be negative,
 all possible values of the probability vector, $\bf{P},$ is defined by the 
-$(k-1)-$dimensional polytope, which is the convex hull of $k$ vertices. 
-Technically, this polytope is known as $(k-1)-$dimensional simplex and 
-it is called the `support` of the Dirichlet distribution. For example, 
-for $k=3,$ the figure below shows the 2-dimensional simplex.  
-
-<style type="text/css">
-  p {
-    .width-half {width: 30%}
-  }
-</style>
+$(k-1)-$dimensional polytope, which is the convex hull of $k$ vertices. Since
+one probability can be determined by deducting the remaining $k-1$ 
+probabilities from 1, one degree of freedom is lost. Technically, this
+$(k-1)-$dimensional polytope is known as $(k-1)-$simplex and it is called 
+the `support` of the Dirichlet distribution. For example, for $k=3$ events, 
+the figure below shows the 2-dimensional simplex, which is a triangle and 
+consists of all possible probability values for 3 events.     
 
 ![](/images/dirichlet-distribution/2Simplex.png){: .align-center height="50%" width="50%"}
 
