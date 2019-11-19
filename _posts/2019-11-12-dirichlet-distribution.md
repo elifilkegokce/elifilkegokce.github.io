@@ -32,9 +32,9 @@ as in the table below.
 |                | **500** | **1.000** | | | **550** | **1.00**  | | | **480** | **1.00**  |
 
 In that case, we need a generalized model, which describe the uncertainty in 
-the probabilities $p.$ Dirichlet distribution, which is the generalization of
+the probabilities $\bf{P}.$ Dirichlet distribution, which is the generalization of
 the Beta distribution into multiple dimensions, and provides the probability 
-density of all possible probability values of $P={p_1, p_2,...,p_k}$ for 
+density of all possible probability values of $\bf{P}={p_1, p_2,...,p_k}$ for 
 a given set of $k$ elements (i.e., call topics). 
 
 > Dirichlet distribution is the multivariate generalization of the 
