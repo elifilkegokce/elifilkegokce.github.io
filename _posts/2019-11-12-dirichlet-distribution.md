@@ -74,7 +74,22 @@ $$
 \end{equation}
 $$
 
- 
+Finally, for $\alpha_i>0$ $i=1,2,...,k,$ we define the PDF of Dirichlet 
+distribution by 
+
+$$
+\begin{equation}
+\bf{Dir(\bf{\alpha})} \rightarrow f(\bf{P}|\bf{\alpha})=\frac{1}{\bf{B(\bf{\alpha})}} \prod_{i=1}^kp_i^{\alpha_i-1}
+\end{equation}
+$$
+
+As you may observe in PDF of Beta distribution, $p^{\alpha-1}(1-p)^{\beta-1}$
+weighs the probability of an event $p$ and the probability of no-event $(1-p)$. 
+In our case, event occurs if a call involves a suspicious transaction. 
+However, the function $p^{\alpha-1}(1-p)^{\beta-1}$, as PDF by itself, does 
+not guarantee that the area under the curve of the PDF to be 1. In order to 
+ensure that the total probability is 1, it is normalized by dividing by the
+constant $B(\alpha,\beta).$ 
 
 ## 2 Let's Derive the PDF of Dirichlet Distribution!
 
