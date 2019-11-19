@@ -99,7 +99,7 @@ for $k=3,$ the figure below shows the 2-dimensional simplex.
   }
 </style>
 
-![](/images/dirichlet-distribution/2Simplex.png){: .align-center .width-half}
+![](/images/dirichlet-distribution/2Simplex.png){: .align-center height="50%" width="50%"}
 
 
 
