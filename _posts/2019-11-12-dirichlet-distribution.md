@@ -114,6 +114,28 @@ constant $\bf{B(\bf{\alpha})}.$
 ## 2 Let's Derive the PDF of Dirichlet Distribution!
 
 
+Process used to derive the PDF of Dirichlet distribution is very similar to
+that of Beta distribution. Similarly, since the area under the curve of 
+the PDF should be equal to 1, from
+
+$$
+\begin{equation}
+\int_{0}^{1} f(\bf{P}|\bf{\alpha}) dp = \frac{1}{\bf{B(\bf{\alpha})}} 
+\int_{0}^{1} \prod_{i=1}^kp_i^{\alpha_i-1} dp = 1,
+\end{equation}
+$$
+
+we have
+
+$$
+\begin{equation}
+ B(\alpha,\beta) = \int_{0}^{1} p^{\alpha-1}(1-p)^{\beta-1} dp 
+ = \frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}
+\end{equation}
+$$
+
+
+
 ## 3 Parameters of Dirichlet Distribution
 
 
