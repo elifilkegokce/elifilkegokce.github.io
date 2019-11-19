@@ -129,8 +129,8 @@ we have
 
 $$
 \begin{equation}
- B(\alpha,\beta) = \int_{0}^{1} p^{\alpha-1}(1-p)^{\beta-1} dp 
- = \frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}
+\bf{B(\bf{\alpha})} = \int_{0}^{1} \prod_{i=1}^kp_i^{\alpha_i-1} dp 
+ =\frac{\prod_{i=1}^{k} \Gamma(\alpha_i)}{\Gamma(\sum_{i=1}^{k} \alpha_i)}
 \end{equation}
 $$
 
