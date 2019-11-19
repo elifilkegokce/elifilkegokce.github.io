@@ -162,6 +162,17 @@ $$
 \end{align}
 $$
 
+Then, we set $x_i = u_kv_i$ for $i=1,2,...,(k-1)$, where $dx_i=u_kdv_i.$ 
+Since $0 \le x_i \le u_k,$ $0\le u_kv_i \le u_k$ and $0 \le v_i \le 1$ for $u_k > 0$.
+
+$$
+\begin{align}
+\prod_{i=1}^{k} \Gamma(\alpha_i) & = \int_{u_k=0}^{\inf} \int_{x_{k-1}=0}^{u_k}
+... \int_{x_1=0}^{u_k} \exp^{-u_k} \prod_{i=1}^{k-1} (u_kv_i)^{\alpha_i-1} 
+(u_k - \sum_{i=1}^{k-1}(u_kv_i))^{\alpha_k-1} u_k^{k-1} dv_1 dv_2...dv_{k-1}du_k 
+\end{align}
+$$
+
 ## 3 Parameters of Dirichlet Distribution
 
 
