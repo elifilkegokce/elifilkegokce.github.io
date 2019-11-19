@@ -86,13 +86,20 @@ $$
 where $\sum_{i=1}^kp_i =1$ and $p_i \ge 0$ for $i=1,2,...,k.$
 
 Since the sum of the probabilities must be equal to one, 
-$\sum_{i=1}^kp_i =1$ and none of the probability, $p_i,$ can be negative,
+$\sum_{i=1}^kp_i =1,$ and none of the probability, $p_i,$ can be negative,
 all possible values of the probability vector, $\bf{P},$ is defined by the 
 $(k-1)-$dimensional polytope, which is the convex hull of $k$ vertices. 
-Technically, this polytope is known as $(k-1)$ dimensional simplex and 
-it is called the `support` of the Dirichlet distribution. 
+Technically, this polytope is known as $(k-1)-$dimensional simplex and 
+it is called the `support` of the Dirichlet distribution. For example, 
+for $k=3,$ the figure below shows the 2-dimensional simplex.  
 
+<style type="text/css">
+  p {
+    .width-half {width: 30%}
+  }
+</style>
 
+![](/images/dirichlet-distribution/2Simplex.png){: .align-center .width-half} | ![](/images/beta-distribution/beta_a_equal_b.png){: .align-right .width-half} 
 
 
 
