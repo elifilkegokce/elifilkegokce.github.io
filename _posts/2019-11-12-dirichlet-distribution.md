@@ -44,8 +44,8 @@ a given set of $k$ elements (i.e., call topics).
 ## 1 How is Dirichlet Distribution defined?
 
 Dirichlet distribution is parameterized by the vector $\bf{\alpha} = 
-(\alpha_1, \alpha_2,...,\alpha_k) $ with $\alpha_i >0$ for $i=1,2, ..k$, which has the same number of elements 
-($k$) as $P,$ and it is defined on the interval $(0, 1).$ Dirichlet
+(\alpha_1, \alpha_2,...,\alpha_k) $ with $\alpha_i >0$ for $i=1,2, ..k$, 
+which has the same number of elements $, k,$ as $P.$ Dirichlet
 distribution provides the probability density function (PDF) of a random 
 values $P$ using the notation below.
 
@@ -74,14 +74,28 @@ $$
 \end{equation}
 $$
 
-Finally, for $\alpha_i>0$ $i=1,2,...,k,$ we define the PDF of Dirichlet 
+Finally, for $\alpha_i>0$ and $i=1,2,...,k,$ we define the PDF of Dirichlet 
 distribution by 
 
 $$
 \begin{equation}
-\bf{Dir(\bf{\alpha})} \rightarrow f(\bf{P}|\bf{\alpha})=\frac{1}{\bf{B(\bf{\alpha})}} \prod_{i=1}^kp_i^{\alpha_i-1}
+\bf{Dir(\bf{\alpha})} \rightarrow f(\bf{P}|\bf{\alpha})=\frac{1}{\bf{B(\bf{\alpha})}} \prod_{i=1}^kp_i^{\alpha_i-1},
 \end{equation}
 $$
+
+where $\sum_{i=1}^kp_i =1$ and $p_i \ge 0$ for $i=1,2,...,k.$
+
+Since the sum of the probabilities must be equal to one, 
+$\sum_{i=1}^kp_i =1$ and none of the probability, $p_i,$ can be negative,
+all possible values of the probability vector, $\bf{P},$ is defined by the 
+$(k-1)-$dimensional polytope, which is the convex hull of $k$ vertices. 
+Technically, this polytope is known as $(k-1)$ dimensional simplex and 
+it is called the `support` of the Dirichlet distribution. 
+
+
+
+
+
 
 As you may observe in PDF of Beta distribution, $p^{\alpha-1}(1-p)^{\beta-1}$
 weighs the probability of an event $p$ and the probability of no-event $(1-p)$. 
