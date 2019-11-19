@@ -135,6 +135,25 @@ $$
 $$
 
 
+We start with calculating $\Gamma(\alpha)\Gamma(\beta),$
+
+$$
+\begin{align}
+prod_{i=1}^{k} \Gamma(\alpha_i) & =  \prod_{i=1}^k \int_{0}^{\inf} 
+\exp^{-x_i}x^{\alpha_i-1}dx_i 
+ \\\\
+& = \int_{x_k=0}^{\inf} \int_{x_{k-1}=0}^{\inf} ... \int_{x1=0}^{\inf} 
+\prod_{i=1}^k(\exp^{-x_i}x_i^{\alpha_i-1}) dx_1 dx_2...dx_k \\\\
+& = \int_{x_k=0}^{\inf} \int_{x_{k-1}=0}^{\inf} ... \int_{x1=0}^{\inf} 
+\exp^{-\sum_{i=1}^kx_i} \prod_{i=1}^k x_i^{\alpha_i-1} dx_1 dx_2...dx_k 
+\end{align}
+$$
+
+First, we set $u_k=\sum_{i=1}^kx_i$. This results in $x_k=u_k-\sum_{i=1}^{k-1}x_i$ 
+and $dx_k=du_k.$ Since $0 \le x_k$, we have $0 \le u_k-\sum_{i=1}^{k-1}x_i$ 
+and, from $0 \le x_i,$ we get $0 \le x_i \le u_k for $i=1,2,...,(k-1).$
+
+
 
 ## 3 Parameters of Dirichlet Distribution
 
