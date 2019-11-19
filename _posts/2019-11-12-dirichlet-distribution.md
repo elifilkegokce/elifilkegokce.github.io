@@ -98,15 +98,18 @@ consists of all possible probability values for 3 events.
 
 ![](/images/dirichlet-distribution/2Simplex.png){: .align-center height="50%" width="50%"}
 
+Beta distribution is a special case of Dirichlet distribution for$k=2$ 
+events. By replacing $\alpha_1 \rightarraw \alpha$, $\alpha_2 \rightarraw \beta$, 
+$p_1 \rightarraw p,$ and $p_2 \rightarraw (1-p),$ we get Beta distribution, 
+$B(\alpha,\beta)$. 
 
-
-As you may observe in PDF of Beta distribution, $p^{\alpha-1}(1-p)^{\beta-1}$
-weighs the probability of an event $p$ and the probability of no-event $(1-p)$. 
-In our case, event occurs if a call involves a suspicious transaction. 
-However, the function $p^{\alpha-1}(1-p)^{\beta-1}$, as PDF by itself, does 
-not guarantee that the area under the curve of the PDF to be 1. In order to 
-ensure that the total probability is 1, it is normalized by dividing by the
-constant $B(\alpha,\beta).$ 
+As you may observe in the PDF of Dirichlet distribution, 
+$\prod_{i=1}^kp_i^{\alpha_i-1}$ weighs the probability of each event $p_i.$ 
+In our case, each event is a call topic.
+However, the function $\prod_{i=1}^kp_i^{\alpha_i-1}$ , as PDF by itself, 
+does not guarantee that the area under the curve of the PDF to be 1. In order
+to ensure that the total probability is 1, it is normalized by dividing by 
+the constant $\bf{B(\bf{\alpha})}.$ 
 
 ## 2 Let's Derive the PDF of Dirichlet Distribution!
 
