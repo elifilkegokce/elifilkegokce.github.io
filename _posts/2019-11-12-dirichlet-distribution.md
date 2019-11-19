@@ -99,8 +99,8 @@ consists of all possible probability values for 3 events.
 ![](/images/dirichlet-distribution/2Simplex.png){: .align-center height="50%" width="50%"}
 
 Beta distribution is a special case of Dirichlet distribution for$k=2$ 
-events. By replacing $\alpha_1 \rightarraw \alpha$, $\alpha_2 \rightarraw \beta$, 
-$p_1 \rightarraw p,$ and $p_2 \rightarraw (1-p),$ we get Beta distribution, 
+events. By replacing $\alpha_1 \rightarrow \alpha$, $\alpha_2 \rightarrow \beta$, 
+$p_1 \rightarrow p,$ and $p_2 \rightarrow (1-p),$ we get Beta distribution, 
 $B(\alpha,\beta)$. 
 
 As you may observe in the PDF of Dirichlet distribution, 
