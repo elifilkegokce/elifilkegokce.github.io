@@ -176,6 +176,10 @@ $$
 ... \\\\
 & \int_{x_1=0}^{1} \bigg( \prod_{i=1}^{k-1} v_i^{\alpha_i-1} \bigg)
 \bigg(1- \sum_{i=1}^{k-1}v_i\bigg)^{\alpha_k-1} u_k^{k-1} dv_1 dv_2...dv_{k-1}du_k \\\\
+& = \int_{u_k=0}^{\inf} \exp^{-u_k} u_k^{\sum_{i=1}^k-k}\int_{x_{k-1}=0}^{1}
+... \\\\
+& \int_{x_1=0}^{1} \bigg( \prod_{i=1}^{k-1} v_i^{\alpha_i-1} \bigg)
+\bigg(1- \sum_{i=1}^{k-1}v_i\bigg)^{\alpha_k-1} u_k^{k-1} dv_1 dv_2...dv_{k-1}du_k \\\\
 
 \end{align}
 $$
