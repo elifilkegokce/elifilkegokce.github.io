@@ -159,7 +159,7 @@ $$
 \prod_{i=1}^{k} \Gamma(\alpha_i) & = \int_{u_k=0}^{\inf} \int_{x_{k-1}=0}^{u_k}
 ... \\\\
 & \int_{x_1=0}^{u_k} \exp^{-u_k} \bigg(\prod_{i=1}^{k-1} x_i^{\alpha_i-1}\bigg)
-(u_k - \sum_{i=1}^{k-1}x_i)^{\alpha_k-1} dx_1 dx_2...dx_{k-1}du_k 
+\bigg(u_k - \sum_{i=1}^{k-1}x_i\bigg)^{\alpha_k-1} dx_1 dx_2...dx_{k-1}du_k 
 \end{align}
 $$
 
@@ -171,11 +171,11 @@ $$
 \prod_{i=1}^{k} \Gamma(\alpha_i) & = \int_{u_k=0}^{\inf} \int_{x_{k-1}=0}^{1}
 ... \\\\
 &\int_{x_1=0}^{1} \exp^{-u_k} \bigg(\prod_{i=1}^{k-1} (u_kv_i)^{\alpha_i-1} \bigg)
-(u_k - \sum_{i=1}^{k-1}(u_kv_i))^{\alpha_k-1} u_k^{k-1} dv_1 dv_2...dv_{k-1}du_k \\\\
+\bigg(u_k - \sum_{i=1}^{k-1}(u_kv_i)\bigg)^{\alpha_k-1} u_k^{k-1} dv_1 dv_2...dv_{k-1}du_k \\\\
 & = \int_{u_k=0}^{\inf} \exp^{-u_k} u_k^{\sum_{i=1}^k-k}\int_{x_{k-1}=0}^{1}
 ... \\\\
 & \int_{x_1=0}^{1} \bigg( \prod_{i=1}^{k-1} v_i^{\alpha_i-1} \bigg)
-(1- \sum_{i=1}^{k-1}v_i)^{\alpha_k-1} u_k^{k-1} dv_1 dv_2...dv_{k-1}du_k \\\\
+\bigg(1- \sum_{i=1}^{k-1}v_i\bigg)^{\alpha_k-1} u_k^{k-1} dv_1 dv_2...dv_{k-1}du_k \\\\
 
 \end{align}
 $$
