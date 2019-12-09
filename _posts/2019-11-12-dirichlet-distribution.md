@@ -189,7 +189,13 @@ $$
 
 ## 3 Parameters of Dirichlet Distribution
 
+![](/images/dirichlet-distribution/alpha_le_1_eq.png){: .align-center height="100%" width="50%"}
 
+![](/images/dirichlet-distribution/alpha_le_1.png){: .align-center height="100%" width="50%"}
+
+![](/images/dirichlet-distribution/alpha_ge_2_eq.png){: .align-center height="100%" width="50%"}
+
+![](/images/dirichlet-distribution/alpha_ge_2.png){: .align-center height="100%" width="50%"}
 
 ## 4 Example: Bayesian Updating
 
