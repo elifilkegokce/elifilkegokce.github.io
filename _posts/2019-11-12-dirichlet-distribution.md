@@ -190,6 +190,7 @@ $$
 ## 3 Parameters of Dirichlet Distribution
 
 
+
 ## 4 Example: Bayesian Updating
 
 
