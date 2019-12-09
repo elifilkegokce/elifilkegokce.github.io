@@ -185,15 +185,49 @@ $$
 \bigg(1- \sum_{i=1}^{k-1}v_i\bigg)^{\alpha_k-1} dv_1 dv_2...dv_{k-1}\\\\
 
 \end{align}
-$$
+$\$
 
 ## 3 Parameters of Dirichlet Distribution
 
+Parameters $\bf{\alpha} = (\alpha_1, \alpha_2,...,\alpha_k)$ is known as
+the concentration parameter and determines which part of the $(k-1)$ 
+simplex has the higher probability. Each $\alpha_i$ is the effective number of 
+observations (i.e, pseudocounts) associated with the element $i$ (i.e.,
+call topic $i$) and weight the probability $p_i.$
+
+Case $\alpha_i le 1 :$ The plots below show the Dirichlet distributions, 
+where $\alpha_1=\alpha_2=alpha_3 \le 1.$ Plots starts with $\a_i$ values 
+equal to 0.1. Then, $\alpha_i$ values are gradually increased to 1. 
+For $\alpha_i$ values that are closer to 0, distribution concentrates 
+on the corners (i.e., call topics) and along the boundaries of the simplex 
+and it has this nice property that distributions are dominated by one of 
+the elements (i.e., call topics). This means if you want to associate
+each call transcript with a single topic, you should choose $\alpha_i$
+values that are closer to 0. When $\alpha_i$ values increases, central 
+points becomes more and more attractive. Finally, for the case, 
+$\alpha=(1,1,1),$  all possible distributions becomes equally likely 
+(i.e., Dirichlet has uniform distribution). For each call transcript, 
+it is equally likely that each call transcript may be associated with 
+a single topic, mixture of all the topics, or something in between.
+
 ![](/images/dirichlet-distribution/alpha_le_1_eq.png){: .align-center height="100%" width="100%"}
+
+
+
 
 ![](/images/dirichlet-distribution/alpha_le_1.png){: .align-center height="100%" width="100%"}
 
+For $\alpha_i>1,$ the distribution tends towards the center of the simplex. 
+As $\alpha_i$ increases, the distribution becomes more tightly concentrated
+around the center of the simplex. In the context of our topic modeling 
+example, as $\alpha_i \rightarrow \inf,$ each transcripts contain each topic
+equally likely. 
+
 ![](/images/dirichlet-distribution/alpha_ge_2_eq.png){: .align-center height="100%" width="100%"}
+
+If the goal is give higher probability for some topic (e.g., with a higher
+probability for topic 1), we would want an asymmetric (noncentral) Dirichlet
+distribution with a higher value for $\alpha_1.$
 
 ![](/images/dirichlet-distribution/alpha_ge_2.png){: .align-center height="100%" width="100%"}
 
