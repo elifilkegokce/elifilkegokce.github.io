@@ -195,9 +195,10 @@ simplex has the higher probability. Each $\alpha_i$ is the effective number of
 observations (i.e, pseudocounts) associated with the element $i$ (i.e.,
 call topic $i$) and weight the probability $p_i.$
 
-Case $\alpha_i le 1 :$ The plots below show the Dirichlet distributions, 
-where $\alpha_1=\alpha_2=alpha_3 \le 1.$ Plots starts with $\a_i$ values 
-equal to 0.1. Then, $\alpha_i$ values are gradually increased to 1. 
+$\underline{\text{Case} \alpha_i \le 1 \text{for all} i}$: The plots 
+below show the Dirichlet distributions, where 
+$\alpha_1=\alpha_2=\alpha_3 \le 1.$ Plots start with $\alpha_i$ 
+values equal to 0.1 and, then, values are gradually increased to 1. 
 For $\alpha_i$ values that are closer to 0, distribution concentrates 
 on the corners (i.e., call topics) and along the boundaries of the simplex 
 and it has this nice property that distributions are dominated by one of 
@@ -207,8 +208,8 @@ values that are closer to 0. When $\alpha_i$ values increases, central
 points becomes more and more attractive. Finally, for the case, 
 $\alpha=(1,1,1),$  all possible distributions becomes equally likely 
 (i.e., Dirichlet has uniform distribution). For each call transcript, 
-it is equally likely that each call transcript may be associated with 
-a single topic, mixture of all the topics, or something in between.
+it is equally likely that a call may be associated with a single topic, 
+mixture of all the topics, or something in between.
 
 ![](/images/dirichlet-distribution/alpha_le_1_eq.png){: .align-center height="100%" width="100%"}
 
