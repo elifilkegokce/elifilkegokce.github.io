@@ -169,8 +169,8 @@ Since $0 \le x_i \le u_k,$ $0\le u_kv_i \le u_k$ and $0 \le v_i \le 1$ for $u_k 
 $$
 \begin{align}
 \prod_{i=1}^{k} \Gamma(\alpha_i) & = \int_{u_k=0}^{\inf} \int_{v_{k-1}=0}^{1}
-...\int_{v_1=0}^{1} \exp^{-u_k} \bigg(\prod_{i=1}^{k-1} (u_kv_i)^{\alpha_i-1} \bigg)\\\\
-&\bigg(u_k - \sum_{i=1}^{k-1}(u_kv_i)\bigg)^{\alpha_k-1} u_k^{k-1} dv_1 dv_2...dv_{k-1}du_k \\\\
+...\int_{v_1=0}^{1} \exp^{-u_k} \bigg(\prod_{i=1}^{k-1} (u_kv_i)^{\alpha_i-1} \bigg) \\\\
+& \bigg(u_k - \sum_{i=1}^{k-1}(u_kv_i)\bigg)^{\alpha_k-1} u_k^{k-1} dv_1 dv_2...dv_{k-1}du_k \\\\
 & = \int_{u_k=0}^{\inf} \exp^{-u_k} u_k^{\sum_{i=1}^k\alpha_i-k}\int_{v_{k-1}=0}^{1}
 ... \int_{v_1=0}^{1} \\\\
 & \bigg( \prod_{i=1}^{k-1} v_i^{\alpha_i-1} \bigg)
@@ -184,7 +184,7 @@ $$
 &\bigg( \prod_{i=1}^{k-1} v_i^{\alpha_i-1} \bigg)
 \bigg(1- \sum_{i=1}^{k-1}v_i\bigg)^{\alpha_k-1} dv_1 dv_2...dv_{k-1}\\\\
 \end{align}
-$\$
+$$
 
 ## 3 Parameters of Dirichlet Distribution
 
@@ -224,11 +224,12 @@ is increased to 5. If one $\alpha_i$ value is greater than the others,
 then the probability distributions that provides a higher probability
 to that element is more probable. In the the third and forth plots, 
 $\alpha_2$ value is increased to 0.9 and 2, respectively. Increasing
-$\alpha_2$ moves the probability distributions towards the boundaries
+$\alpha_2$ moves the probability distributions towards the boundary
 associated with element 1 and 2 (i.e., call topics 1 and 2). Probability 
 distributions which provides higher probability to element 2 becomes
-more favorable. 
-
+more favorable. When $\alpha_2$ becomes equal to $\alpha_3$ in the last 
+plot, probability distribution concentrates in the center of the boundary
+associated with the elements 1 and 2.
 
 ![](/images/dirichlet-distribution/alpha_le_1.png){: .align-center height="100%" width="100%"}
 
