@@ -183,7 +183,6 @@ $$
 \int_{x_{k-1}=0}^{1}...\int_{x_1=0}^{1} \\\\
 &\bigg( \prod_{i=1}^{k-1} v_i^{\alpha_i-1} \bigg)
 \bigg(1- \sum_{i=1}^{k-1}v_i\bigg)^{\alpha_k-1} dv_1 dv_2...dv_{k-1}\\\\
-
 \end{align}
 $\$
 
@@ -195,7 +194,6 @@ simplex has the higher probability. Each $\alpha_i$ is the effective number of
 observations (i.e, pseudocounts) associated with the element $i$ (i.e.,
 call topic $i$) and weight the probability $p_i.$
 
-$\underline{\text{Case } \alpha_1=\alpha_2=...=\alpha_k \le 1}$: 
 The plots below show the Dirichlet distributions, where 
 $\alpha_1=\alpha_2=\alpha_3 \le 1.$ Plots start with $\alpha_i$ 
 values equal to 0.1 and, then, values are gradually increased to 1. 
@@ -204,8 +202,9 @@ on the corners (i.e., call topics) and along the boundaries of the simplex
 and it has this nice property that distributions are dominated by one of 
 the elements (i.e., call topics). This means if you want to associate
 each call transcript with a single topic, you should choose $\alpha_i$
-values that are closer to 0. When $\alpha_i$ values increases, central 
-points becomes more and more attractive. Finally, for the case, 
+values that are closer to 0. However, any element can be dominated, 
+since all $\alpha$ values are equal. When $\alpha_i$ values increases, 
+central points becomes more and more attractive. Finally, for the case, 
 $\alpha=(1,1,1),$  all possible distributions becomes equally likely 
 (i.e., Dirichlet has uniform distribution). For each call transcript, 
 it is equally likely that a call may be associated with a single topic, 
@@ -213,7 +212,22 @@ mixture of all the topics, or something in between.
 
 ![](/images/dirichlet-distribution/alpha_le_1_eq.png){: .align-center height="100%" width="100%"}
 
-
+The plots below show the Dirichlet distributions, where $\alpha_i \le 1$ 
+and $\alpha_i \neq \alpha_j$ for some $i,j = 1,2,3$. Plots start with 
+$\bf{\alpha} = (0.9,0.5,0.2).$  Similar to the previous case, distribution
+concentrates on the corners (i.e., call topics) and along the boundaries
+of the simplex. However, in that case, probability distributions 
+concentrates more on the corner associated with element 1 (i.e., call
+topic 1) since $\alpha_1$ is greater than $\alpha_2$ and $\alpha_3$. 
+This becomes more clear in the second plot, where $\alpha_1$ value
+is increased to 5. If one $\alpha_i$ value is greater than the others,
+then the probability distributions that provides a higher probability
+to that element is more probable. In the the third and forth plots, 
+$\alpha_2$ value is increased to 0.9 and 2, respectively. Increasing
+$\alpha_2$ moves the probability distributions towards the boundaries
+associated with element 1 and 2 (i.e., call topics 1 and 2). Probability 
+distributions which provides higher probability to element 2 becomes
+more favorable. 
 
 
 ![](/images/dirichlet-distribution/alpha_le_1.png){: .align-center height="100%" width="100%"}
