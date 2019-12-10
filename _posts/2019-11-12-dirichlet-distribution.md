@@ -195,8 +195,8 @@ simplex has the higher probability. Each $\alpha_i$ is the effective number of
 observations (i.e, pseudocounts) associated with the element $i$ (i.e.,
 call topic $i$) and weight the probability $p_i.$
 
-$\underline{\text{Case} \alpha_i \le 1 \text{for all} i}$: The plots 
-below show the Dirichlet distributions, where 
+$\underline{\text{Case } \alpha_1=\alpha_2=...=\alpha_k \le 1}$: 
+The plots below show the Dirichlet distributions, where 
 $\alpha_1=\alpha_2=\alpha_3 \le 1.$ Plots start with $\alpha_i$ 
 values equal to 0.1 and, then, values are gradually increased to 1. 
 For $\alpha_i$ values that are closer to 0, distribution concentrates 
