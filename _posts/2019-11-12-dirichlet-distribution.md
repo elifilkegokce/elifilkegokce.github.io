@@ -17,7 +17,7 @@ of them is associated with account information update and the remaining
 topics can be obtained by normalizing the word counts of each topic; 
 i.e., dividing word count of each topic by the number of total words in the
 call transcript. Then, the probability distribution of topics
-become $\bf{P} \text{= (250, 150, 100)/100 = (0.5, 0.3, 0.2)}$. Because of 
+become $\bf{P}$ $= (250, 150, 100)/100 = (0.5, 0.3, 0.2)$. Because of 
 the inevitable variability in the call process, it is possible to get calls 
 which is related to these three topics, but with different probability 
 distributions as in the table below.
