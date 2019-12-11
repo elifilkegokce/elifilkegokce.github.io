@@ -17,10 +17,10 @@ of them is associated with account information update and the remaining
 topics can be obtained by normalizing the word counts of each topic; 
 i.e., dividing word count of each topic by the number of total words in the
 call transcript. Then, the probability distribution of topics
-become $\bf{P} = (250, 150, 100)/100 = (0.5, 0.3, 0.2).$ Because of the inevitable
-variability in the call process, it is possible to get calls which is 
-related to these three topics, but with different probability distributions
-as in the table below.
+become $\bf{P} \text{= (250, 150, 100)/100 = (0.5, 0.3, 0.2)}$. Because of 
+the inevitable variability in the call process, it is possible to get calls 
+which is related to these three topics, but with different probability 
+distributions as in the table below.
 
 |                |   Call 1  |         | | |   Call 2  |         | | |   Call 3  |         |
 | :------------- | :-------: | :-----: | | | :-------: | :-----: | | | :-------: | :-----: |
@@ -266,7 +266,7 @@ distributions, which provides higher probability to topic 3, more likely.
 Parameter $\bf{\alpha}$ determines the probability mixture of each outcome 
 (i.e., each topic) for any given event (i.e., call transcript). For
 low $\alpha_i$ values, transcripts will likely to be a mixture of a few 
-topics. When $alpha_i$ values increase, transcripts will likely to be
+topics. When $\alpha_i$ values increase, transcripts will likely to be
 a mixture of more topics. In order to increase the probability of a
 transcripts with some certain topic  (e.g., with a higher probability
 for topic 1), higher value for $\alpha_1$ should be given.
