@@ -34,7 +34,7 @@ distributions as in the table below.
 In that case, we need a generalized model, which describe the uncertainty in 
 the probabilities $\bf{P}.$ Dirichlet distribution, which is the generalization of
 the Beta distribution into multiple dimensions, and provides the probability 
-density of all possible probability values of $\bf{P}=(p_1, p_2,...,p_k)$ for 
+density of all possible probability values of $\bf{P}$ =($p_1$, $p_2$,...,$p_k$) for 
 a given set of $k$ events (i.e., call topics). 
 
 > Dirichlet distribution is the multivariate generalization of the 
