@@ -271,8 +271,8 @@ a mixture of more topics. In order to increase the probability of a
 transcripts with some certain topic  (e.g., with a higher probability
 for topic 1), higher value for $\alpha_1$ should be given.
 
-## 4 Example: Bayesian Updating
-
+**Note:** You can find the code that I use to generate the Dirichlet 
+distribution plots in my github repository.
 
 ## 5 One Last Note!
 
