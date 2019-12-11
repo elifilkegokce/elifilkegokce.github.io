@@ -61,7 +61,7 @@ $$
 
 * $\bf{\alpha} = (\alpha_1, \alpha_2,...,\alpha_k):$ Vector of parameters of 
 Dirichlet distribution. Each concentration parameter $\alpha_i$ is the 
-effective number of observations associated with the element (i.e, call 
+effective number of observations associated with the outcome (i.e, call 
 topic) $p_i.$
 
 * $\bf{B(\bf{\alpha})}:$ Beta function, which has a constant value for given
@@ -188,21 +188,26 @@ $$
 
 ## 3 Parameters of Dirichlet Distribution
 
-Parameters $\bf{\alpha} = (\alpha_1, \alpha_2,...,\alpha_k)$ is known as
+Parameter $\bf{\alpha} = (\alpha_1, \alpha_2,...,\alpha_k)$ is known as
 the concentration parameter and determines which part of the $(k-1)$ 
-simplex has the higher probability. Each $\alpha_i$ is the effective number of 
-observations (i.e, pseudocounts) associated with the element $i$ (i.e.,
-call topic $i$) and weight the probability $p_i.$
+simplex has the higher probability. There is a value $\alpha_i$ for
+each outcome $i$ (i.e., call topic $i$). Each of these $\alpha_i$ values
+represents the effective number of observations (i.e, pseudocounts) 
+associated with the outcome $i$ and weight the probability $p_i$. 
+Plots in the figures below show how Dirichlet distributions change
+by different combination of $\alpha_i$ values for 3 call topics. Each 
+point on the plots represents the probability mixture of the three call 
+topics such as (0.8, 0.2, 0.0) or (0.2, 0.4, 0.4). 
 
-The plots below show the Dirichlet distributions, where 
+Plots below show the Dirichlet distributions, where 
 $\alpha_1=\alpha_2=\alpha_3 \le 1.$ Plots start with $\alpha_i$ 
-values equal to 0.1 and, then, values are gradually increased to 1. 
+values equal to 0.1 and then values are gradually increased to 1. 
 For $\alpha_i$ values that are closer to 0, distribution concentrates 
 on the corners (i.e., call topics) and along the boundaries of the simplex 
 and it has this nice property that distributions are dominated by one of 
-the elements (i.e., call topics). This means if you want to associate
+the outcomes (i.e., call topics). This means if you want to associate
 each call transcript with a single topic, you should choose $\alpha_i$
-values that are closer to 0. However, any element can be dominated, 
+values that are closer to 0. However, any topic can be dominated, 
 since all $\alpha$ values are equal. When $\alpha_i$ values increases, 
 central points becomes more and more attractive. Finally, for the case, 
 $\alpha=(1,1,1),$  all possible distributions becomes equally likely 
@@ -212,40 +217,59 @@ mixture of all the topics, or something in between.
 
 ![](/images/dirichlet-distribution/alpha_le_1_eq.png){: .align-center height="100%" width="100%"}
 
-The plots below show the Dirichlet distributions, where $\alpha_i \le 1$ 
+Plots below show the Dirichlet distributions, where $\alpha_i \le 1$ 
 and $\alpha_i \neq \alpha_j$ for some $i,j = 1,2,3$. Plots start with 
-$\bf{\alpha} = (0.9,0.5,0.2).$  Similar to the previous case, distribution
+$\bf{\alpha} = (0.9,0.5,0.2)$.  Similar to the previous case, distribution
 concentrates on the corners (i.e., call topics) and along the boundaries
 of the simplex. However, in that case, probability distributions 
-concentrates more on the corner associated with element 1 (i.e., call
+concentrates more on the corner associated with outcome 1 (i.e., call
 topic 1) since $\alpha_1$ is greater than $\alpha_2$ and $\alpha_3$. 
 This becomes more clear in the second plot, where $\alpha_1$ value
 is increased to 5. If one $\alpha_i$ value is greater than the others,
 then the probability distributions that provides a higher probability
-to that element is more probable. In the the third and forth plots, 
+to that outcome is more probable. In the the third and forth plots, 
 $\alpha_2$ value is increased to 0.9 and 2, respectively. Increasing
 $\alpha_2$ moves the probability distributions towards the boundary
-associated with element 1 and 2 (i.e., call topics 1 and 2). Probability 
-distributions which provides higher probability to element 2 becomes
+associated with outcome 1 and 2 (i.e., call topics 1 and 2). Probability 
+distributions which provides higher probability to outcome 2 becomes
 more favorable. When $\alpha_2$ becomes equal to $\alpha_3$ in the last 
 plot, probability distribution concentrates in the center of the boundary
-associated with the elements 1 and 2.
+associated with the outcomes 1 and 2.
 
 ![](/images/dirichlet-distribution/alpha_le_1.png){: .align-center height="100%" width="100%"}
 
-For $\alpha_i>1,$ the distribution tends towards the center of the simplex. 
-As $\alpha_i$ increases, the distribution becomes more tightly concentrated
-around the center of the simplex. In the context of our topic modeling 
-example, as $\alpha_i \rightarrow \inf,$ each transcripts contain each topic
+Plots below show the Dirichlet distributions, where
+$\alpha_1=\alpha_2=\alpha_3 > 1$. Plots start with 
+$\bf{\alpha} = (2,2,2)$ and then $\alpha_i$ values are increased to 500. 
+As $\alpha_i$ increases, distribution becomes more tightly concentrated
+around the center of the simplex. In the context of our example, as 
+$\alpha_i \rightarrow \inf$, each transcript contains each topic
 equally likely. 
 
 ![](/images/dirichlet-distribution/alpha_ge_2_eq.png){: .align-center height="100%" width="100%"}
 
-If the goal is give higher probability for some topic (e.g., with a higher
-probability for topic 1), we would want an asymmetric (noncentral) Dirichlet
-distribution with a higher value for $\alpha_1.$
+Plots below show the Dirichlet distributions, where
+$\alpha_1=\alpha_2=\alpha_3 > 1$ and $\alpha_i \neq \alpha_j$ 
+for some $i,j = 1,2,3$. Plots start with $\bf{\alpha} = (5.0,2.0,2.0)$
+and then values are gradually increased. In the first and the second plots,
+distribution is concentrates around the corner associated with the outcome 1
+(i.e., call topic 1) since the $\alpha_1$  value is greater that the other 
+two values. When $\alpha_2$ is increased in the the third and fourth plots,
+distribution tends towards the the boundary of outcomes 1 and 2 (i.e., call
+topics 1 and 2) making the distributions, which provides higher probability 
+to topic 2, more favorable. With the increased $alpha_3$ value in the last 
+plot, distribution moves towards the center of the simplex making the 
+distributions, which provides higher probability to topic 3, more likely. 
 
 ![](/images/dirichlet-distribution/alpha_ge_2.png){: .align-center height="100%" width="100%"}
+
+Parameter $\bf{\alpha}$ determines the probability mixture of each outcome 
+(i.e., each topic) for any given event (i.e., call transcript). For
+low $\alpha_i$ values, transcripts will likely to be a mixture of a few 
+topics. When $alpha_i$ values increase, transcripts will likely to be
+a mixture of more topics. In order to increase the probability of a
+transcripts with some certain topic  (e.g., with a higher probability
+for topic 1), higher value for $\alpha_1$ should be given.
 
 ## 4 Example: Bayesian Updating
 
