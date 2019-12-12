@@ -315,7 +315,7 @@ f(p=\hat{p}|N, k) & = \frac{\hat{p}^{k+\alpha -1}(1-\hat{p})^{N-k+\beta -1}}{B(k
 \end{align} 
 $$
 
-which is the beta distribution with parameters $(k+\alpha, N-k+\beta)$.
+which is the Beta distribution with parameters $(k+\alpha, N-k+\beta).$
 
 
  
