@@ -277,9 +277,7 @@ $k$ fraud calls in $N$ calls is the Binomial distribution given by
 
 
 $$
-\begin{align}
-f(k|N, p=\hat{p})= {N}\choose{k}p^k(1-p)^{N-k}
-\end{align}
+f(k|N, p=\hat{p}) = {N}\choose{k} p^k(1-p)^{N-k}
 $$
 
 Using the Beta distribution, prior distribution for the probability of
