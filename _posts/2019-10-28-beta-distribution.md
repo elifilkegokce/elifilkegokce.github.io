@@ -306,18 +306,16 @@ f(p=\hat{p}|N, k) & = \frac{\binom{N}{k} \hat{p}^k(1-\hat{p})^{N-k}\frac{\hat{p}
 $$
 
 Since $\int_{0}^{1} \frac{x^{k+\alpha -1}(1-x)^{N-k+\beta-1}}{B(\alpha+k,\beta+N-k)} dx = 1$
-from the PDF of Beta distribution 
+from the PDF of Beta distribution, we will have the posterior distribution for the probability
+as
 
 $$
 \begin{align}
-f(p=\hat{p}|N, k) & = \frac{\hat{p}^{k+\alpha -1}(1-\hat{p})^{N-k+\beta -1}}{B(\alpha+k,\beta+N-k)} \\
-= f(p|\alpha+k,\beta+N-k)
+f(p=\hat{p}|N, k) & = \frac{\hat{p}^{k+\alpha -1}(1-\hat{p})^{N-k+\beta -1}}{B(\alpha+k,\beta+N-k)}, \\
 \end{align} 
 $$
 
-
-
-
+which is the beta distribution with parameters (\alpha+k, \beta+N-k).
 
 
  
