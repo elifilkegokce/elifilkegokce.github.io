@@ -272,8 +272,8 @@ closed from expression for the posterior distribution,
 making the calculation of the posterior distribution easier.
 
 
-Given the probability of fraud call $\hat{p}$, likelihood function of
-$k$ fraud calls in $N$ calls is the Binomial distribution given by
+#Given the probability of fraud call $\hat{p}$, likelihood function of
+#$k$ fraud calls in $N$ calls is the Binomial distribution given by
 
 #$$
 #\begin{align}
