@@ -43,8 +43,8 @@ a given set of $k$ events (i.e., call topics).
  
 ## 1 How is Dirichlet Distribution defined?
 
-Dirichlet distribution is parameterized by the vector $\bf{\alpha} = 
-(\alpha_1, \alpha_2,...,\alpha_k) $ with $\alpha_i >0$ for $i=1,2, ..k$, 
+Dirichlet distribution is parameterized by the vector $\bf{\alpha}$ = 
+($\alpha_1$, $\alpha_2$,...,$\alpha_k$) with $\alpha_i >0$ for $i=1,2, ..k$, 
 which has the same number of events $, k,$ as $P.$ Dirichlet
 distribution provides the probability density function (PDF) of a random 
 values $P$ using the notation below.
@@ -59,7 +59,7 @@ $$
 \end{equation}
 $$
 
-* $\bf{\alpha} = (\alpha_1, \alpha_2,...,\alpha_k):$ Vector of parameters of 
+* $\bf{\alpha}$ = ($\alpha_1$, $\alpha_2$,...,$\alpha_k$): Vector of parameters of 
 Dirichlet distribution. Each concentration parameter $\alpha_i$ is the 
 effective number of observations associated with the outcome (i.e, call 
 topic) $p_i.$
@@ -188,7 +188,7 @@ $$
 
 ## 3 Parameters of Dirichlet Distribution
 
-Parameter $\bf{\alpha} = (\alpha_1, \alpha_2,...,\alpha_k)$ is known as
+Parameter $\bf{\alpha}$ = ($\alpha_1$, $\alpha_2$,...,$\alpha_k$) is known as
 the concentration parameter and determines which part of the $(k-1)$ 
 simplex has the higher probability. There is a value $\alpha_i$ for
 each outcome $i$ (i.e., call topic $i$). Each of these $\alpha_i$ values
@@ -219,7 +219,7 @@ mixture of all the topics, or something in between.
 
 Plots below show the Dirichlet distributions, where $\alpha_i \le 1$ 
 and $\alpha_i \neq \alpha_j$ for some $i,j = 1,2,3$. Plots start with 
-$\bf{\alpha} = (0.9,0.5,0.2)$.  Similar to the previous case, distribution
+$\bf{\alpha}$ = (0.9,0.5,0.2).  Similar to the previous case, distribution
 concentrates on the corners (i.e., call topics) and along the boundaries
 of the simplex. However, in that case, probability distributions 
 concentrates more on the corner associated with outcome 1 (i.e., call
@@ -240,7 +240,7 @@ associated with the outcomes 1 and 2.
 
 Plots below show the Dirichlet distributions, where
 $\alpha_1=\alpha_2=\alpha_3 > 1$. Plots start with 
-$\bf{\alpha} = (2,2,2)$ and then $\alpha_i$ values are increased to 500. 
+$\bf{\alpha}$ = (2,2,2) and then $\alpha_i$ values are increased to 500. 
 As $\alpha_i$ increases, distribution becomes more tightly concentrated
 around the center of the simplex. In the context of our example, as 
 $\alpha_i \rightarrow \inf$, each transcript contains each topic
@@ -250,7 +250,7 @@ equally likely.
 
 Plots below show the Dirichlet distributions, where
 $\alpha_1=\alpha_2=\alpha_3 > 1$ and $\alpha_i \neq \alpha_j$ 
-for some $i,j = 1,2,3$. Plots start with $\bf{\alpha} = (5.0,2.0,2.0)$
+for some $i,j = 1,2,3$. Plots start with $\bf{\alpha}$ = (5.0,2.0,2.0)
 and then values are gradually increased. In the first and the second plots,
 distribution is concentrates around the corner associated with the outcome 1
 (i.e., call topic 1) since the $\alpha_1$  value is greater that the other 
