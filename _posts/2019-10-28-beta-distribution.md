@@ -268,7 +268,7 @@ for the Bernoulli, binomial, and geometric distributions. If Beta
 distribution is used to model the prior distribution of the 
 probability parameters in these distributions, then resulting 
 posterior distribution is Beta distribution. This provides 
-closed from expression for the posterior distribution,
+closed form expression for the posterior distribution,
 making the calculation of the posterior distribution easier.
 
 
