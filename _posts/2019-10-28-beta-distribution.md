@@ -293,6 +293,13 @@ Combining the likelihood and prior distribution, we get posterior
 distribution of fraud probability for the given $k$ fraud calls in 
 $N$ calls as follows:
 
+$$
+\begin{align}
+f(p=\hat{p}|N, k)=\frac{\binom{N}{k} \hat{p}^k(1-\hat{p})^{N-k}\frac{\hat{p}^{\alpha -1}(1-\hat{p})^{\beta -1}}{B(\alpha,\beta)}
+}{1} 
+\end{align}
+$$
+
 
 
 
