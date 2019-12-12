@@ -305,7 +305,7 @@ f(p=\hat{p}|N, k) & = \frac{\binom{N}{k} \hat{p}^k(1-\hat{p})^{N-k}\frac{\hat{p}
 \end{align} 
 $$
 
-Since $\int_{0}^{1} \frac{x^{k+\alpha -1}(1-x)^{N-k+\beta-1}}{B(k+\alpha+k,N-k+\beta)} dx = 1$
+Since $\int_{0}^{1} \frac{x^{k+\alpha -1}(1-x)^{N-k+\beta-1}}{B(k+\alpha,N-k+\beta)} dx = 1$
 from the PDF of Beta distribution, we will have the posterior distribution for the probability
 as
 
