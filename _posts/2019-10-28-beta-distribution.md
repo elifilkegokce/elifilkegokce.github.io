@@ -283,11 +283,11 @@ $$
 Using the Beta distribution, prior distribution for the probability of
 fraud $p$ is given by
 
-$$
-\begin{align}
-f(p=\^{p}|\alpha,\beta)=\frac{1}{B(\alpha,\beta)} p^{\alpha-1}(1-p)^{\beta-1}
-\end{align}
-$$
+#$$
+#\begin{align}
+#f(p=\^{p}|\alpha,\beta)=\frac{1}{B(\alpha,\beta)} p^{\alpha-1}(1-p)^{\beta-1}
+#\end{align}
+#$$
 
 Combining the likelihood and prior distribution, we get posterior
 distribution of fraud probability for the given $k$ fraud calls in 
