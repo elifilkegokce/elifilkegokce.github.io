@@ -272,34 +272,9 @@ closed from expression for the posterior distribution,
 making the calculation of the posterior distribution easier.
 
 
-#Given the probability of fraud call $\hat{p}$, likelihood function of
-#$k$ fraud calls in $N$ calls is the Binomial distribution given by
+Given the probability of fraud call $\hat{p}$, likelihood function of
+$k$ fraud calls in $N$ calls is the Binomial distribution given by
 
-#$$
-#\begin{align}
-#f(k|N, p=\^{p})= {N}\choose{k}p^k(1-p)^{N-k}
-#\end{align}
-#$$
-
-#Using the Beta distribution, prior distribution for the probability of
-#fraud $p$ is given by
-
-#$$
-#\begin{align}
-#f(p=\^{p}|\alpha,\beta)=\frac{1}{B(\alpha,\beta)} p^{\alpha-1}(1-p)^{\beta-1}
-#\end{align}
-#$$
-
-#Combining the likelihood and prior distribution, we get posterior
-#distribution of fraud probability for the given $k$ fraud calls in 
-#$N$ calls as follows:
-
-#$$
-#\begin{align}
-#f(p=\^{p}|N, k) &=$ \frac{{N}\choose{k}\^{p}^k(1-\^{p})^{N-k} \frac{\^{p}^{\alpha-1}(1-\^{p})^{\beta-1}}{B(\alpha,\beta)}
-#}{}
-#\end{align}
-#$$ 
 
 
 
