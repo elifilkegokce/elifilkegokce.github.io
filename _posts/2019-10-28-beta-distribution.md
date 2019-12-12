@@ -311,7 +311,7 @@ as
 
 $$
 \begin{align}
-f(p=\hat{p}|N, k) & = \frac{\hat{p}^{k+\alpha -1}(1-\hat{p})^{N-k+\beta -1}}{B(k+\alpha,N-k\beta)}, \\
+f(p=\hat{p}|N, k) & = \frac{\hat{p}^{k+\alpha -1}(1-\hat{p})^{N-k+\beta -1}}{B(k+\alpha,N-k+\beta)}, \\
 \end{align} 
 $$
 
