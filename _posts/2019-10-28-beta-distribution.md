@@ -300,22 +300,22 @@ f(p=\hat{p}|N, k) & = \frac{\binom{N}{k} \hat{p}^k(1-\hat{p})^{N-k}\frac{\hat{p}
 & = \frac{\binom{N}{k} \hat{p}^{k+\alpha -1}(1-\hat{p})^{N-k+\beta -1} \frac{1}{B(\alpha,\beta)}
 }{\int_{0}^{1} \binom{N}{k} x^{k+\alpha -1}(1-x)^{N-k+\beta-1}\frac{1}{B(\alpha,\beta)} dx} \\
 & = \frac{\binom{N}{k} \hat{p}^{k+\alpha -1}(1-\hat{p})^{N-k+\beta -1}\frac{1}{B(\alpha,\beta)}
-}{\binom{N}{k} \frac{B(\alpha+k,\beta+N-k)}{B(\alpha,\beta)}
-\int_{0}^{1} \frac{x^{k+\alpha -1}(1-x)^{N-k+\beta-1}}{B(\alpha+k,\beta+N-k)} dx} \\
+}{\binom{N}{k} \frac{B(k+\alpha,N-k+\beta)}{B(\alpha,\beta)}
+\int_{0}^{1} \frac{x^{k+\alpha -1}(1-x)^{N-k+\beta-1}}{B(k+\alpha,N-k+\beta)} dx} \\
 \end{align} 
 $$
 
-Since $\int_{0}^{1} \frac{x^{k+\alpha -1}(1-x)^{N-k+\beta-1}}{B(\alpha+k,\beta+N-k)} dx = 1$
+Since $\int_{0}^{1} \frac{x^{k+\alpha -1}(1-x)^{N-k+\beta-1}}{B(k+\alpha+k,N-k+\beta)} dx = 1$
 from the PDF of Beta distribution, we will have the posterior distribution for the probability
 as
 
 $$
 \begin{align}
-f(p=\hat{p}|N, k) & = \frac{\hat{p}^{k+\alpha -1}(1-\hat{p})^{N-k+\beta -1}}{B(\alpha+k,\beta+N-k)}, \\
+f(p=\hat{p}|N, k) & = \frac{\hat{p}^{k+\alpha -1}(1-\hat{p})^{N-k+\beta -1}}{B(k+\alpha,N-k\beta)}, \\
 \end{align} 
 $$
 
-which is the beta distribution with parameters $(\alpha+k, \beta+N-k)$.
+which is the beta distribution with parameters $(k+\alpha, N-k+\beta)$.
 
 
  
