@@ -289,23 +289,21 @@ $(n_1, n_2,...,n_k)$ calls associated with each topic in $N$ calls is
 the Multinomial distribution given by
 
 $$
-f((n_1, n_2,...,n_k)|N, \bf{P})
-$$ $$= 
-\binom{N}{n_1, n_2, ...,n_k} \prod_{i=1}^{k}\hat{p}_i^{n_i}
+f((n_1, n_2,...,n_k)|N, \bf{P}) = \binom{N}{n_1, n_2, ...,n_k} \prod_{i=1}^{k}\hat{p}_i^{n_i}
 $$
 
 Using the Dirichlet distribution, prior distribution for the probability of
 $k$ call topics is given by
 
 $$
-\begin{equation}
- f(\bf{P}|\bf{\alpha})=\frac{1}{\bf{B(\bf{\alpha})}} \prod_{i=1}^kp_i^{\alpha_i-1},
-\end{equation}
+f(\bf{P}|\bf{\alpha})=\frac{1}{\bf{B(\bf{\alpha})}} \prod_{i=1}^k\hat{p}_i^{\alpha_i-1}
 $$
 
 Combining the likelihood and prior distribution, we get posterior
-distribution of fraud probability for the given $k$ fraud calls in 
-$N$ calls as follows:
+distribution of probabilities of $k$ call topics for the given 
+$(n_1, n_2,...,n_k)$ calls associated with each topic in $N$ calls as follows:
+
+
 
 ---
 REFERENCES
