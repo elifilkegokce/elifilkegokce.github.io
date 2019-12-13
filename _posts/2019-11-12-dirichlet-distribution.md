@@ -303,7 +303,18 @@ Combining the likelihood and prior distribution, we get posterior
 distribution of probabilities of $k$ call topics for the given 
 $(n_1, n_2,...,n_k)$ calls associated with each topic in $N$ calls as follows:
 
-
+$$
+\begin{align}
+f(\bf{P}|N, (n_1, n_2,...,n_k)) &  \\
+& = \frac{\binom{N}{k} \hat{p}^k(1-\hat{p})^{N-k}\frac{\hat{p}^{\alpha -1}(1-\hat{p})^{\beta -1}}{B(\alpha,\beta)}
+}{\int_{0}^{1} \binom{N}{k} x^k(1-x)^{N-k}\frac{x^{\alpha -1}(1-x)^{\beta -1}}{B(\alpha,\beta)} dx} \\
+& = \frac{\binom{N}{k} \hat{p}^{k+\alpha -1}(1-\hat{p})^{N-k+\beta -1} \frac{1}{B(\alpha,\beta)}
+}{\int_{0}^{1} \binom{N}{k} x^{k+\alpha -1}(1-x)^{N-k+\beta-1}\frac{1}{B(\alpha,\beta)} dx} \\
+& = \frac{\binom{N}{k} \hat{p}^{k+\alpha -1}(1-\hat{p})^{N-k+\beta -1}\frac{1}{B(\alpha,\beta)}
+}{\binom{N}{k} \frac{B(k+\alpha,N-k+\beta)}{B(\alpha,\beta)}
+\int_{0}^{1} \frac{x^{k+\alpha -1}(1-x)^{N-k+\beta-1}}{B(k+\alpha,N-k+\beta)} dx} \\
+\end{align} 
+$$
 
 ---
 REFERENCES
