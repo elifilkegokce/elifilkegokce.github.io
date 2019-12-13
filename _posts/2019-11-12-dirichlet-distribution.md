@@ -283,29 +283,23 @@ then resulting posterior distribution is Dirichlet distribution. This
 provides closed form expression for the posterior distribution, making 
 the calculation of the posterior distribution easier.
 
-Given the probability of $k$ call topics
-$(\hat{p}_1, \hat{p}_2, ...,\hat{p}_k)$, likelihood function of having
+Given the probability of $k$ call topics $\bf{P}$ 
+= ($\hat{p}_1$, $\hat{p}_2$, ...,$\hat{p}_k$), likelihood function of having
 $(n_1, n_2,...,n_k)$ calls associated with each topic in $N$ calls is 
 the Multinomial distribution given by
 
 $$
-f((n_1, n_2,...,n_k)|N, \bf{P}=(\hat{p}_1, \hat{p}_2, ...,\hat{p}_k)) = 
-\binom{N}{((\hat{p}_1, \hat{p}_2, ...,\hat{p}_k))} \prod_{i=1}^{k}p_i^{n_i}
-$$
-
-$$
-\begin{equation}
- f(\bf{P}|\bf{\alpha})=\frac{1}{\bf{B(\bf{\alpha})}} \prod_{i=1}^kp_i^{\alpha_i-1},
-\end{equation}
+f((n_1, n_2,...,n_k)|N, \bf{P}) = 
+\binom{N}{(n_1, n_2, ...,n_k)} \prod_{i=1}^{k}\hat{p}_i^{n_i}
 $$
 
 Using the Beta distribution, prior distribution for the probability of
 fraud $p$ is given by
 
 $$
-\begin{align}
-f(p=\hat{p}|\alpha,\beta)=\frac{1}{B(\alpha,\beta)} p^{\alpha-1}(1-p)^{\beta-1}
-\end{align}
+\begin{equation}
+ f(\bf{P}|\bf{\alpha})=\frac{1}{\bf{B(\bf{\alpha})}} \prod_{i=1}^kp_i^{\alpha_i-1},
+\end{equation}
 $$
 
 Combining the likelihood and prior distribution, we get posterior
