@@ -316,12 +316,20 @@ f(\bf{P}| \text{N}, \bf{\hat{N}}) &  \\
 \frac{1}{\bf{B(\bf{\alpha})}} \bf{dx}} \\
 & = \frac{\binom{N}{n_1,n_2,...,n_k} \prod_{i=1}^{k}\hat{p}_i^{n_i+\alpha_i-1}
 \frac{1}{\bf{B(\bf{\alpha})}} 
-}{\binom{N}{n_1,n_2,...,n_k} \frac{\bf{B(\bf{\alpha})}}{\bf{B(\bf{\alpha})}}
+}{\binom{N}{n_1,n_2,...,n_k} \frac{\bf{B(\bf{\alpha+\hat{N}})}}{\bf{B(\bf{\alpha})}}
 \int_{0}^{1} \prod_{i=1}^{k}x_i^{n_i+\alpha_i-1}
 \frac{1}{\bf{B(\bf{\alpha+\hat{N}})}} \bf{dx}} \\
-& = \frac{\binom{N}{k} \hat{p}^{k+\alpha -1}(1-\hat{p})^{N-k+\beta -1}\frac{1}{B(\alpha,\beta)}
-}{\binom{N}{k} \frac{B(k+\alpha,N-k+\beta)}{B(\alpha,\beta)}
-\int_{0}^{1} \frac{x^{k+\alpha -1}(1-x)^{N-k+\beta-1}}{B(k+\alpha,N-k+\beta)} dx} \\
+\end{align} 
+$$
+
+Since $\int_{0}^{1} \prod_{i=1}^{k}x_i^{n_i+\alpha_i-1}
+\frac{1}{\bf{B(\bf{\alpha+\hat{N}})}} \bf{dx}} =1 from the PDF of 
+Dirichlet distribution, we will have the posterior distribution for 
+the probability as
+
+$$
+\begin{align}
+f(\bf{P}| \text{N}, \bf{\hat{N}}) = \frac{\prod_{i=1}^{k}\hat{p}_i^{n_i+\alpha_i-1}}{\bf{B(\bf{\alpha+\hat{N}})}} \\
 \end{align} 
 $$
 
