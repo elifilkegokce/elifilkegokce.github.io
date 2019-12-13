@@ -316,7 +316,8 @@ f(\bf{P}|N, (n_1, n_2,...,n_k)) &  \\
 \frac{1}{\bf{B(\bf{\alpha})}} \bf{dx}} \\
 & = \frac{\binom{N}{n_1,n_2,...,n_k} \prod_{i=1}^{k}\hat{p}_i^{n_i+\alpha_i-1}
 \frac{1}{\bf{B(\bf{\alpha})}} 
-}{\binom{N}{n_1,n_2,...,n_k} \int_{0}^{1} \prod_{i=1}^{k}x_i^{n_i+\alpha_i-1}
+}{\binom{N}{n_1,n_2,...,n_k} \frac{1}{\bf{B(\bf{\alpha})}}
+\int_{0}^{1} \prod_{i=1}^{k}x_i^{n_i+\alpha_i-1}
 \frac{1}{\bf{B(\bf{\alpha})}} \bf{dx}} \\
 & = \frac{\binom{N}{k} \hat{p}^{k+\alpha -1}(1-\hat{p})^{N-k+\beta -1}\frac{1}{B(\alpha,\beta)}
 }{\binom{N}{k} \frac{B(k+\alpha,N-k+\beta)}{B(\alpha,\beta)}
