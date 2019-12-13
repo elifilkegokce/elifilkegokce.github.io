@@ -276,10 +276,41 @@ distribution plots in my github repository.
 
 ## 5 One Last Note!
 
-Dirichlet distribution is the conjugate prior for categorical distribution 
-and multinomial distribution. This means that 
+Dirichlet distribution is the conjugate prior for Categorical distribution 
+and Multinomial distribution. If Dirichlet distribution is used to model 
+the prior distribution of the probability parameters in these distributions, 
+then resulting posterior distribution is Dirichlet distribution. This
+provides closed form expression for the posterior distribution, making 
+the calculation of the posterior distribution easier.
 
+Given the probability of $k$ call topics
+$(\hat{p}_1, \hat{p}_2, ...,\hat{p}_k)$, likelihood function of having
+$(n_1, n_2,...,n_k)$ calls associated with each topic in $N$ calls is 
+the Multinomial distribution given by
 
+$$
+f((n_1, n_2,...,n_k)|N, \bf{P}=(\hat{p}_1, \hat{p}_2, ...,\hat{p}_k)) = 
+\binom{N}{((\hat{p}_1, \hat{p}_2, ...,\hat{p}_k))} \prod_{i=1}^{k}p_i^{n_i}
+$$
+
+$$
+\begin{equation}
+ f(\bf{P}|\bf{\alpha})=\frac{1}{\bf{B(\bf{\alpha})}} \prod_{i=1}^kp_i^{\alpha_i-1},
+\end{equation}
+$$
+
+Using the Beta distribution, prior distribution for the probability of
+fraud $p$ is given by
+
+$$
+\begin{align}
+f(p=\hat{p}|\alpha,\beta)=\frac{1}{B(\alpha,\beta)} p^{\alpha-1}(1-p)^{\beta-1}
+\end{align}
+$$
+
+Combining the likelihood and prior distribution, we get posterior
+distribution of fraud probability for the given $k$ fraud calls in 
+$N$ calls as follows:
 
 ---
 REFERENCES
