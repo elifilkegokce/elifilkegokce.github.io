@@ -309,7 +309,11 @@ f(\bf{P}|N, (n_1, n_2,...,n_k)) &  \\
 & = \frac{\binom{N}{n_1,n_2,...,n_k} \prod_{i=1}^{k}\hat{p}_i^{n_i}
 \frac{1}{\bf{B(\bf{\alpha})}} \prod_{i=1}^k\hat{p}_i^{\alpha_i-1}
 }{\int_{0}^{1} \binom{N}{n_1,n_2,...,n_k} \prod_{i=1}^{k}x_i^{n_i}
-\frac{1}{\bf{B(\bf{\alpha})}} \prod_{i=1}^kx_i^{\alpha_i-1}d\bf{x}} \\
+\frac{1}{\bf{B(\bf{\alpha})}} \prod_{i=1}^kx_i^{\alpha_i-1}\bf{dx}} \\
+& = \frac{\binom{N}{n_1,n_2,...,n_k} \prod_{i=1}^{k}\hat{p}_i^{n_i+\alpha_i-1}
+\frac{1}{\bf{B(\bf{\alpha})}} 
+}{\int_{0}^{1} \binom{N}{n_1,n_2,...,n_k} \prod_{i=1}^{k}x_i^{n_i+\alpha_i-1}
+\frac{1}{\bf{B(\bf{\alpha})}} \bf{dx}} \\
 & = \frac{\binom{N}{k} \hat{p}^{k+\alpha -1}(1-\hat{p})^{N-k+\beta -1} \frac{1}{B(\alpha,\beta)}
 }{\int_{0}^{1} \binom{N}{k} x^{k+\alpha -1}(1-x)^{N-k+\beta-1}\frac{1}{B(\alpha,\beta)} dx} \\
 & = \frac{\binom{N}{k} \hat{p}^{k+\alpha -1}(1-\hat{p})^{N-k+\beta -1}\frac{1}{B(\alpha,\beta)}
