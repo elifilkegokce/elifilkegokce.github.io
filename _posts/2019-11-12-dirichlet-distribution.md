@@ -306,7 +306,8 @@ $(n_1, n_2,...,n_k)$ calls associated with each topic in $N$ calls as follows:
 $$
 \begin{align}
 f(\bf{P}|N, (n_1, n_2,...,n_k)) &  \\
-& = \frac{\binom{N}{k} \hat{p}^k(1-\hat{p})^{N-k}\frac{\hat{p}^{\alpha -1}(1-\hat{p})^{\beta -1}}{B(\alpha,\beta)}
+& = \frac{\binom{N}{n_1,n_2,...,n_k} \prod_{i=1}^{k}\hat{p}_i^{n_i}
+\frac{1}{\bf{B(\bf{\alpha})}} \prod_{i=1}^k\hat{p}_i^{\alpha_i-1}
 }{\int_{0}^{1} \binom{N}{k} x^k(1-x)^{N-k}\frac{x^{\alpha -1}(1-x)^{\beta -1}}{B(\alpha,\beta)} dx} \\
 & = \frac{\binom{N}{k} \hat{p}^{k+\alpha -1}(1-\hat{p})^{N-k+\beta -1} \frac{1}{B(\alpha,\beta)}
 }{\int_{0}^{1} \binom{N}{k} x^{k+\alpha -1}(1-x)^{N-k+\beta-1}\frac{1}{B(\alpha,\beta)} dx} \\
