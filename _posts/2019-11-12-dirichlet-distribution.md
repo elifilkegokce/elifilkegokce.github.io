@@ -344,5 +344,7 @@ REFERENCES
 
 [On the Dirichlet Distribution](https://mast.queensu.ca/~communications/Papers/msc-jiayu-lin.pdf)
 
+[Visualizing Dirichlet Distribution](http://blog.bogatron.net/blog/2014/02/02/visualizing-dirichlet-distributions/)
+
 
 
