@@ -323,15 +323,18 @@ f(\bf{P}| \text{N}, \bf{\hat{N}}) &  \\
 $$
 
 Since $\int_{0}^{1} \prod_{i=1}^{k}x_i^{n_i+\alpha_i-1}
-\frac{1}{\bf{B(\bf{\alpha+\hat{N}})}} \bf{dx}} =1 from the PDF of 
+\frac{1}{\bf{B(\bf{\alpha+\hat{N}})}} \bf{dx} =1$ from the PDF of 
 Dirichlet distribution, we will have the posterior distribution for 
 the probability as
 
 $$
 \begin{align}
-f(\bf{P}| \text{N}, \bf{\hat{N}}) = \frac{\prod_{i=1}^{k}\hat{p}_i^{n_i+\alpha_i-1}}{\bf{B(\bf{\alpha+\hat{N}})}} \\
+f(\bf{P}| \text{N}, \bf{\hat{N}}) = \frac{\prod_{i=1}^{k}\hat{p}_i^{n_i+\alpha_i-1}}{\bf{B(\bf{\alpha+\hat{N}})}}, \\
 \end{align} 
 $$
+
+which is the Dirichlet distribution with parameters 
+$\bf{\alpha+\hat{N}}$ = ($\alpha_1+n_1$, $\alpha_2+n_2$,..., $\alpha_k+n_k$)$.
 
 ---
 REFERENCES
