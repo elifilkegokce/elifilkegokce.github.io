@@ -257,7 +257,7 @@ distribution is concentrates around the corner associated with the outcome 1
 two values. When $\alpha_2$ is increased in the the third and fourth plots,
 distribution tends towards the the boundary of outcomes 1 and 2 (i.e., call
 topics 1 and 2) making the distributions, which provides higher probability 
-to topic 2, more favorable. With the increased $alpha_3$ value in the last 
+to topic 2, more favorable. With the increased $\alpha_3$ value in the last 
 plot, distribution moves towards the center of the simplex making the 
 distributions, which provides higher probability to topic 3, more likely. 
 
@@ -323,7 +323,7 @@ f(\bf{P}| \text{N}, \bf{\hat{N}}) &  \\
 $$
 
 Since $\int_{0}^{1} \prod_{i=1}^{k}x_i^{n_i+\alpha_i-1}
-\frac{1}{\bf{B(\bf{\alpha+\hat{N}})}} \bf{dx} =1$ from the PDF of 
+\frac{1}{\bf{B(\bf{\alpha+\hat{N}})}} \bf{dx}$ = 1 from the PDF of 
 Dirichlet distribution, we will have the posterior distribution for 
 the probability as
 
@@ -334,7 +334,7 @@ f(\bf{P}| \text{N}, \bf{\hat{N}}) = \frac{\prod_{i=1}^{k}\hat{p}_i^{n_i+\alpha_i
 $$
 
 which is the Dirichlet distribution with parameters 
-$\bf{\alpha+\hat{N}}$ = ($\alpha_1+n_1$, $\alpha_2+n_2$,..., $\alpha_k+n_k$)$.
+$\bf{\alpha+\hat{N}}$ = ($\alpha_1+n_1$, $\alpha_2+n_2$,..., $\alpha_k+n_k$).
 
 ---
 REFERENCES
