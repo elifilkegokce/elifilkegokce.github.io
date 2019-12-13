@@ -289,12 +289,13 @@ $(n_1, n_2,...,n_k)$ calls associated with each topic in $N$ calls is
 the Multinomial distribution given by
 
 $$
-f((n_1, n_2,...,n_k)|N, \bf{P}) = 
-\binom{N}{(n_1, n_2, ...,n_k)} \prod_{i=1}^{k}\hat{p}_i^{n_i}
+f((n_1, n_2,...,n_k)|N, \bf{P})
+$$ $$= 
+\binom{N}{n_1, n_2, ...,n_k} \prod_{i=1}^{k}\hat{p}_i^{n_i}
 $$
 
-Using the Beta distribution, prior distribution for the probability of
-fraud $p$ is given by
+Using the Dirichlet distribution, prior distribution for the probability of
+$k$ call topics is given by
 
 $$
 \begin{equation}
