@@ -11,7 +11,7 @@ search: false
 REFERENCES
 ---
 
-[Beta Distribution and Baseball](http://varianceexplained.org/statistics/beta_distribution_and_baseball/)
+[Gibbs Sampling for the Uninitiated](https://pdfs.semanticscholar.org/6fb3/1dd73faa5aec66cfe414e235de63247e8b68.pdf?_ga=2.200633256.762164847.1576735017-401941902.1576735017)
 
 [On the Dirichlet Distribution](https://mast.queensu.ca/~communications/Papers/msc-jiayu-lin.pdf)
 
