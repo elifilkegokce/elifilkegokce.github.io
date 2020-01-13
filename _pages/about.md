@@ -8,12 +8,20 @@ author_profile: true
 
 {% include base_path %}
 
-> Hi, I am Emrah Cimren, Lead Data Scientist at Starbucks. I am leading a network optimization team in the Starbuck's Global Supply Chain.
+> Hi!
+> I am Elif Ilke Gokce and I am an Operations Research/Data Scientist at 
+> Bank of America.
 
-> My current work includes long term manufacturing and supply network design and last mile routing. 
+> My current role requires me dealing with wide range of problems everyday
+> including, but not limited to, forecasting, simulation,  optimization, 
+> A/B Testing to natural language processing. 
 
-> I am interested in combining Operations Research with Data Science.
+> My research interest is solving real-world problems using operations 
+> research and machine learning techniques.
+
+It should be noted that all the contents in this website are solely my own
+and do not express the views or opinions of my employer.
 
 Please feel free to contact me if you have any question or comment.
 
-[cimren.1@gmail.com](mailto:cimren.1@gmail.com)
+[elifilke@gmail.com](mailto:elifilke@gmail.com)
