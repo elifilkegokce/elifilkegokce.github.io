@@ -3,11 +3,10 @@ title:  "What is Beta Distribution?"
 search: false
 ---
 
-<div class="text-gray-dark mb-2">
-  .text-gray-dark on white
+<div class="text-gray-light mb-2">
+Intuition, Definition, Derivation, and Analysis of Parameters...
 </div>
 
-Intuition, Definition, Derivation, and Analysis of Parameters
 
 Lately, most of the projects I am working on require me to predict 
 probabilities such as transfer rate of a call, abandonment rate of a 
