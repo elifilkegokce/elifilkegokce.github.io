@@ -3,7 +3,7 @@ title:  "What is Beta Distribution?"
 search: false
 ---
 
-<div class="text-gray-light mb-2">
+<div class="text-gray-200 mb-2">
 Intuition, Definition, Derivation, and Analysis of Parameters...
 </div>
 
