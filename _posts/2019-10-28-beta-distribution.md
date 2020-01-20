@@ -3,18 +3,24 @@ title:  "What is Beta Distribution?"
 search: false
 ---
 
-Lately, most of the projects I am working on requires me to answer the 
-question: "Why do customers call the contact center?". A customer may
-contact to the customer service of a bank  for various reasons. One of 
-the main reason is to report a suspicious transaction. Suppose that you 
-are trying to predict the probability of a call to be associated with a
-suspicious transaction. A naive approach may be to use the ratio of 
-calls reporting a suspicious transaction. However, this may not be a 
-good predictor since a call may include a mixture of topics. Using the 
-prior expectations based on the past data, the best way to predict 
-the proportions and probabilities is with Beta distribution. 
+Intuition, Definition, Derivation, and Analysis of Parameters
 
-> Beta distribution is used to predict proportions and probabilities!
+Lately, most of the projects I am working on require me to predict 
+probabilities such as transfer rate of a call, abandonment rate of a 
+call, or chance of a call to be associated with a fraud (i.e., suspicious) 
+activity. A customer may contact to the customer service for various 
+reasons. One of the main reasons is to report a fraud activity. A naive 
+approach in predicting the chance of a call to be associated with a
+fraud activity may be to use the ratio of calls reporting a fraud 
+activity. However, this may not be a good predictor especially if the
+total number of calls are small and doesn't capture all the 
+uncertainty. Using the prior expectations based on the past data,
+the best way to predict the probabilities is with Beta distribution. 
+
+> Beta distribution is used to model the probability distribution of
+> probabilities!
+
+> Beta distribution is used to predict probabilities!
  
 ## 1 How is Beta Distribution defined?
  
@@ -324,7 +330,7 @@ which is the Beta distribution with parameters $(k+\alpha, N-k+\beta).$
 REFERENCES
 ---
 
-[Beta Distribution and Baseball](http://varianceexplained.org/statistics/beta_distribution_and_baseball/)
+[Understanding the Beta Distribution (using baseball statistic)](http://varianceexplained.org/statistics/beta_distribution_and_baseball/)
 
 [On the Dirichlet Distribution](https://mast.queensu.ca/~communications/Papers/msc-jiayu-lin.pdf)
 
