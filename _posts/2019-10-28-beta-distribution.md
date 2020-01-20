@@ -3,6 +3,10 @@ title:  "What is Beta Distribution?"
 search: false
 ---
 
+<div class="text-gray-dark mb-2">
+  .text-gray-dark on white
+</div>
+
 Intuition, Definition, Derivation, and Analysis of Parameters
 
 Lately, most of the projects I am working on require me to predict 
