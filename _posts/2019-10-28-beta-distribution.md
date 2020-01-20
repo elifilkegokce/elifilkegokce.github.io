@@ -1,5 +1,5 @@
 ---
-title:  "What is Beta Distribution?"
+title:  **"What is Beta Distribution?"**
 search: false
 ---
 
