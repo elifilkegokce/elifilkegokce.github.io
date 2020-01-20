@@ -12,12 +12,13 @@ author_profile: true
 > I am Elif Ilke Gokce and I am an Operations Research/Data Scientist at 
 > Bank of America.
 
-> My current role requires me dealing with wide range of problems everyday
-> including, but not limited to, forecasting, simulation,  optimization, 
-> A/B Testing to natural language processing. 
-
-> My research interest is solving real-world problems using operations 
-> research and machine learning techniques.
+> In my current role, I deal with a wide range of problems everyday from
+> forecasting, simulation,  optimization, A/B Testing to natural language 
+> processing. 
+>
+> I am passionate about learning and developing new methodologies and 
+> applying them to solve real-life problems. This blog consists of the 
+> things that I learn each day.
 
 It should be noted that all the contents in this website are solely my own
 and do not express the views or opinions of my employer.
