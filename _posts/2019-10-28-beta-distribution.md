@@ -3,10 +3,7 @@ title:  "What is Beta Distribution?"
 search: false
 ---
 
-<div class="text-gray-light mb-2">
 Intuition, Definition, Derivation, and Analysis of Parameters...
-</div>
-
 
 Lately, most of the projects I am working on require me to predict 
 probabilities such as transfer rate of a call, abandonment rate of a 
