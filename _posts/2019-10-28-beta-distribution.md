@@ -25,9 +25,9 @@ the best way to predict the probabilities is with Beta distribution.
 ## 1 How is Beta Distribution defined?
  
 Beta distribution has two parameters $\bf{\alpha}$ and $\bf{\beta}$ and,
-similar to probabilities, it is defined on the interval $(0, 1).$  
-Beta distribution provides the probability density function (PDF) of 
-a random value $p$ using the notation below.
+similar to probabilities, it is defined on the interval $(0, 1)$. Beta 
+distribution provides the probability density function (PDF) of a random 
+value (i.e., probability $p$) using the notation below.
 
 Notation:
 
@@ -39,15 +39,14 @@ $$
 \end{equation}
 $$
 
-* $\bf{\alpha}:$ The first parameter of Beta distribution. Effective number of
-observations of $p$ (i.e., event), which is the calls associated with 
-suspicious transactions in our case.
-* $\bf{\beta}:$ The second parameter of Beta distribution. Effective number
-of observations of $(1-p)$ (i.e., no-event), which is the calls that don't 
-involve suspicious transaction related topics in our case.
+* $\bf{\alpha}:$ The first parameter of Beta distribution. Effective 
+number of observations of an event, which is the number of fraud 
+activity calls in our case.
+* $\bf{\beta}:$ The second parameter of Beta distribution. Effective 
+number of observations of no-events, which is the number of non-fraud 
+calls in our case.
 * $\bf{B(\alpha, \beta)}:$ Beta function, which has a constant value for given
-$\alpha$ and $\beta.$ Using the parameters $\alpha$ 
-and $\beta$, and the gamma function $\Gamma(n)$, it is defined by
+$\alpha$ and $\beta$, is defined by
 
 $$
 \begin{equation}
@@ -56,7 +55,7 @@ B(\alpha,\beta)=\frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}
 $$
 
 Finally, for $\alpha>0$ and $\beta>0$, we define the PDF of Beta 
-distribution by 
+distribution for $0 \le p \le 1$ as follows:
 
 $$
 \begin{equation}
@@ -65,12 +64,18 @@ f(p|\alpha,\beta)=\frac{1}{B(\alpha,\beta)} p^{\alpha-1}(1-p)^{\beta-1}
 $$
 
 As you may observe in PDF of Beta distribution, $p^{\alpha-1}(1-p)^{\beta-1}$
-weighs the probability of an event $p$ and the probability of no-event $(1-p)$. 
-In our case, event occurs if a call involves a suspicious transaction. 
-However, the function $p^{\alpha-1}(1-p)^{\beta-1}$, as PDF by itself, does 
-not guarantee that the area under the curve of the PDF to be 1. In order to 
-ensure that the total probability is 1, it is normalized by dividing by the
-constant $B(\alpha,\beta).$
+weighs the probability of an event $p$ and the probability of no-event 
+$(1-p)$. In our case, event is the fraud calls. Parameters $\alpha$ and 
+$\beta$ can be thought as the number of fraud calls and the number of
+non-fraud calls. If the number fraud calls $\alpha$ is larger (smaller) 
+than the number of non-fraud calls $\beta$, then higher (lower) 
+weight will be given to $p$ and probability distribution will shift 
+toward right (left). However, the function $p^{\alpha-1}(1-p)^{\beta-1}$, 
+as PDF by itself, does not guarantee that the area under the curve of 
+the PDF to be 1. In order to ensure that the total probability is 1, it 
+is normalized by dividing by the constant $B(\alpha,\beta)$.
+
+
 
 ## 2 Let's Derive the Beta Function!
 
