@@ -238,45 +238,13 @@ b_list = [0.01, 0.75, 0.9]
 a_list = [0.01, 0.75, 0.9]
 plot_beta(a_list, b_list, plot_title, color_list)
 ```
-
-## 4 Example: Bayesian Updating
-
-Step 1: Suppose that we are interested in predicting the probability 
-of a call within a certain group of incoming calls to be 
-associated with a suspicious transaction. Based on historical 
-data, average probability of a call to be associated with a 
-suspicious transaction is about 0.3, which can range between 0.245 and
-0.358. This can be formulated using Beta distribution with $\alpha = 75$ 
-and $\beta=175.$ As new calls are received, we update the parameters 
-$\alpha$ and $\beta.$ 
-
-Step 2: Suppose that 7 new calls are received and all of them
-is associated with a suspicious transaction. Then, we update our
-probability distribution using parameters $\alpha = (75+7)$ and 
-$\beta=175$ to include our new information. 
-
-Step 3: Suppose that 5 more calls are received and none of them
-is associated with a suspicious transaction. Then, we update our
-probability distribution using parameters $\alpha = 82$ and 
-$\beta=(175+5)$
-
-Step 4: Suppose that 110 more calls are handled and 50 of these
-calls are associated with a suspicious transaction.  Then, we 
-update our probability distribution using parameters 
-$\alpha = (82+50)$ and $\beta=(180+60)$ and expectation becomes 
-$82/(82+240) \approx 0.35$
-
-![](/images/beta-distribution/Ex1.png){: .align-right .width-half} | ![](/images/beta-distribution/Ex2.png){: .align-right .width-half} 
-
-![](/images/beta-distribution/Ex3.png){: .align-right .width-half} | ![](/images/beta-distribution/Ex4.png){: .align-right .width-half} 
-
  
-## 5 One Last Note!
+## 4 One Last Note!
 
 Beta distribution enables us to model the random behaviour of
 probabilities. If were are only interested in modelling the PDF of
 probabilities, we can take any probability distribution function which
-is always positive and normalize it using the same approach as in Beta 
+is always positive and normalize it as in Beta 
 distribution. There is another interesting property of the Beta 
 distribution that makes it desirable. Beta distribution is 
 the [conjugate prior probability 
@@ -291,13 +259,12 @@ making the calculation of the posterior distribution easy.
 Given the probability of fraud call $\hat{p}$, likelihood function of
 $k$ fraud calls in $N$ calls is the Binomial distribution given by
 
-
 $$
 f(k|N, p=\hat{p}) = \binom{N}{k} p^k(1-p)^{N-k}
 $$
 
 Using the Beta distribution, prior distribution for the probability of
-fraud $p$ is given by
+fraud call $p$ is given by
 
 $$
 \begin{align}
@@ -333,10 +300,41 @@ $$
 
 which is the Beta distribution with parameters $(k+\alpha, N-k+\beta).$
 
+If we use Beta distribution as a prior in modelling the probability of
+an event, then we will also have Beta distribution as posterior. This
+makes the computations easy while updating the model as more data comes
+in. Parameters for the updated posterior distribution can be calculated
+by simply adding the number of events (fraud calls) and non-events
+(non-fraud calls) to the existing parameters $\alpha$ and $\beta$,
+ respectively.
 
+**Example: Bayesian Updating**
 
+Step 1: Suppose that we are interested in predicting the probability 
+of a fraud call within a certain group of incoming calls. Based on 
+historical data, average probability of a fraud call is about 0.3, 
+which can range between 0.245 and 0.358. This can be formulated 
+using Beta distribution with $\alpha = 75$ and $\beta=175.$ As 
+new calls are received, we update the parameters $\alpha$ 
+and $\beta.$ 
 
- 
+Step 2: Suppose that 7 new fraud calls are received. Then, we 
+update our probability distribution using parameters 
+$\alpha = (75+7)$ and $\beta=175$ to include our new information. 
+
+Step 3: Suppose that 5 more non-fraud calls are received. Then, 
+we update our probability distribution using parameters 
+$\alpha = 82$ and $\beta=(175+5)$
+
+Step 4: Suppose that 110 more calls are received and 50 of them
+are fraud calls.  Then, we update our probability distribution 
+with $\alpha = (82+50)$ and $\beta=(180+60)$ and expectation 
+becomes $82/(82+240) \approx 0.35$
+
+![](/images/beta-distribution/Ex1.png){: .align-right .width-half} | ![](/images/beta-distribution/Ex2.png){: .align-right .width-half} 
+
+![](/images/beta-distribution/Ex3.png){: .align-right .width-half} | ![](/images/beta-distribution/Ex4.png){: .align-right .width-half} 
+
 
 ---
 REFERENCES
