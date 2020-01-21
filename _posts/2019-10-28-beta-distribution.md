@@ -63,17 +63,20 @@ f(p|\alpha,\beta)=\frac{1}{B(\alpha,\beta)} p^{\alpha-1}(1-p)^{\beta-1}
 \end{equation}
 $$
 
-As you may observe in PDF of Beta distribution, $p^{\alpha-1}(1-p)^{\beta-1}$
-weighs the probability of an event $p$ and the probability of no-event 
-$(1-p)$. In our case, event is the fraud calls. Parameters $\alpha$ and 
-$\beta$ can be thought as the number of fraud calls and the number of
-non-fraud calls. If the number fraud calls $\alpha$ is larger (smaller) 
-than the number of non-fraud calls $\beta$, then higher (lower) 
-weight will be given to $p$ and probability distribution will shift 
-toward right (left). However, the function $p^{\alpha-1}(1-p)^{\beta-1}$, 
-as PDF by itself, does not guarantee that the area under the curve of 
-the PDF to be 1. In order to ensure that the total probability is 1, it 
-is normalized by dividing by the constant $B(\alpha,\beta)$.
+As you may observe in PDF of Beta distribution, numerator 
+$p^{\alpha-1}(1-p)^{\beta-1}$ weighs the probability of an event $p$ 
+and the probability of no-event $(1-p)$. In our case, event is the 
+fraud calls. Parameters $\alpha$ and $\beta$ can be thought as the 
+number of fraud calls and the number of non-fraud calls. If the number 
+fraud calls $\alpha$ is larger (smaller) than the number of non-fraud 
+calls $\beta$, then higher (lower) weight will be given to $p$ and 
+probability distribution will shift toward right (left). However, the 
+function $p^{\alpha-1}(1-p)^{\beta-1}$, as PDF by itself, does not 
+guarantee that the area under the curve of the PDF to be 1. In order 
+to ensure that the total probability is 1, it is normalized by dividing 
+by the constant $B(\alpha,\beta)$.
+
+
 
 
 
@@ -271,17 +274,19 @@ $82/(82+240) \approx 0.35$
 ## 5 One Last Note!
 
 Beta distribution enables us to model the random behaviour of
-proportions and probabilities. There is another interesting 
-property of the Beta distribution. Beta distribution is 
+probabilities. If were are only interested in modelling the PDF of
+probabilities, we can take any probability distribution function which
+is always positive and normalize it using the same approach as in Beta 
+distribution. There is another interesting property of the Beta 
+distribution that makes it desirable. Beta distribution is 
 the [conjugate prior probability 
 distribution](https://en.wikipedia.org/wiki/Conjugate_prior) 
-for the Bernoulli, binomial, and geometric distributions. If Beta
-distribution is used to model the prior distribution of the 
-probability parameters in these distributions, then resulting 
-posterior distribution is Beta distribution. This provides 
+for the Bernoulli, binomial, negative binomial, and geometric 
+distributions. If Beta distribution is used to model the prior 
+distribution of the probability parameters in these distributions, 
+then resulting posterior distribution is Beta distribution. This provides 
 closed form expression for the posterior distribution,
-making the calculation of the posterior distribution easier.
-
+making the calculation of the posterior distribution easy.
 
 Given the probability of fraud call $\hat{p}$, likelihood function of
 $k$ fraud calls in $N$ calls is the Binomial distribution given by
@@ -327,6 +332,8 @@ f(p=\hat{p}|N, k) & = \frac{\hat{p}^{k+\alpha -1}(1-\hat{p})^{N-k+\beta -1}}{B(k
 $$
 
 which is the Beta distribution with parameters $(k+\alpha, N-k+\beta).$
+
+
 
 
  
