@@ -174,8 +174,9 @@ When $\alpha=\beta$, PDF of Beta is symmetric around $0.5$. Distribution is
 U-shaped for $\alpha=\beta<1$. When $\alpha=\beta \rightarrow 0,$ Beta
 distribution becomes Bernoulli distribution with equal probability 0.5 at
 $p=0$ and $p=1$ and zero elsewhere. When $\alpha=\beta=1$, you will have
-zero observation for event and non-event. In that case, probability
-of an event and non-event is the same on through $\[0,1\]$ and 
+zero observation for event and non-event. In that case, shape of Beta
+distribution is straight line, probability
+of an event and non-event is the same through $\[0,1\]$, and 
 Beta distribution is equivalent to Uniform distribution. Beta is 
 bell-shaped for $\alpha=\beta>2$. Since we have the same number
 of observations for event and non-event, the probability of event
