@@ -77,9 +77,6 @@ to ensure that the total probability is 1, it is normalized by dividing
 by the constant $B(\alpha,\beta)$.
 
 
-
-
-
 ## 2 Let's Derive the Beta Function!
 
 Since the area under the curve of the PDF should be equal to 1, from
@@ -154,11 +151,14 @@ $$
 ## 3 Parameters of Beta Distribution
 
 PDF of the Beta distribution has two shape parameters; $\alpha$ and 
-$\beta.$ When they get smaller, resulting distribution is distributed 
-more sparsely. As $\alpha, \beta \rightarrow 0,$ probability parameter 
+$\beta$. Shape of Beta distribution changes as the values of $\alpha$ and 
+$\beta$ are changed. It can be  U-shaped, straight-line, or bell-shaped. 
+
+When $\alpha$ and $\beta$ are decreased, resulting Beta distribution 
+becomes more sparse. As $\alpha, \beta \rightarrow 0$, probability 
 $p$ concentrates more and more near 0 or 1. When they are equal to 1, 
 possibility of $p$ to take on any value between 0 and 1 becomes equally 
-likely. When the parameters get larger, distribution tighten about the 
+likely. When the parameters get larger, distribution tighten around the 
 expectations. Graphs below show how PDF of Beta changes with $\alpha$ 
 and $\beta.$
 
@@ -170,15 +170,18 @@ and $\beta.$
 
 ![](/images/beta-distribution/beta_a_equal_b_less1.png){: .align-right .width-half} | ![](/images/beta-distribution/beta_a_equal_b.png){: .align-right .width-half} 
 
-When $\alpha=\beta$, PDF of Beta is symmetric around $0.5$ Distribution is 
-U-shaped for $\alpha=\beta<1.$ When $\alpha=\beta \rightarrow 0,$ Beta
+When $\alpha=\beta$, PDF of Beta is symmetric around $0.5$. Distribution is 
+U-shaped for $\alpha=\beta<1$. When $\alpha=\beta \rightarrow 0,$ Beta
 distribution becomes Bernoulli distribution with equal probability 0.5 at
-$p=0$ and $p=1$ and zero elsewhere. When $\alpha=\beta=1,$ Beta distribution
-is equivalent to Uniform distribution. Beta is bell-shaped for 
-$\alpha=\beta>2$. When $\alpha=\beta \rightarrow \inf,$ $p$ concentrates 
-around 0.5, variance of probability $p$ converges to 0, and PDF becomes
-sharper. When each call is equally likely to be about a suspicious call 
-or not, we choose a higher value for $\alpha$ and $\beta.$
+$p=0$ and $p=1$ and zero elsewhere. When $\alpha=\beta=1$, you will have
+zero observation for event and non-event. In that case, probability
+of an event and non-event is the same on through $\[0,1\]$ and 
+Beta distribution is equivalent to Uniform distribution. Beta is 
+bell-shaped for $\alpha=\beta>2$. Since we have the same number
+of observations for event and non-event, the probability of event
+is highest at 0.5. When $\alpha=\beta \rightarrow \inf,$ $p$ concentrates 
+more around 0.5, variance of probability $p$ converges to 0, and PDF becomes
+sharper. 
 
 As seen in the below graphs, for $\alpha \ne \beta$, Beta distribution is 
 skewed to the right or left based on the parameter dominated. If $\alpha$
