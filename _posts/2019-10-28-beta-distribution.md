@@ -5,12 +5,14 @@ search: false
 
 Intuition, Definition, Derivation, and Analysis of Parameters...
 
-Lately, most of the projects I am working on require me to predict 
-probabilities such as transfer rate of a call, abandonment rate of a 
-call, or chance of a call to be associated with a fraud (i.e., suspicious) 
-activity. A customer may contact to the customer service for various 
-reasons. One of the main reasons is to report a fraud activity. A naive 
-approach in predicting the chance of a call to be associated with a
+As Analysts/Scientists/Engineers, we predict various probabilities such 
+as abandonment rate of a customer, click-through rate of a link, chance
+of a call to be transferred to another agent, or chance of a call to be 
+associated with a certain topic such as fraud, transaction, or 
+cancellation. A customer may contact to the customer service for various 
+reasons. Suppose that you are interested in calculating the rate of 
+customers calling about a fraud activity. A naive approach 
+in predicting the chance of a call to be associated with a
 fraud activity may be to use the ratio of calls reporting a fraud 
 activity. However, this may not be a good predictor especially if the
 total number of calls are small and doesn't capture all the 
