@@ -6,7 +6,8 @@ search: false
 Intuition, Definition, Derivation, and Analysis of Parameters...
 
 As Analysts/Scientists/Engineers, we predict various probabilities such 
-as click-through rate of a link, abandonment rate of a call coming to 
+as click-through rate of a link, chance of a customer to respond to a 
+survey, abandonment rate of a call coming to 
 a customer service, chance of a call to be transferred to another agent, 
 or chance of a call to be associated with a certain topic such as fraud
 activity, order a new item or cancellation. Suppose that you are 

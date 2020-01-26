@@ -3,13 +3,15 @@ title:  "What is Dirichlet Distribution?"
 search: false
 ---
 
+Intuition, Definition, Derivation, and Parameters...
+
 We have discussed [Beta Distribution](https://elifilkegokce.github.io/beta-distribution/)
-in our previous post. If customers had called the contact center for only two
+in our previous post. If customers had called a call center for only two
 reasons, then Beta distribution would have been enough to formulate the
-probability of a call to be associated with a certain reason. However, calls
-are usually related to multiple topics. A call may be associated with
-bill payment, account information update and check order at the same time. 
-Suppose after counting the number of words associated with each topic 
+probability of a call to be associated with a certain topic. However, calls
+can be related to multiple topics. A call may be associated with
+paying a bill, updating an account information, and ordering a new item 
+at the same time. Suppose after counting the number of words associated with each topic 
 in the call transcript, we find out that there are 500 words in the 
 transcript. Out of these, 250 words are associated with bill payment, 150
 of them is associated with account information update and the remaining 
