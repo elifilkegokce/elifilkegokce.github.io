@@ -37,11 +37,11 @@ probability distributions as in the table below.
 |                  | **500** | **1.000** | | | **550** | **1.00**  | | | **480** | **1.00**  |
 
 In that case, we need a generalized model, which considers the 
-uncertainty in the probabilities $\bf{P}$ = ($p_1, p_2,...,p_k$). 
-For a given set of $k$ events (call topics), Dirichlet distribution, 
-which is a generalization of the Beta distribution into multiple 
-dimensions, can be used to describe the probability density of all 
-possible probability values of $\bf{P}$. 
+uncertainty in the probabilities $\bf{P}$ = ($p_1, p_2,...,p_k$) of a
+given set of $k$ events (topics). Dirichlet distribution, which is a 
+generalization of the Beta distribution into multiple dimensions, can 
+be used to describe the probability density of all possible probability 
+values of $\bf{P}$. 
 
 > Dirichlet distribution is the multivariate generalization of the 
 >[Beta Distribution](https://elifilkegokce.github.io/beta-distribution/)!
