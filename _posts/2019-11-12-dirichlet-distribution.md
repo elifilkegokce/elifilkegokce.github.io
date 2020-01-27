@@ -52,7 +52,7 @@ values of $\bf{P}$.
  
 ## 1 How is Dirichlet Distribution defined?
 
-Dirichlet distribution is parameterized by a positive-valued vector 
+Dirichlet distribution is parameterized by a positive real-valued vector 
 $\bf{\alpha}$ = ($\alpha_1$, $\alpha_2$,...,$\alpha_k$), where each
 parameter $\alpha_i$ is corresponding to an event (topic).  
 
