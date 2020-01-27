@@ -108,7 +108,7 @@ for 3 events.
 
 ![](/images/dirichlet-distribution/2Simplex.png){: .align-center height="50%" width="50%"}
 
-Beta distribution is a special case of Dirichlet distribution for$k=2$ 
+Beta distribution is a special case of Dirichlet distribution for $k=2$ 
 events. By replacing $\alpha_1 \rightarrow \alpha$, $\alpha_2 \rightarrow \beta$, 
 $p_1 \rightarrow p,$ and $p_2 \rightarrow (1-p),$ we get [Beta Distribution](https://elifilkegokce.github.io/beta-distribution/), 
 $B(\alpha,\beta)$. 
@@ -122,7 +122,7 @@ is assigned to $p_i$ and probability density is shift towards that
 event (topic). However, the function $\prod_{i=1}^kp_i^{\alpha_i-1}$ , 
 as PDF by itself, does not guarantee that the area under the curve of 
 the PDF to be 1. In order to ensure that the total probability is 1, 
-it is normalized by dividing by the constant $\bf{B(\bf{\alpha})}.$ 
+it is normalized by dividing a constant $\bf{B(\bf{\alpha})}.$ 
 
 
 ## 2 Let's Derive the PDF of Dirichlet Distribution!
