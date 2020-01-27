@@ -197,7 +197,17 @@ $$
 &\bigg( \prod_{i=1}^{k-1} v_i^{\alpha_i-1} \bigg)
 \bigg(1- \sum_{i=1}^{k-1}v_i\bigg)^{\alpha_k-1} dv_1 dv_2...dv_{k-1}\\\\
 \end{align}
+& = \Gamma\bigg(\sum_{i=1}^k\alpha_i\bigg) \bf{B(\bf{\alpha})} 
 $$
+
+Finally, from the last equation, we have
+
+$$
+\begin{equation}
+\bf{B(\bf{\alpha})} =\frac{\prod_{i=1}^{k} \Gamma(\alpha_i)}{\Gamma(\sum_{i=1}^{k} \alpha_i)}
+\end{equation}
+$$
+
 
 ## 3 Parameters of Dirichlet Distribution
 
