@@ -97,7 +97,7 @@ where $\sum_{i=1}^kp_i =1$ and $p_i \ge 0$ for $i=1,2,...,k.$
 Since probability $p_i$ cannot be negative and the sum of the 
 probabilities must be equal to one, $\sum_{i=1}^kp_i =1$, one 
 probability can be determined by deducting the remaining $k-1$ 
-probabilities from 1. Therefore, all possible values of the probability 
+probabilities from 1. As a result, all possible values of the probability 
 vector $\bf{P}$ can be defined by the $(k-1)-$dimensional 
 polytope (convex hull of $k$ vertices). Technically, 
 this $(k-1)-$dimensional polytope is known as $(k-1)-$simplex and 
