@@ -47,8 +47,8 @@ values of $\bf{P}$.
 >[Beta Distribution](https://elifilkegokce.github.io/beta-distribution/)!
 
 > Dirichlet distribution is used to model the probability distributions 
-> of non-negative probability vectors ($p_1$, $p_2$,...,$p_k$), whose 
-> elements are sums to 1.
+> of non-negative probability vectors $\bf{P}$ = ($p_1$, $p_2$,...,$p_k$), 
+> whose elements are sums to 1.
  
 ## 1 How is Dirichlet Distribution defined?
 
