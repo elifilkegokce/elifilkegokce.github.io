@@ -41,7 +41,7 @@ uncertainty in the probabilities $\bf{P}$. For a given set of $k$
 events (call topics), Dirichlet distribution, which is a generalization 
 of the Beta distribution into multiple dimensions, can be used to describe
 the probability density of all possible probability values of $\bf{P}$ =
-($p_1$, $p_2$,...,$p_k$). 
+($p_1, p_2,...,p_k$). 
 
 > Dirichlet distribution is the multivariate generalization of the 
 >[Beta Distribution](https://elifilkegokce.github.io/beta-distribution/)!
@@ -52,10 +52,9 @@ the probability density of all possible probability values of $\bf{P}$ =
  
 ## 1 How is Dirichlet Distribution defined?
 
-Dirichlet distribution is parameterized by a positive vector 
-$\bf{\alpha}$ = ($\alpha_1$, $\alpha_2$,...,$\alpha_k$) with
-$\alpha_i >0$ for $i=1,2,...,k$, where each parameter $\alpha_i$ is
-corresponding to an event (topic.  
+Dirichlet distribution is parameterized by a positive-valued vector 
+$\bf{\alpha}$ = ($\alpha_1$, $\alpha_2$,...,$\alpha_k$), where each
+parameter $\alpha_i$ is corresponding to an event (topic).  
 
 Using the notation below, Dirichlet distribution provides the 
 probability density function (PDF) of random values (probabilities) 
@@ -96,15 +95,16 @@ $$
 where $\sum_{i=1}^kp_i =1$ and $p_i \ge 0$ for $i=1,2,...,k.$
 
 Since probability, $p_i,$ cannot be negative and the sum of the 
-probabilities must be equal to one, $\sum_{i=1}^kp_i =1,$ and none of the ,
-all possible values of the probability vector, $\bf{P},$ is defined by the 
-$(k-1)-$dimensional polytope, which is the convex hull of $k$ vertices. Since
-one probability can be determined by deducting the remaining $k-1$ 
-probabilities from 1, one degree of freedom is lost. Technically, this
-$(k-1)-$dimensional polytope is known as $(k-1)-$simplex and it is called 
-the `support` of the Dirichlet distribution. For example, for $k=3$ events, 
-the figure below shows the 2-dimensional simplex, which is a triangle and 
-consists of all possible probability values for 3 events.     
+probabilities must be equal to one, $\sum_{i=1}^kp_i =1$, one 
+probability can be determined by deducting the remaining $k-1$ 
+probabilities from 1. All possible values of the probability 
+vector, $\bf{P},$ can be defined by the $(k-1)-$dimensional 
+polytope, which is the convex hull of $k$ vertices. Technically, 
+this $(k-1)-$dimensional polytope is known as $(k-1)-$simplex and 
+it is called the `support` of the Dirichlet distribution. For example, 
+for $k=3$ events, the figure below shows the 2-dimensional simplex, 
+which is a triangle and consists of all possible probability values 
+for 3 events.     
 
 ![](/images/dirichlet-distribution/2Simplex.png){: .align-center height="50%" width="50%"}
 
@@ -113,16 +113,19 @@ events. By replacing $\alpha_1 \rightarrow \alpha$, $\alpha_2 \rightarrow \beta$
 $p_1 \rightarrow p,$ and $p_2 \rightarrow (1-p),$ we get [Beta Distribution](https://elifilkegokce.github.io/beta-distribution/), 
 $B(\alpha,\beta)$. 
 
-As you may observe in the PDF of Dirichlet distribution, 
-$\prod_{i=1}^kp_i^{\alpha_i-1}$ weighs the probability of each event $p_i.$ 
-In our case, each event is a call topic. However, the function 
-$\prod_{i=1}^kp_i^{\alpha_i-1}$ , as PDF by itself, does not guarantee 
-that the area under the curve of the PDF to be 1. In order to ensure 
-that the total probability is 1, it is normalized by dividing by the 
-constant $\bf{B(\bf{\alpha})}.$ 
+As you may observe in the PDF of Dirichlet distribution, numerator
+$\prod_{i=1}^kp_i^{\alpha_i-1}$ weighs the probability of each event 
+$p_i$. In our case, events are call topics. Each parameter $\alpha_i$
+can be thought as the number of calls about topic $i$. If the value 
+of $\alpha_i$ is higher than the other parameters, then larger weight 
+is assigned to $p_i$ and probability density is shift towards that 
+event (topic). However, the function $\prod_{i=1}^kp_i^{\alpha_i-1}$ , 
+as PDF by itself, does not guarantee that the area under the curve of 
+the PDF to be 1. In order to ensure that the total probability is 1, 
+it is normalized by dividing by the constant $\bf{B(\bf{\alpha})}.$ 
+
 
 ## 2 Let's Derive the PDF of Dirichlet Distribution!
-
 
 Process used to derive the PDF of Dirichlet distribution is very similar to
 that of Beta distribution. Similarly, since the area under the curve of 
