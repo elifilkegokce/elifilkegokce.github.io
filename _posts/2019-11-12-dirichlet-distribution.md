@@ -196,8 +196,8 @@ $$
 \int_{x_{k-1}=0}^{1}...\int_{x_1=0}^{1} \\\\
 &\bigg( \prod_{i=1}^{k-1} v_i^{\alpha_i-1} \bigg)
 \bigg(1- \sum_{i=1}^{k-1}v_i\bigg)^{\alpha_k-1} dv_1 dv_2...dv_{k-1}\\\\
+& = \Gamma\bigg(\sum_{i=1}^k\alpha_i\bigg) \bf{B(\bf{\alpha})} \\\\
 \end{align}
-& = \Gamma\bigg(\sum_{i=1}^k\alpha_i\bigg) \bf{B(\bf{\alpha})} 
 $$
 
 Finally, from the last equation, we have
