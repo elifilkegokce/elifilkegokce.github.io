@@ -94,14 +94,14 @@ $$
 
 where $\sum_{i=1}^kp_i =1$ and $p_i \ge 0$ for $i=1,2,...,k.$
 
-Since probability, $p_i,$ cannot be negative and the sum of the 
+Since probability $p_i$ cannot be negative and the sum of the 
 probabilities must be equal to one, $\sum_{i=1}^kp_i =1$, one 
 probability can be determined by deducting the remaining $k-1$ 
-probabilities from 1. All possible values of the probability 
-vector, $\bf{P},$ can be defined by the $(k-1)-$dimensional 
-polytope, which is the convex hull of $k$ vertices. Technically, 
+probabilities from 1. Therefore, all possible values of the probability 
+vector $\bf{P}$ can be defined by the $(k-1)-$dimensional 
+polytope (convex hull of $k$ vertices). Technically, 
 this $(k-1)-$dimensional polytope is known as $(k-1)-$simplex and 
-it is called the `support` of the Dirichlet distribution. For example, 
+called the `support` of the Dirichlet distribution. For example, 
 for $k=3$ events, the figure below shows the 2-dimensional simplex, 
 which is a triangle and consists of all possible probability values 
 for 3 events.     
