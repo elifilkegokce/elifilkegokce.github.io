@@ -71,7 +71,7 @@ $$
 $$
 
 * $\bf{\alpha}$ = ($\alpha_1$, $\alpha_2$,...,$\alpha_k$): Positive 
-vector of parameters. Concentration parameter $\alpha_i$ is the 
+real-valued vector of parameters. Concentration parameter $\alpha_i$ is the 
 effective number of observations associated with the event (topic) $p_i.$
 
 * $\bf{B(\bf{\alpha})}$: Beta function, which has a constant value 
