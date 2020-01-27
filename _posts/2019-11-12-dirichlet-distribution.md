@@ -8,48 +8,58 @@ Intuition, Definition, Derivation, and Parameters...
 We have discussed [Beta Distribution](https://elifilkegokce.github.io/beta-distribution/)
 in our previous post. If customers had called a call center for only two
 reasons, then Beta distribution would have been enough to formulate the
-probability of a call to be associated with a certain topic. However, calls
-can be related to multiple topics. A call may be associated with
+probability of a call to be associated with a certain topic. However, 
+a call (or any text such as a news, an article, a book, or an 
+e-mail ...) can be related to multiple topics. It may be associated with
 paying a bill, updating an account information, and ordering a new item 
-at the same time. Suppose after counting the number of words associated with each topic 
-in the call transcript, we find out that there are 500 words in the 
-transcript. Out of these, 250 words are associated with bill payment, 150
-of them is associated with account information update and the remaining 
-100 is associated with check order. The probability distribution of three 
-topics can be obtained by normalizing the word counts of each topic; 
-i.e., dividing word count of each topic by the number of total words in the
-call transcript. Then, the probability distribution of topics
-become $\bf{P}$ = (250, 150, 100)/100 = (0.5, 0.3, 0.2). Because of 
-the inevitable variability in the call process, it is possible to get calls 
-which is related to these three topics, but with different probability 
-distributions as in the table below.
+at the same time. 
 
-|                |   Call 1  |         | | |   Call 2  |         | | |   Call 3  |         |
-| :------------- | :-------: | :-----: | | | :-------: | :-----: | | | :-------: | :-----: |
-| **Topic**      |**words**|  $\bf{P}$ | | |**words**|  $\bf{P}$ | | |**words**|  $\bf{P}$ |
-| Bill Payment   |   250   |   0.500   | | |   264   |   0.480   | | |   264   |   0.550   |  
-| Account Update |   150   |   0.300   | | |   187   |   0.340   | | |   132   |   0.275   |
-| Check Order    |   100   |   0.200   | | |    99   |   0.180   | | |    84   |   0.175   |
+Suppose after counting the number of words associated with each topic 
+in a call, we find out that there are 500 words in the call transcript. 
+Out of these, 250 words are associated with paying a bill, 150
+of them is associated with updating an account information and the 
+remaining 100 is associated with ordering a new item. By normalizing the 
+word counts of each topic (i.e., dividing word count of each topic by 
+the total number of words in the call transcript), we may have
+probability distribution of the topics as $\bf{P}$ = 
+(250, 150, 100)/100 = (0.5, 0.3, 0.2). However, variability
+is inevitable in a call (or in any text). It is possible to get calls, 
+which is related to the three topics considered, but with different 
+probability distributions as in the table below.
+
+|                  |   Call 1  |         | | |   Call 2  |         | | |   Call 3  |         |
+| :-------------   | :-------: | :-----: | | | :-------: | :-----: | | | :-------: | :-----: |
+| **Topic**        |**words**|  $\bf{P}$ | | |**words**|  $\bf{P}$ | | |**words**|  $\bf{P}$ |
+| Bill Payment     |   250   |   0.500   | | |   264   |   0.480   | | |   264   |   0.550   |  
+| Account Update   |   150   |   0.300   | | |   187   |   0.340   | | |   132   |   0.275   |
+| Order a new Item |   100   |   0.200   | | |    99   |   0.180   | | |    84   |   0.175   |
 | =====
-|                | **500** | **1.000** | | | **550** | **1.00**  | | | **480** | **1.00**  |
+|                  | **500** | **1.000** | | | **550** | **1.00**  | | | **480** | **1.00**  |
 
-In that case, we need a generalized model, which describe the uncertainty in 
-the probabilities $\bf{P}.$ Dirichlet distribution, which is the generalization of
-the Beta distribution into multiple dimensions, and provides the probability 
-density of all possible probability values of $\bf{P}$ =($p_1$, $p_2$,...,$p_k$) for 
-a given set of $k$ events (i.e., call topics). 
+In that case, we need a generalized model, which considers the 
+uncertainty in the probabilities $\bf{P}$. For a given set of $k$ 
+events (call topics), Dirichlet distribution, which is a generalization 
+of the Beta distribution into multiple dimensions, can be used to describe
+the probability density of all possible probability values of $\bf{P}$ =
+($p_1$, $p_2$,...,$p_k$). 
 
 > Dirichlet distribution is the multivariate generalization of the 
 >[Beta Distribution](https://elifilkegokce.github.io/beta-distribution/)!
 
+> Dirichlet distribution is used to model the probability distributions 
+> of non-negative probability vectors ($p_1$, $p_2$,...,$p_k$), whose 
+> elements are sums to 1.
  
 ## 1 How is Dirichlet Distribution defined?
 
-Dirichlet distribution is parameterized by the vector $\bf{\alpha}$ = 
-($\alpha_1$, $\alpha_2$,...,$\alpha_k$) with $\alpha_i >0$ for $i=1,2, ..k$, 
-which has the same number of events $, k,$ as $P.$ Dirichlet
-distribution provides the probability density function (PDF) of a random 
-values $P$ using the notation below.
+Dirichlet distribution is parameterized by a positive vector 
+$\bf{\alpha}$ = ($\alpha_1$, $\alpha_2$,...,$\alpha_k$) with
+$\alpha_i >0$ for $i=1,2,...,k$, where each parameter $\alpha_i$ is
+corresponding to an event (topic.  
+
+Using the notation below, Dirichlet distribution provides the 
+probability density function (PDF) of random values (probabilities) 
+$\bf{P}$.
 
 Notation:
 
@@ -61,14 +71,12 @@ $$
 \end{equation}
 $$
 
-* $\bf{\alpha}$ = ($\alpha_1$, $\alpha_2$,...,$\alpha_k$): Vector of parameters of 
-Dirichlet distribution. Each concentration parameter $\alpha_i$ is the 
-effective number of observations associated with the outcome (i.e, call 
-topic) $p_i.$
+* $\bf{\alpha}$ = ($\alpha_1$, $\alpha_2$,...,$\alpha_k$): Positive 
+vector of parameters. Concentration parameter $\alpha_i$ is the 
+effective number of observations associated with the event (topic) $p_i.$
 
-* $\bf{B(\bf{\alpha})}:$ Beta function, which has a constant value for given
-$\bf{\alpha}.$ Using the parameters $\bf{\alpha}$ and the gamma function 
-$\Gamma(n)$, it is defined by
+* $\bf{B(\bf{\alpha})}$: Beta function, which has a constant value 
+for given $\bf{\alpha}$, is defined by
 
 $$
 \begin{equation}
@@ -87,8 +95,8 @@ $$
 
 where $\sum_{i=1}^kp_i =1$ and $p_i \ge 0$ for $i=1,2,...,k.$
 
-Since the sum of the probabilities must be equal to one, 
-$\sum_{i=1}^kp_i =1,$ and none of the probability, $p_i,$ can be negative,
+Since probability, $p_i,$ cannot be negative and the sum of the 
+probabilities must be equal to one, $\sum_{i=1}^kp_i =1,$ and none of the ,
 all possible values of the probability vector, $\bf{P},$ is defined by the 
 $(k-1)-$dimensional polytope, which is the convex hull of $k$ vertices. Since
 one probability can be determined by deducting the remaining $k-1$ 
