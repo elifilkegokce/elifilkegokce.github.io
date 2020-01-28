@@ -278,13 +278,12 @@ first and the second events.
 
 ![](/images/dirichlet-distribution/alpha_le_1.png){: .align-center height="100%" width="100%"}
 
-Plots below show the Dirichlet distributions, where
-$\alpha_1=\alpha_2=\alpha_3 > 1$. Plots start with 
-$\bf{\alpha}$ = (2,2,2) and then $\alpha_i$ values are increased to 500. 
-As $\alpha_i$ increases, distribution becomes more tightly concentrated
-around the center of the simplex. In the context of our example, as 
-$\alpha_i \rightarrow \inf$, each transcript contains each topic
-equally likely. 
+*Dirichlet distributions with $\alpha_1=\alpha_2=\alpha_3 > 1$:*
+Plots start with $\bf{\alpha}$ = (2,2,2) and then values are increased
+to 500. As $\alpha_i$ increases, distribution becomes more tightly 
+concentrated around the center of the simplex. As 
+$\alpha_i \rightarrow \inf$, it is equally likely that each text 
+(transcript) contains each topic. 
 
 ![](/images/dirichlet-distribution/alpha_ge_2_eq.png){: .align-center height="100%" width="100%"}
 
