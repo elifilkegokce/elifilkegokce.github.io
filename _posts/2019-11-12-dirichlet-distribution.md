@@ -388,8 +388,8 @@ probability vector of events, then we will also have Dirichlet
 distribution as posterior. This makes the computations easy while 
 updating the model as more data comes in. Parameters for the 
 updated posterior distribution can be calculated by simply adding the 
-number of newly observed event $i$ to parameter $\alpha_i$ corresponding
-to that event.
+number of newly observed event $i$ to the parameter $\alpha_i$ 
+corresponding to that event.
  
 ---
 REFERENCES
