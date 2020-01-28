@@ -323,15 +323,16 @@ posterior distributions more convenient and faster. Dirichlet
 distribution is the conjugate prior for Categorical distribution 
 and Multinomial distribution. If Dirichlet distribution is used to 
 model the prior distribution of the probability parameters in these 
-distributions, then the resulting posterior distribution is Dirichlet 
-distribution. This provides closed form expression for the posterior 
-distribution, making the calculation of the posterior distribution 
+distributions, then the resulting posterior distribution of parameters
+is also Dirichlet distribution. This provides closed form expression 
+for the posterior distribution, making the calculation of the posterior 
+distribution 
 easy!
 
-Given the probability of $k$ call topics $\bf{P}$ 
-= ($\hat{p}_1$, $\hat{p}_2$, ...,$\hat{p}_k$), likelihood function of having
-$(n_1, n_2,...,n_k)$ calls associated with each topic in $N$ calls is 
-the Multinomial distribution given by
+Given the probability of $k$ topics $\bf{P}$ 
+= ($\hat{p}_1$, $\hat{p}_2$, ...,$\hat{p}_k$), likelihood function 
+of having $(n_1, n_2,...,n_k)$ calls associated with each topic in 
+$N$ calls is the Multinomial distribution given by
 
 $$
 f((n_1, n_2,...,n_k)|N, \bf{P}) = \binom{N}{n_1, n_2, ...,n_k} \prod_{i=1}^{k}\hat{p}_i^{n_i}
@@ -345,8 +346,9 @@ f(\bf{P}|\bf{\alpha})=\frac{1}{\bf{B(\bf{\alpha})}} \prod_{i=1}^k\hat{p}_i^{\alp
 $$
 
 Combining the likelihood and prior distribution, we get posterior
-distribution of probabilities of $k$ call topics for the given 
-$\bf{\hat{N}}$ = $(n_1, n_2,...,n_k)$ calls associated with each topic in $N$ calls as follows:
+distribution of probability vector of $k$ topics for the given 
+$\bf{\hat{N}}$ = $(n_1, n_2,...,n_k)$ calls associated with each 
+topic in $N$ calls as follows:
 
 $$
 \begin{align}

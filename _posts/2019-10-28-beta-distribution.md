@@ -258,9 +258,9 @@ distribution](https://en.wikipedia.org/wiki/Conjugate_prior)
 for the Bernoulli, binomial, negative binomial, and geometric 
 distributions. If Beta distribution is used to model the prior 
 distribution of the probability parameters in these distributions, 
-then resulting posterior distribution is Beta distribution. This provides 
-closed form expression for the posterior distribution,
-making the calculation of the posterior distribution easy.
+then resulting posterior distribution of the probabilities is Beta 
+distribution. This provides closed form expression for the posterior 
+distribution, making the calculation of the posterior distribution easy.
 
 Given the probability of fraud call $\hat{p}$, likelihood function of
 $k$ fraud calls in $N$ calls is the Binomial distribution given by
