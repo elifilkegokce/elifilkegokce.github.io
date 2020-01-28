@@ -115,8 +115,8 @@ $B(\alpha,\beta)$.
 
 As you may observe in the PDF of Dirichlet distribution, numerator
 $\prod_{i=1}^kp_i^{\alpha_i-1}$ weighs the probability of each event 
-$p_i$. In our case, events are call topics. Each parameter $\alpha_i$
-can be thought as the number of calls about topic $i$. If the value 
+$p_i$. Each parameter $\alpha_i$ can be thought as the number of 
+observations (calls) associated with the event (topic) $i$. If the value 
 of $\alpha_i$ is higher than the other parameters, then larger weight 
 is assigned to $p_i$ and probability density is shift towards the 
 probabilities that give a higher probability to that event (topic). 
@@ -220,41 +220,26 @@ $$
 
 ## 3 Parameters of Dirichlet Distribution
 
-Parameter $\bf{\alpha}$ = $(\alpha_1, \alpha_2,...,\alpha_k)$ is known as
-the concentration parameter and, as its name implies, it determines how
-concentrated the distribution is around its mean 
+Parameter $\bf{\alpha}$ = $(\alpha_1, \alpha_2,...,\alpha_k)$ is 
+known as the concentration parameter and, as its name implies, it 
+determines how concentrated the distribution is around its mean 
 $(\hat{\alpha_1}, \hat{\alpha_2},...,\hat{\alpha_k})$, where
-$\hat{\alpha_i} = \alpha_i / sum_{j=1}^k \alpha_j$ . Smaller values of 
-the parameters results in a more sparsely distributions. 
+$\hat{\alpha_i} = \alpha_i / \sum_{j=1}^k \alpha_j$ . Smaller 
+values of the parameters favors more sparsely distributed 
+distributions where greater amount of probability values allocated 
+to a few events (topics) and most of the events (topics) have a 
+probability value around 0. Larger values of the concentration 
+parameters results in more evenly distributed distributions among 
+all events (topics).
 
+Plots in the following figures show how Dirichlet distributions 
+change by different combination of $\alpha_i$ values for 3 events 
+(topics). Each point on the plots represents the probability 
+mixture of the three events such as (0.8, 0.2, 0.0) or 
+(0.2, 0.4, 0.4). 
 
-With a value much less than 1, 
-the mass will be highly concentrated in a few components, and all the 
-rest will have almost no mass. With a value much greater than 1, 
-the mass will be dispersed almost equally among all the components. 
-
-The larger the value of the concentration parameter, 
-the more evenly distributed is the resulting distribution 
-(the more it tends towards the uniform distribution). 
-The smaller the value of the concentration parameter, 
-the more sparsely distributed is the resulting distribution, 
-with most values or ranges of values having a probability near 
-zero (in other words, the more it tends towards a distribution 
-concentrated on a single point,
-
-
-There is a value $\alpha_i$ for
-each outcome $i$ (i.e., call topic $i$). Each of these $\alpha_i$ values
-represents the effective number of observations (i.e, pseudocounts) 
-associated with the outcome $i$ and weight the probability $p_i$. 
-Plots in the figures below show how Dirichlet distributions change
-by different combination of $\alpha_i$ values for 3 call topics. Each 
-point on the plots represents the probability mixture of the three call 
-topics such as (0.8, 0.2, 0.0) or (0.2, 0.4, 0.4). 
-
-Plots below show the Dirichlet distributions, where 
-$\alpha_1=\alpha_2=\alpha_3 \le 1.$ Plots start with $\alpha_i$ 
-values equal to 0.1 and then values are gradually increased to 1. 
+Dirichlet distributions, where $\alpha_1=\alpha_2=\alpha_3 \le 1$:
+Plots start with $\alpha_i$ values equal to 0.1 and then values are gradually increased to 1. 
 For $\alpha_i$ values that are closer to 0, distribution concentrates 
 on the corners (i.e., call topics) and along the boundaries of the simplex 
 and it has this nice property that distributions are dominated by one of 
