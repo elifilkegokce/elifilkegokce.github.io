@@ -272,7 +272,7 @@ $\alpha_2$ moves the probability distributions towards the boundary
 associated with the first and the second events (topics 1 and 2). 
 Probability distributions which provides higher probability also to
 the second event becomes more favorable. When $\alpha_2$ becomes 
-equal to $\alpha_3$ in the last plot, probability distribution 
+equal to $\alpha_1$ in the last plot, probability distribution 
 concentrates in the center of the boundary associated with the 
 first and the second events.
 
@@ -317,12 +317,16 @@ distribution plots in my github repository.
 
 ## 5 One Last Note!
 
-Dirichlet distribution is the conjugate prior for Categorical distribution 
-and Multinomial distribution. If Dirichlet distribution is used to model 
-the prior distribution of the probability parameters in these distributions, 
-then resulting posterior distribution is Dirichlet distribution. This
-provides closed form expression for the posterior distribution, making 
-the calculation of the posterior distribution easier.
+Dirichlet distribution is favorable distribution in modeling the 
+PDF of probability vectors since it makes the calculation of 
+posterior distributions more convenient and faster. Dirichlet 
+distribution is the conjugate prior for Categorical distribution 
+and Multinomial distribution. If Dirichlet distribution is used to 
+model the prior distribution of the probability parameters in these 
+distributions, then the resulting posterior distribution is Dirichlet 
+distribution. This provides closed form expression for the posterior 
+distribution, making the calculation of the posterior distribution 
+easy!
 
 Given the probability of $k$ call topics $\bf{P}$ 
 = ($\hat{p}_1$, $\hat{p}_2$, ...,$\hat{p}_k$), likelihood function of having
@@ -377,6 +381,14 @@ $$
 which is the Dirichlet distribution with parameters 
 $\bf{\alpha+\hat{N}}$ = ($\alpha_1+n_1$, $\alpha_2+n_2$,..., $\alpha_k+n_k$).
 
+If we use Dirichlet distribution as a prior in modelling the 
+probability vector of events, then we will also have Dirichlet
+distribution as posterior. This makes the computations easy while 
+updating the model as more data comes in. Parameters for the 
+updated posterior distribution can be calculated by simply adding the 
+number of newly observed event $i$ to parameter $\alpha_i$ corresponding
+to that event.
+ 
 ---
 REFERENCES
 ---
