@@ -256,24 +256,25 @@ or something in between.
 
 ![](/images/dirichlet-distribution/alpha_le_1_eq.png){: .align-center height="100%" width="100%"}
 
-Plots below show the Dirichlet distributions, where $\alpha_i \le 1$ 
-and $\alpha_i \neq \alpha_j$ for some $i,j = 1,2,3$. Plots start with 
-$\bf{\alpha}$ = (0.9,0.5,0.2).  Similar to the previous case, distribution
-concentrates on the corners (i.e., call topics) and along the boundaries
+*Dirichlet distributions with $\alpha_i \le 1$ and 
+$\alpha_i \neq \alpha_j$ for some $i,j = 1,2,3$:* Plots start with 
+$\bf{\alpha}$ = (0.9,0.5,0.2). Similar to the previous case, distribution
+concentrates on the corners and along the boundaries
 of the simplex. However, in that case, probability distributions 
-concentrates more on the corner associated with outcome 1 (i.e., call
-topic 1) since $\alpha_1$ is greater than $\alpha_2$ and $\alpha_3$. 
+concentrates more on the corner associated with the first event 
+(topic 1) since $\alpha_1$ is greater than $\alpha_2$ and $\alpha_3$. 
 This becomes more clear in the second plot, where $\alpha_1$ value
 is increased to 5. If one $\alpha_i$ value is greater than the others,
 then the probability distributions that provides a higher probability
-to that outcome is more probable. In the the third and forth plots, 
+to that event is more probable. In the the third and forth plots, 
 $\alpha_2$ value is increased to 0.9 and 2, respectively. Increasing
 $\alpha_2$ moves the probability distributions towards the boundary
-associated with outcome 1 and 2 (i.e., call topics 1 and 2). Probability 
-distributions which provides higher probability to outcome 2 becomes
-more favorable. When $\alpha_2$ becomes equal to $\alpha_3$ in the last 
-plot, probability distribution concentrates in the center of the boundary
-associated with the outcomes 1 and 2.
+associated with the first and the second events (topics 1 and 2). 
+Probability distributions which provides higher probability also to
+the second event becomes more favorable. When $\alpha_2$ becomes 
+equal to $\alpha_3$ in the last plot, probability distribution 
+concentrates in the center of the boundary associated with the 
+first and the second events.
 
 ![](/images/dirichlet-distribution/alpha_le_1.png){: .align-center height="100%" width="100%"}
 
@@ -287,28 +288,30 @@ equally likely.
 
 ![](/images/dirichlet-distribution/alpha_ge_2_eq.png){: .align-center height="100%" width="100%"}
 
-Plots below show the Dirichlet distributions, where
-$\alpha_1=\alpha_2=\alpha_3 > 1$ and $\alpha_i \neq \alpha_j$ 
-for some $i,j = 1,2,3$. Plots start with $\bf{\alpha}$ = (5.0,2.0,2.0)
-and then values are gradually increased. In the first and the second plots,
-distribution is concentrates around the corner associated with the outcome 1
-(i.e., call topic 1) since the $\alpha_1$  value is greater that the other 
-two values. When $\alpha_2$ is increased in the the third and fourth plots,
-distribution tends towards the the boundary of outcomes 1 and 2 (i.e., call
-topics 1 and 2) making the distributions, which provides higher probability 
-to topic 2, more favorable. With the increased $\alpha_3$ value in the last 
-plot, distribution moves towards the center of the simplex making the 
-distributions, which provides higher probability to topic 3, more likely. 
+*Dirichlet distributions with $\alpha_1=\alpha_2=\alpha_3 > 1$ 
+and $\alpha_i \neq \alpha_j$ for some $i,j = 1,2,3$:* Plots start 
+with $\bf{\alpha}$ = (5.0,2.0,2.0) and then values are gradually 
+increased. In the first and the second plots, distribution is 
+concentrated around the corner associated with the first event 
+(topic 1) since $\alpha_1$ is greater that the others. When the 
+value of $\alpha_2$ is increased in the the third and fourth plots,
+distribution tends towards the the boundary of the first and the
+second events (topics 1 and 2) making the distributions, which 
+also provides higher probability to the second event, more 
+favorable. With the increased $\alpha_3$ value in the last plot, 
+distribution moves towards the center of the simplex favoring 
+the distributions with higher probability for topic 3 as well. 
 
 ![](/images/dirichlet-distribution/alpha_ge_2.png){: .align-center height="100%" width="100%"}
 
-Parameter $\bf{\alpha}$ determines the probability mixture of each outcome 
-(i.e., each topic) for any given event (i.e., call transcript). For
-low $\alpha_i$ values, transcripts will likely to be a mixture of a few 
-topics. When $\alpha_i$ values increase, transcripts will likely to be
-a mixture of more topics. In order to increase the probability of a
-transcripts with some certain topic  (e.g., with a higher probability
-for topic 1), higher value for $\alpha_1$ should be given.
+Parameter $\bf{\alpha}$ determines the probability mixture of each 
+event (topic) for any given text (call transcript, news, e-mail 
+and so on). For low $\alpha_i$ values, texts will likely to be a 
+mixture of a few topics. When $\alpha_i$ values increase, texts 
+will likely to be a mixture of more topics. In order to increase 
+the probability of a text with some certain topic  (e.g., with a 
+higher probability for topic 1), higher value should be assigned to
+to that topic ($\alpha_1)$.
 
 **Note:** You can find the code that I use to generate the Dirichlet 
 distribution plots in my github repository.
