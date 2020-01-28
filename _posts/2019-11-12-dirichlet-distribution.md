@@ -345,10 +345,10 @@ $$
 f(\bf{P}|\bf{\alpha})=\frac{1}{\bf{B(\bf{\alpha})}} \prod_{i=1}^k\hat{p}_i^{\alpha_i-1}
 $$
 
-Combining the likelihood and prior distribution, we get posterior
-distribution of probability vector of $k$ topics for the given 
-$\bf{\hat{N}}$ = $(n_1, n_2,...,n_k)$ calls associated with each 
-topic in $N$ calls as follows:
+Given the number of calls $\bf{\hat{N}}$ = $(n_1, n_2,...,n_k)$ 
+associated with each topic in $N = \sum_{i=1}^k n_i$ calls. Combining 
+the likelihood and prior distribution, we get the posterior 
+distribution of the probability vector of $k$ topics as follows:
 
 $$
 \begin{align}
@@ -372,7 +372,7 @@ $$
 Since $\int_{0}^{1} \prod_{i=1}^{k}x_i^{n_i+\alpha_i-1}
 \frac{1}{\bf{B(\bf{\alpha+\hat{N}})}} \bf{dx}$ = 1 from the PDF of 
 Dirichlet distribution, we will have the posterior distribution for 
-the probability as
+the probability vector as
 
 $$
 \begin{align}
