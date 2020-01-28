@@ -138,6 +138,9 @@ $$
 & = \int_{p_{k-1}=0}^{1} \int_{p_{k-2}=0}^{1}... \int_{p_1=0}^{1} \frac{1}{\bf{B(\bf{\alpha})}} 
 \bigg(\prod_{i=1}^{k-1}p_i^{\alpha_i-1} \bigg) \\\\
 & \bigg( 1- \sum_{i=1}^{k-1} p_i \bigg)^{(\alpha_k-1)} dp_1dp_2...dp_{k-1}\\\\
+& = \frac{1}{\bf{B(\bf{\alpha})}} \int_{p_{k-1}=0}^{1} \int_{p_{k-2}=0}^{1}... \int_{p_1=0}^{1}  
+\bigg(\prod_{i=1}^{k-1}p_i^{\alpha_i-1} \bigg) \\\\
+& \bigg( 1- \sum_{i=1}^{k-1} p_i \bigg)^{(\alpha_k-1)} dp_1dp_2...dp_{k-1}\\\\
 & = 1,
 \end{align}
 $$
@@ -145,14 +148,15 @@ $$
 we have
 
 $$
-\begin{equation}
-\bf{B(\bf{\alpha})} = \int_{0}^{1} \prod_{i=1}^kp_i^{\alpha_i-1} dp 
- =\frac{\prod_{i=1}^{k} \Gamma(\alpha_i)}{\Gamma(\sum_{i=1}^{k} \alpha_i)}
-\end{equation}
+\begin{align}
+\bf{B(\bf{\alpha})} & =  \int_{p_{k-1}=0}^{1} \int_{p_{k-2}=0}^{1}... \int_{p_1=0}^{1}  
+\bigg(\prod_{i=1}^{k-1}p_i^{\alpha_i-1} \bigg) \\\\
+& \bigg( 1- \sum_{i=1}^{k-1} p_i \bigg)^{(\alpha_k-1)} dp_1dp_2...dp_{k-1}\\\\
+\end{align}
 $$
 
 
-We start with calculating $\Gamma(\alpha)\Gamma(\beta),$
+We start with calculating $\prod_{i=1}^{k} \Gamma(\alpha_i)$,
 
 $$
 \begin{align}
