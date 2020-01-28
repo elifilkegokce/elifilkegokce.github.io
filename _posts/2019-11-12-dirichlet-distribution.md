@@ -227,31 +227,32 @@ $(\hat{\alpha_1}, \hat{\alpha_2},...,\hat{\alpha_k})$, where
 $\hat{\alpha_i} = \alpha_i / \sum_{j=1}^k \alpha_j$ . Smaller 
 values of the parameters favors more sparsely distributed 
 distributions where greater amount of probability values allocated 
-to a few events (topics) and most of the events (topics) have a 
-probability value around 0. Larger values of the concentration 
+to a few events (topics) and the remaining events (topics) have a 
+probability value close to 0. Larger values of the concentration 
 parameters results in more evenly distributed distributions among 
 all events (topics).
 
 Plots in the following figures show how Dirichlet distributions 
-change by different combination of $\alpha_i$ values for 3 events 
-(topics). Each point on the plots represents the probability 
+change by different combination of $\alpha_i$ values for $k=3$ 
+events (topics). Each point on the plots represents the probability 
 mixture of the three events such as (0.8, 0.2, 0.0) or 
 (0.2, 0.4, 0.4). 
 
-Dirichlet distributions, where $\alpha_1=\alpha_2=\alpha_3 \le 1$:
-Plots start with $\alpha_i$ values equal to 0.1 and then values are gradually increased to 1. 
-For $\alpha_i$ values that are closer to 0, distribution concentrates 
-on the corners (i.e., call topics) and along the boundaries of the simplex 
-and it has this nice property that distributions are dominated by one of 
-the outcomes (i.e., call topics). This means if you want to associate
-each call transcript with a single topic, you should choose $\alpha_i$
-values that are closer to 0. However, any topic can be dominated, 
-since all $\alpha$ values are equal. When $\alpha_i$ values increases, 
-central points becomes more and more attractive. Finally, for the case, 
-$\alpha=(1,1,1),$  all possible distributions becomes equally likely 
-(i.e., Dirichlet has uniform distribution). For each call transcript, 
-it is equally likely that a call may be associated with a single topic, 
-mixture of all the topics, or something in between.
+Dirichlet distributions with $\alpha_1=\alpha_2=\alpha_3 \le 1$: 
+Plots start with $\alpha_i$ values equal to 0.1 and then gradually 
+increased to 1. For $\alpha_i$ values closer to 0, distribution
+concentrates on the corners and along the boundaries of the simplex. 
+In that case, it has this nice property that distributions are 
+dominated by one of the events (topics). This means that if 
+you want to associate each text (call transcript, article, news, 
+e-mail) with a single topic, you should choose $\alpha_i$
+values that are closer to 0. However, any topic can be dominated to
+others, since all $\alpha$ values are equal. When $\alpha_i$ values 
+increases, central points becomes more and more attractive. Finally, 
+for the case $\alpha=(1,1,1)$, all possible distributions becomes 
+equally likely (Dirichlet has uniform distribution). It is equally 
+likely that a text may have a single topic, mixture of all topics, 
+or something in between.
 
 ![](/images/dirichlet-distribution/alpha_le_1_eq.png){: .align-center height="100%" width="100%"}
 
