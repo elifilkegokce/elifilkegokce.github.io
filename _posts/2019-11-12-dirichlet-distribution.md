@@ -118,10 +118,11 @@ $\prod_{i=1}^kp_i^{\alpha_i-1}$ weighs the probability of each event
 $p_i$. In our case, events are call topics. Each parameter $\alpha_i$
 can be thought as the number of calls about topic $i$. If the value 
 of $\alpha_i$ is higher than the other parameters, then larger weight 
-is assigned to $p_i$ and probability density is shift towards that 
-event (topic). However, the function $\prod_{i=1}^kp_i^{\alpha_i-1}$ , 
-as PDF by itself, does not guarantee that the area under the curve of 
-the PDF to be 1. In order to ensure that the total probability is 1, 
+is assigned to $p_i$ and probability density is shift towards the 
+probabilities that give a higher probability to that event (topic). 
+However, the function $\prod_{i=1}^kp_i^{\alpha_i-1}$ , as PDF by 
+itself, does not guarantee that the area under the curve of the PDF 
+to be 1. In order to ensure that the total probability is 1, 
 it is normalized by dividing a constant $\bf{B(\bf{\alpha})}.$ 
 
 
@@ -219,9 +220,30 @@ $$
 
 ## 3 Parameters of Dirichlet Distribution
 
-Parameter $\bf{\alpha}$ = ($\alpha_1$, $\alpha_2$,...,$\alpha_k$) is known as
-the concentration parameter and determines which part of the $(k-1)$ 
-simplex has the higher probability. There is a value $\alpha_i$ for
+Parameter $\bf{\alpha}$ = $(\alpha_1, \alpha_2,...,\alpha_k)$ is known as
+the concentration parameter and, as its name implies, it determines how
+concentrated the distribution is around its mean 
+$(\hat{\alpha_1}, \hat{\alpha_2},...,\hat{\alpha_k})$, where
+$\hat{\alpha_i} = \alpha_i / sum_{j=1}^k \alpha_j$ . Smaller values of 
+the parameters results in a more sparsely distributions. 
+
+
+With a value much less than 1, 
+the mass will be highly concentrated in a few components, and all the 
+rest will have almost no mass. With a value much greater than 1, 
+the mass will be dispersed almost equally among all the components. 
+
+The larger the value of the concentration parameter, 
+the more evenly distributed is the resulting distribution 
+(the more it tends towards the uniform distribution). 
+The smaller the value of the concentration parameter, 
+the more sparsely distributed is the resulting distribution, 
+with most values or ranges of values having a probability near 
+zero (in other words, the more it tends towards a distribution 
+concentrated on a single point,
+
+
+There is a value $\alpha_i$ for
 each outcome $i$ (i.e., call topic $i$). Each of these $\alpha_i$ values
 represents the effective number of observations (i.e, pseudocounts) 
 associated with the outcome $i$ and weight the probability $p_i$. 
