@@ -132,10 +132,13 @@ that of Beta distribution. Similarly, since the area under the curve of
 the PDF should be equal to 1, from
 
 $$
-\begin{equation}
+\begin{align}
 \int_{0}^{1} f(\bf{P}|\bf{\alpha}) dp = \frac{1}{\bf{B(\bf{\alpha})}} 
-\int_{0}^{1} \prod_{i=1}^kp_i^{\alpha_i-1} dp = 1,
-\end{equation}
+\int_{0}^{1} \prod_{i=1}^kp_i^{\alpha_i-1} dp \\\\
+& = \int_{p_{k-1}=0}^{1} \int_{p_{k-2}=0}^{1}... \int_{p_1=0}^{1} \frac{1}{\bf{B(\bf{\alpha})}} 
+\prod_{i=1}^{k-1}p_i^{\alpha_i-1} \bigg( 1- \sum_{i=1}^{k-1} \bigg)^(\alpha_k-1) dp_1dp_2...dp_{k-1}\\\\
+& = 1,
+\end{align}
 $$
 
 we have
