@@ -238,7 +238,7 @@ events (topics). Each point on the plots represents the probability
 mixture of the three events such as (0.8, 0.2, 0.0) or 
 (0.2, 0.4, 0.4). 
 
-Dirichlet distributions with $\alpha_1=\alpha_2=\alpha_3 \le 1$: 
+*Dirichlet distributions with $\alpha_1=\alpha_2=\alpha_3 \le 1$:* 
 Plots start with $\alpha_i$ values equal to 0.1 and then gradually 
 increased to 1. For $\alpha_i$ values closer to 0, distribution
 concentrates on the corners and along the boundaries of the simplex. 
